@@ -6,16 +6,19 @@
     @import "./add-ons/_placeholder";
     
     body {
+        // mise à zéro des marges et padding pour navigateurs
         margin: 0;
         padding: 0;
     }
 
     main {
+        // police et éventuels ancres avec comportement smooth
         font-family: roboto, sans-serif;
         scroll-behavior: smooth;
     }
 
     h1 {
+        // modif du titre et centrage
         font-family: shrikhand;
         font-size: 45px;
         margin-bottom:20px;
@@ -24,6 +27,7 @@
     }
 
     .localisation {
+        // couleur background et ombres
         @extend %flex-center;
         background-color:$back-gray;
         box-shadow: 0px -4px 3px 1px $back-shadow-gray,
@@ -32,28 +36,33 @@
     }
 
     .localisation .fa-location-dot {
+        // mise en place de l'icône
         @extend %flex-center;
         font-size: 20px;
         margin-inline: 20px;
     }
 
     .ville {
+        // mise en place du nom de la ville
         font-size: 20px;
         font-weight: 400;
     }
 
     .partie-1-reservation {
+        // mise en forme de la partie réservation
         display: flex;
         flex-direction: column;
         background-color: $back-lightgray;
     }
 
     .reservation-title {
+        // ajustement padding titre résa
         padding: 30px 30px 20px 30px;
     }
 
     .reservation-title-1,
     .reservation-title-2 {
+        // modif police des titres
         @extend %flex-center;
         font-size: 28px;
         font-weight: 600;
@@ -61,16 +70,19 @@
 
     .reservation-commentaire-1,
     .reservation-commentaire-2 {
+        // modif police des comm
         @extend %flex-center;
         font-size: 20px;
         font-weight: 200;
     }
 
     .button-container {
+        // centrage bouton
         @extend %flex-center;
     }
 
     .button-explorer {
+        // déco bouton explorer
         width: 45%;
         border-radius: 50px;
         border: none;
@@ -84,32 +96,48 @@
     }
 
     .button-explorer:hover {
+        // changement au survol
         cursor: pointer;
         transform: scale(1.05);
         transition: 0.3s;
     }
 
     .partie-2-fonctionnement {
+        // mise en colonne 
         @extend %flex-column;
     }
 
     .fonctionnement-title {
+        // mise en place et police du titre
+        display:flex;
+        justify-content: baseline;
         font-size: 28px;
-        margin: 50px 0 30px 20px;
+        margin: 50px 0 30px 5%;
     }
 
     .button-fonctionnement {
+        // mise en colonne
         @extend %flex-column;
     }
+
+    // .button-choix-du-restaurant{
+    //     display:grid;
+    //     grid-template-columns: 1fr 1fr 90%;
+    // }
 
     .button-choix-du-restaurant,
     .button-composez-votre-menu,
     .button-degustez-au-restaurant {
+        // mise en forme des 3 boutons 
+        @extend %flex-center;
+        justify-content: center;
+        width: 70%;
         margin-block: 14px;
-        padding: 33px;
+        margin-inline: 15%;
+        padding: 33px 33px 33px 0;
         border: none;
         border-radius: 20px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         background-color: $back-lightgray;
         box-shadow: 0px 5px 5px $box-shadow-gray;
@@ -118,6 +146,7 @@
     .fa-tablet-screen-button,
     .fa-list-ul,
     .fa-store {
+        // mise en forme des 3 icônes
         color: $font-awesome-gray;
         padding-right: 30px;
     }
@@ -125,16 +154,19 @@
     .fa-tablet-screen-button:hover,
     .fa-list-ul:hover,
     .fa-store:hover {
+        // changement au survol
         color: $violet;
     }
 
     .fa-1,
     .fa-2,
     .fa-3 {
+        // chiffre 1/2/3
         color: white;
         // margin:2px;
         border-radius: 50px;
-        padding:5px;
+        margin-right:20px;
+        padding: 5px;
         font-size: 15px;
         background-color: $violet;
     }
@@ -142,29 +174,42 @@
     .button-choix-du-restaurant:hover,
     .button-composez-votre-menu:hover,
     .button-dégustez-au-restaurant:hover {
+        // changement du statut au survol
         cursor: pointer;
         transform: scale(1.05);
         transition: 0.3s;
     }
 
     .partie-3-restaurants {
+        // mise en colonne
         @extend %flex-column;
         background-color: $back-lightgray;
         padding-block: 40px;
     }
 
     .restaurants-title {
+        // modif titre restaurants
         font-size: 28px;
-        margin-left: 25px;
+        margin-left: 5%;
     }
 
     .cards{
-        @extend %flex-column;
+        // modif cards 
         width:90%;
+        margin:5%;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4{
+        // hauteur cards
+        height: 406px;
     }
 
     h3,
     p {
+        // padding titre et paragraphe
         margin: 0;
         padding: 15px;
     }
@@ -173,10 +218,22 @@
     .card2-comm,
     .card3-comm,
     .card4-comm {
+        // modif du comm
+        display:flex;
+        flex-direction: column;
         background-color: white;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+
+    .title-heart{
+        // modif coeur icône
+        display:flex;
+        justify-content: space-between;
     }
 
     img {
+        // photos
         max-width: 100%;
         max-height: 100%;
     }
@@ -185,6 +242,7 @@
     .photo2,
     .photo3,
     .photo4 {
+        // modif photos
         width: 700px;
         height: 300px;
         object-fit: cover;
@@ -193,6 +251,38 @@
         // background-attachment: fixed;
         // background-size:cover;
         // background-position: top;
+    }
+
+    footer{
+        // background footer
+        padding:15px 25px 15px 25px;
+        background: $font-background-dark-gray;
+    }
+
+    .liens-footer{
+        // mise en colonne footer
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer-title{
+        // police du titre du footer
+        margin-block: 10px;
+        font-family: shrikhand;
+        color:white;
+        font-size: 20px;
+    }
+
+    .proposer-un-restaurant,
+    .devenir-partenaire,
+    .mentions-legales,
+    .contact{
+        // couleur et police liens footer
+        color:white;
+        text-decoration: none;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        padding:5px;
     }
 
 
