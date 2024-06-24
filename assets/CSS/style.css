@@ -24,10 +24,17 @@
   }
   h1 {
     font-family: shrikhand;
-    font-size: 45px;
+    font-size: 42px;
+    font-weight: 300;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+  }
+  .restaurant-title {
+    font-family: shrikhand;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
   }
   .localisation {
     background-color: rgb(227, 227, 227);
