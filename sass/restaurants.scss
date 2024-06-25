@@ -100,6 +100,11 @@
     font-weight: 500;
   }
 
+  .fa-utensils,
+  .fa-handshake-angle {
+    color: white;
+  }
+
   .button-container {
     // centrage bouton
     @extend %flex-center;

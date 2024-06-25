@@ -76,7 +76,7 @@
     padding: 28px 75px 28px 75px;
     margin-top: 38px;
     margin-bottom: 92px;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 5px rgb(189, 182, 182);
   }
   .button-explorer:hover {
@@ -114,7 +114,7 @@
   .fa-tablet-screen-button:hover,
   .fa-list-ul:hover,
   .fa-store:hover {
-    color: #9356DC;
+    color: #9356dc;
   }
   .fa-1,
   .fa-2,
@@ -124,7 +124,7 @@
     margin-right: 20px;
     padding: 5px;
     font-size: 15px;
-    background-color: #9356DC;
+    background-color: #9356dc;
   }
   .button-choix-du-restaurant:hover,
   .button-composez-votre-menu:hover,
@@ -159,9 +159,9 @@
   .nouveau {
     font-size: 20px;
     font-weight: 500;
-    border: 2px solid #99E2D0;
+    border: 2px solid #99e2d0;
     border-radius: 5px;
-    background: #99E2D0;
+    background: #99e2d0;
     padding: 10px 20px 10px 20px;
     position: absolute;
     z-index: 2;
@@ -225,7 +225,7 @@
   }
   footer {
     padding: 15px 25px 15px 25px;
-    background: #3d3d3d;
+    background: #2e2e2e;
   }
   .liens-footer {
     display: flex;
