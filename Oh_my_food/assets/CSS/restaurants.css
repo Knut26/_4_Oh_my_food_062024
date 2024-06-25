@@ -1,0 +1,38 @@
+@media (max-width: 767.8px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    font-family: roboto, sans-serif;
+    scroll-behavior: smooth;
+  }
+  main {
+    background-color: rgb(247, 247, 247);
+  }
+  .entrees,
+  .plats,
+  .desserts {
+    font-size: 20px;
+  }
+  .entrees-title,
+  .plats-title,
+  .desserts-title {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .entrees-sous-title,
+  .plats-sous-title,
+  .desserts-sous-title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .entrees-comm,
+  .plats-comm,
+  .desserts-comm {
+    font-size: 18px;
+    font-weight: 200;
+  }
+}
+
+/*# sourceMappingURL=restaurants.css.map */
