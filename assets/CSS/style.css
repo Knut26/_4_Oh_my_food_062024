@@ -151,6 +151,23 @@
   .card4 {
     height: 450px;
   }
+  .card1,
+  .card2 {
+    position: relative;
+    z-index: 1;
+  }
+  .nouveau {
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #99E2D0;
+    border-radius: 5px;
+    background: #99E2D0;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+  }
   .index-la-palette-du-gout,
   .index-la-note-enchantee,
   .index-a-la-francaise,
@@ -182,6 +199,7 @@
     background-color: white;
     border-radius: 25px;
     font-size: 20px;
+    height: 100px;
   }
   a {
     text-decoration: none;
