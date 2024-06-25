@@ -90,7 +90,7 @@
 
   .button-explorer {
     // déco bouton explorer
-    width: 45%;
+    width: 74%;
     border-radius: 50px;
     border: none;
     font-size: 28px;
@@ -206,12 +206,35 @@
     margin: 5%;
   }
 
+  .fa-heart {
+  }
+
   .card1,
   .card2,
   .card3,
   .card4 {
     // hauteur cards
-    height: 406px;
+    height: 450px;
+  }
+
+  .index-la-palette-du-gout,
+  .index-la-note-enchantee,
+  .index-a-la-francaise,
+  .index-le-delice-des-sens {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .index-menilmontant,
+  .index-charonne,
+  .index-cite-rouge,
+  .index-folie-mericourt {
+    font-size: 25px;
+    padding: 0 0 0 15px;
+  }
+
+  .nouveau {
+    color: green;
   }
 
   h3,

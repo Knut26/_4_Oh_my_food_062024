@@ -68,7 +68,7 @@
     font-weight: 200;
   }
   .button-explorer {
-    width: 45%;
+    width: 74%;
     border-radius: 50px;
     border: none;
     font-size: 28px;
@@ -149,7 +149,24 @@
   .card2,
   .card3,
   .card4 {
-    height: 406px;
+    height: 450px;
+  }
+  .index-la-palette-du-gout,
+  .index-la-note-enchantee,
+  .index-a-la-francaise,
+  .index-le-delice-des-sens {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .index-menilmontant,
+  .index-charonne,
+  .index-cite-rouge,
+  .index-folie-mericourt {
+    font-size: 25px;
+    padding: 0 0 0 15px;
+  }
+  .nouveau {
+    color: green;
   }
   h3,
   p {
