@@ -1,123 +1,271 @@
-@media (max-width: 767.8px) {
-  .button-container, .restaurant-title, .nav {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-  }
+.button-container, .restaurant-title, .nav {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: rgb(247, 247, 247);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+button {
+  border: none;
+}
+
+.fa-arrow-left {
+  font-size: 35px;
+}
+
+.nav {
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+
+.restaurant-title {
+  justify-content: space-between;
+  width: 85%;
+  margin-block: 40px;
+}
+
+.entrees,
+.plats,
+.desserts {
+  margin: 30px 30px 50px 30px;
+  font-size: 20px;
+}
+
+.entrees-title,
+.plats-title,
+.desserts-title {
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #99e2d0;
+  width: 70px;
+}
+
+.entrees-sous-title,
+.plats-sous-title,
+.desserts-sous-title {
+  font-size: 30px;
+  margin: 45px 20px 0px 20px;
+}
+
+.entrees-comm,
+.plats-comm,
+.desserts-comm {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  font-weight: 300;
+  margin: 0px 20px 0px 20px;
+  padding: 10px 10px 10px 0;
+}
+
+.sous-titre-et-comm {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #fffffffffffffffffffffffffffffffffffff;
+}
+
+.prix {
+  font-weight: 500;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+  color: white;
+}
+
+.button-commander {
+  width: 45%;
+  border-radius: 50px;
+  border: none;
+  font-size: 28px;
+  color: white;
+  padding: 28px 75px 28px 75px;
+  margin-top: 38px;
+  margin-bottom: 70px;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 5px rgb(189, 182, 182);
+}
+
+.button-commander:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+footer {
+  padding-inline: 25px;
+  padding-bottom: 8px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-block: 6px;
+}
+
+.liens-footer {
+  margin-bottom: 40px;
+}
+
+.proposer-un-restaurant,
+.devenir-partenaire,
+.mentions-legales,
+.contact {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
   }
-  div {
-    font-family: roboto, sans-serif;
-    scroll-behavior: smooth;
-  }
-  main {
-    background-color: rgb(247, 247, 247);
-  }
   h1 {
-    font-size: 30px;
-  }
-  button {
-    border: none;
-  }
-  .fa-arrow-left {
-    font-size: 35px;
-  }
-  .nav {
-    justify-content: space-between;
-    width: 60%;
-    margin-left: 50px;
-  }
-  h3 {
-    font-size: 48px;
-    font-weight: 200;
-  }
-  .fa-heart {
-    font-size: 25px;
-  }
-  .restaurant-title {
-    justify-content: space-between;
-    width: 85%;
-    margin-block: 40px;
-  }
-  .entrees,
-  .plats,
-  .desserts {
-    margin: 30px 30px 50px 30px;
-    font-size: 20px;
-  }
-  .entrees-title,
-  .plats-title,
-  .desserts-title {
-    font-size: 26px;
+    font-family: shrikhand;
+    font-size: 40px;
     font-weight: 300;
-    padding-bottom: 15px;
-    border-bottom: 5px solid #99e2d0;
-    width: 70px;
-  }
-  .entrees-sous-title,
-  .plats-sous-title,
-  .desserts-sous-title {
-    font-size: 30px;
-    margin: 45px 20px 0px 20px;
-  }
-  .entrees-comm,
-  .plats-comm,
-  .desserts-comm {
+    margin: 20px;
     display: flex;
-    justify-content: space-between;
-    font-size: 27px;
-    font-weight: 300;
-    margin: 0px 20px 0px 20px;
-    padding: 10px 10px 10px 0;
+    justify-content: center;
   }
-  .sous-titre-et-comm {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px #fffffffffffffffffffffffffffffffffffff;
+  .localisation {
+    background-color: rgb(227, 227, 227);
+    box-shadow: none;
+    height: 45px;
   }
-  .prix {
-    font-weight: 500;
+  .reservation-title {
+    padding: 17px 30px 16px 30px;
   }
-  .fa-utensils,
-  .fa-handshake-angle {
-    color: white;
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 7px;
   }
-  .button-commander {
-    width: 45%;
+  .reservation-title-1,
+  .reservation-title-2 {
+    font-size: 40px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .button-explorer {
+    width: 28%;
     border-radius: 50px;
     border: none;
-    font-size: 28px;
+    font-size: 15px;
     color: white;
-    padding: 28px 75px 28px 75px;
-    margin-top: 38px;
-    margin-bottom: 70px;
+    padding: 17px 20px 17px 20px;
+    margin-top: 30px;
+    margin-bottom: 45px;
     background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 0px 5px 5px rgb(189, 182, 182);
+    box-shadow: 0px 5px 10px rgb(189, 182, 182);
   }
-  .button-commander:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.3s;
+  .button-fonctionnement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .partie-2-fonctionnement {
+    background: white;
+    height: 235px;
+  }
+  .partie-3-restaurants {
+    background-color: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    height: 265px;
+    max-width: 500px;
+  }
+  .card-part1,
+  .card-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 95px;
+  }
+  .button-choix-du-restaurant {
+    justify-content: center;
+    width: 90%;
+    margin-block: 10px;
+    margin-inline: 5%;
+    padding: 30px 5px 30px 0px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 5px 5px rgb(236, 234, 234);
+    position: relative;
+    z-index: 1;
+  }
+  .fonctionnement-title {
+    font-size: 24px;
+    margin: 45px 0 10px 5%;
   }
   footer {
-    padding-inline: 25px;
-    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
   }
   .footer-title {
+    padding: 40px 30px 40px 0;
     font-size: 18px;
-    margin-block: 6px;
   }
   .liens-footer {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 90px 20px 0;
   }
-  .proposer-un-restaurant,
-  .devenir-partenaire,
+  .devenir-partenaire {
+    padding-right: 45px;
+  }
   .mentions-legales,
   .contact {
     font-size: 15px;
+  }
+  .mentions-legales {
+    padding-right: 10px;
+  }
+  .fa-utensils,
+  .fa-handshake-angle {
+    padding-right: 5px;
   }
 }
 
