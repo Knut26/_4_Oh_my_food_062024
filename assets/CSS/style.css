@@ -316,13 +316,29 @@ footer {
     margin: 0;
     padding: 0;
   }
+  h1 {
+    font-family: shrikhand;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .localisation {
+    background-color: rgb(227, 227, 227);
+    box-shadow: none;
+    height: 45px;
+  }
+  .reservation-title {
+    padding: 17px 30px 16px 30px;
+  }
   .reservation-title,
   .reservation-commentaire {
     display: flex;
-    flex-direction: center;
     justify-content: center;
     align-items: center;
     gap: 7px;
+    margin-top: 7px;
   }
   .reservation-title-1,
   .reservation-title-2 {
@@ -332,11 +348,93 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 100%;
   }
-  img {
-    width: 200px;
-    height: 180px;
+  .button-explorer {
+    width: 28%;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 17px 20px 17px 20px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0px 5px 10px rgb(189, 182, 182);
+  }
+  .button-fonctionnement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .partie-2-fonctionnement {
+    background: white;
+    height: 235px;
+  }
+  .partie-3-restaurants {
+    background-color: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    height: 265px;
+    max-width: 500px;
+  }
+  .card-part1,
+  .card-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 95px;
+  }
+  .button-choix-du-restaurant {
+    justify-content: center;
+    width: 90%;
+    margin-block: 10px;
+    margin-inline: 5%;
+    padding: 30px 5px 30px 0px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 5px 5px rgb(236, 234, 234);
+    position: relative;
+    z-index: 1;
+  }
+  .fonctionnement-title {
+    font-size: 24px;
+    margin: 45px 0 10px 5%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+  }
+  .footer-title {
+    padding: 40px 30px 40px 0;
+    font-size: 18px;
+  }
+  .liens-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 90px 20px 0;
+  }
+  .devenir-partenaire {
+    padding-right: 45px;
+  }
+  .mentions-legales,
+  .contact {
+    font-size: 15px;
+  }
+  .mentions-legales {
+    padding-right: 10px;
+  }
+  .fa-utensils,
+  .fa-handshake-angle {
+    padding-right: 5px;
   }
 }
 
