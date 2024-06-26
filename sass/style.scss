@@ -150,6 +150,12 @@ h1 {
   z-index: 1;
 }
 
+.button-choix-du-restaurant:hover .fa-tablet-screen-button,
+.button-composez-votre-menu:hover .fa-list-ul,
+.button-degustez-au-restaurant:hover .fa-store {
+  color: $pink;
+}
+
 .number {
   color: white;
   border: 2px solid $violet;
@@ -188,15 +194,6 @@ h1 {
   padding: 5px;
   font-size: 15px;
   background-color: $violet;
-}
-
-.button-choix-du-restaurant:hover,
-.button-composez-votre-menu:hover,
-.button-dégustez-au-restaurant:hover {
-  // changement du statut au survol
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
 }
 
 .partie-3-restaurants {
@@ -293,7 +290,7 @@ p {
   border-bottom-right-radius: 15px;
   font-size: 20px;
   height: 70px;
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 a {

@@ -54,6 +54,46 @@ h3 {
   margin-block: 40px;
 }
 
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+// .card1:hover .fa-heart,
+// .card2:hover .fa-heart,
+// .card3:hover .fa-heart,
+// .card4:hover .fa-heart {
+//   color: $pink;
+// }
+
+.card1:hover .fa-heart,
+.card2:hover .fa-heart,
+.card3:hover .fa-heart,
+.card4:hover .fa-heart {
+  // au survol de la carte le coeur disparait
+  display: none;
+}
+
+.coeur-plein {
+  // le coeur plein de base n'est pas affiché
+  display: none;
+  color: #ff79da;
+  // color: linear-gradient(#ff79da, #9356dc);
+}
+
+.card1:hover .fa-heart + .coeur-plein,
+.card2:hover .fa-heart + .coeur-plein,
+.card3:hover .fa-heart + .coeur-plein,
+.card4:hover .fa-heart + .coeur-plein {
+  // au survol de la carte entière le coeur de
+  // base est remplacé par le coeur plein
+  display: inline-block;
+}
+
 .entrees,
 .plats,
 .desserts {
@@ -126,6 +166,16 @@ h3 {
   // changement au survol
   cursor: pointer;
   transform: scale(1.05);
+  transition: 300ms;
+}
+
+.button-choix-du-restaurant:hover,
+.button-composez-votre-menu:hover,
+.button-degustez-au-restaurant:hover {
+  background-color: $green;
+  transition: 400ms;
+  cursor: pointer;
+  transform: scale(1.05);
   transition: 0.3s;
 }
 
@@ -148,6 +198,14 @@ footer {
 .mentions-legales,
 .contact {
   font-size: 15px;
+}
+.proposer-un-restaurant:hover,
+.devenir-partenaire:hover,
+.mentions-legales:hover,
+.contact:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 // }
 
@@ -306,6 +364,51 @@ footer {
   .fa-utensils,
   .fa-handshake-angle {
     padding-right: 5px;
+  }
+
+  img {
+    height: 384px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+
+  .nav {
+    height: 70px;
+  }
+
+  .restaurant-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 200;
+  }
+
+  header {
+    position: relative;
+    z-index: 1;
+  }
+
+  main {
+    border-radius: 45px;
+    width: 75%;
+    position: absolute;
+    z-index: 2;
+    top: 412px;
+    left: 130px;
+  }
+
+  footer {
+    position: relative;
+    bottom: -1244px;
+    z-index: 3;
+    left: 0px;
+    width: 97%;
   }
 }
 
