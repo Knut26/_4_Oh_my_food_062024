@@ -17,7 +17,7 @@
     background-color: rgb(247, 247, 247);
   }
   h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   button {
     border: none;
@@ -35,7 +35,7 @@
     font-weight: 200;
   }
   .fa-heart {
-    font-size: 45px;
+    font-size: 25px;
   }
   .restaurant-title {
     justify-content: space-between;
@@ -103,12 +103,12 @@
     transition: 0.3s;
   }
   footer {
-    padding-inline: 30px;
-    padding-bottom: 40px;
+    padding-inline: 25px;
+    padding-bottom: 8px;
   }
   .footer-title {
-    font-size: 30px;
-    margin-block: 20px;
+    font-size: 18px;
+    margin-block: 6px;
   }
   .liens-footer {
     margin-bottom: 40px;
@@ -117,7 +117,7 @@
   .devenir-partenaire,
   .mentions-legales,
   .contact {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 
