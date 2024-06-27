@@ -44,10 +44,6 @@ h3 {
   font-weight: 200;
 }
 
-.fa-heart {
-  font-size: 25px;
-}
-
 .restaurant-title {
   @extend %flex-center;
   justify-content: space-between;
@@ -61,30 +57,6 @@ h3 {
 // .card4:hover .fa-heart {
 //   color: $pink;
 // }
-
-.card1:hover .fa-heart,
-.card2:hover .fa-heart,
-.card3:hover .fa-heart,
-.card4:hover .fa-heart {
-  // au survol de la carte le coeur disparait
-  display: none;
-}
-
-.coeur-plein {
-  // le coeur plein de base n'est pas affiché
-  display: none;
-  color: #ff79da;
-  // color: linear-gradient(#ff79da, #9356dc);
-}
-
-.card1:hover .fa-heart + .coeur-plein,
-.card2:hover .fa-heart + .coeur-plein,
-.card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein {
-  // au survol de la carte entière le coeur de
-  // base est remplacé par le coeur plein
-  display: inline-block;
-}
 
 .entrees,
 .plats,

@@ -42,33 +42,10 @@ h3 {
   font-weight: 200;
 }
 
-.fa-heart {
-  font-size: 25px;
-}
-
 .restaurant-title {
   justify-content: space-between;
   width: 85%;
   margin-block: 40px;
-}
-
-.card1:hover .fa-heart,
-.card2:hover .fa-heart,
-.card3:hover .fa-heart,
-.card4:hover .fa-heart {
-  display: none;
-}
-
-.coeur-plein {
-  display: none;
-  color: #ff79da;
-}
-
-.card1:hover .fa-heart + .coeur-plein,
-.card2:hover .fa-heart + .coeur-plein,
-.card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein {
-  display: inline-block;
 }
 
 .entrees,
