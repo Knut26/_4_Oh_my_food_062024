@@ -1,7 +1,6 @@
-.button-container,
-.restaurant-title,
-.nav {
+.button-container, .restaurant-title, .nav {
   display: flex;
+  flex-direction: center;
   justify-content: center;
   align-items: center;
 }
@@ -51,15 +50,6 @@ h3 {
   justify-content: space-between;
   width: 85%;
   margin-block: 40px;
-}
-
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
 }
 
 .card1:hover .fa-heart,
@@ -119,7 +109,7 @@ h3 {
 .sous-titre-et-comm {
   background: white;
   border-radius: 15px;
-  box-shadow: 3px 3px 3px #fff;
+  box-shadow: 3px 3px 3px #fffffffffffffffffffffffffffffffffffff;
 }
 
 .prix {
@@ -148,6 +138,7 @@ h3 {
   cursor: pointer;
   transform: scale(1.05);
   transition: 300ms;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
 
 .button-choix-du-restaurant:hover,
@@ -158,6 +149,7 @@ h3 {
   cursor: pointer;
   transform: scale(1.05);
   transition: 0.3s;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
 
 footer {
@@ -253,21 +245,6 @@ footer {
     background-color: rgb(247, 247, 247);
     padding-top: 20px;
     padding-bottom: 30px;
-  }
-  .card1,
-  .card2,
-  .card3,
-  .card4 {
-    height: 265px;
-    max-width: 500px;
-  }
-  .card-part1,
-  .card-part2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
-    column-gap: 95px;
   }
   .button-choix-du-restaurant {
     justify-content: center;

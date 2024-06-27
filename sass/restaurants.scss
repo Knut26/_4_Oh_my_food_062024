@@ -55,15 +55,6 @@ h3 {
   margin-block: 40px;
 }
 
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 // .card1:hover .fa-heart,
 // .card2:hover .fa-heart,
 // .card3:hover .fa-heart,
@@ -168,6 +159,7 @@ h3 {
   cursor: pointer;
   transform: scale(1.05);
   transition: 300ms;
+  box-shadow: 0px 4px 3px 1px $back-shadow-gray;
 }
 
 .button-choix-du-restaurant:hover,
@@ -178,6 +170,7 @@ h3 {
   cursor: pointer;
   transform: scale(1.05);
   transition: 0.3s;
+  box-shadow: 0px 4px 3px 1px $back-shadow-gray;
 }
 
 footer {
@@ -295,22 +288,22 @@ footer {
   //     margin-block: 30px;
   //   }
 
-  .card1,
-  .card2,
-  .card3,
-  .card4 {
-    height: 265px;
-    max-width: 500px;
-  }
+  // .card1,
+  // .card2,
+  // .card3,
+  // .card4 {
+  //   height: 265px;
+  //   max-width: 500px;
+  // }
 
-  .card-part1,
-  .card-part2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
-    column-gap: 95px;
-  }
+  // .card-part1,
+  // .card-part2 {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   row-gap: 30px;
+  //   column-gap: 95px;
+  // }
 
   .button-choix-du-restaurant {
     justify-content: center;
