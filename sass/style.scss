@@ -325,9 +325,9 @@ a {
 .card3,
 .card4 {
   // hauteur cards
-  height: 245px;
+  height: 250px;
   max-width: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .card-part1,
@@ -336,7 +336,7 @@ a {
   justify-content: center;
   align-items: center;
   row-gap: 30px;
-  column-gap: 95px;
+  column-gap: 10%;
 }
 
 .card1,
@@ -356,7 +356,7 @@ a {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
-  height: 70px;
+  height: 95px;
   margin-top: -4px;
 }
 
