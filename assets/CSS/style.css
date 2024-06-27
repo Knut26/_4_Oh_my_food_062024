@@ -141,8 +141,8 @@ h1 {
   position: absolute;
   z-index: 2;
   left: -10px;
-  width: 10px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #9356dc;
   border-radius: 15px;
   background: #9356dc;
