@@ -1,5 +1,6 @@
 // "_" pour dire que c'est un module
 // et qu'il ne faut pas le compiler
+
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
 body {
@@ -157,15 +158,22 @@ h1 {
 }
 
 .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  padding: 0;
+}
+
+.box-number {
+  position: absolute;
+  z-index: 2;
+  left: -10px;
+  width: 10px;
+  height: 15px;
   border: 2px solid $violet;
   border-radius: 15px;
   background: $violet;
-  position: absolute;
-  z-index: 2;
-  left: -12px;
-  width: 10px;
-  height: 15px;
 }
 
 .fa-tablet-screen-button,
