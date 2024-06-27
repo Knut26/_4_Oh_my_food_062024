@@ -1,9 +1,13 @@
-// @media (max-width: 767.98px) {
+//-----------IMPORT------------------
+
 // "_" pour dire que c'est un module
 // et qu'il ne faut pas le compiler
 
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
+
+//------------CORPS DU SITE-----------
+
 body {
   // mise à zéro des marges et padding pour navigateurs
   margin: 0;
@@ -23,6 +27,8 @@ main {
 h1 {
   font-size: 30px;
 }
+
+//--------------HEADER------------------
 
 button {
   border: none;
@@ -50,6 +56,8 @@ h3 {
   width: 85%;
   margin-block: 40px;
 }
+
+//--------MAIN------------------
 
 // .card1:hover .fa-heart,
 // .card2:hover .fa-heart,
@@ -144,6 +152,8 @@ h3 {
   transition: 0.3s;
   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
 }
+
+//--------FOOTER------------------
 
 footer {
   padding-inline: 25px;
