@@ -1,15 +1,21 @@
 .button-choix-du-restaurant,
 .button-composez-votre-menu,
-.button-degustez-au-restaurant, .button-container, .reservation-commentaire-1,
-.reservation-commentaire-2, .reservation-title-1,
-.reservation-title-2, .localisation .fa-location-dot, .localisation {
+.button-degustez-au-restaurant,
+.button-container,
+.reservation-commentaire-1,
+.reservation-commentaire-2,
+.reservation-title-1,
+.reservation-title-2,
+.localisation .fa-location-dot,
+.localisation {
   display: flex;
-  flex-direction: center;
   justify-content: center;
   align-items: center;
 }
 
-.partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement {
+.partie-3-restaurants,
+.button-fonctionnement,
+.partie-2-fonctionnement {
   display: flex;
   flex-direction: column;
 }
@@ -42,7 +48,8 @@ h1 {
 
 .localisation {
   background-color: rgb(227, 227, 227);
-  box-shadow: 0px -4px 3px 1px rgb(189, 182, 182), 0px 4px 3px 1px rgb(189, 182, 182);
+  box-shadow: 0px -4px 3px 1px rgb(189, 182, 182),
+    0px 4px 3px 1px rgb(189, 182, 182);
 }
 
 .localisation .fa-location-dot {
