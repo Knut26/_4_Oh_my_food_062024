@@ -9,7 +9,7 @@
 //-------LOADER---------------------
 
 .loader {
-  // définition du loader de chargement
+  // définition du loader
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   font-weight: 500;
   font-family: shrikhand;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -265,11 +265,19 @@ a {
   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
 }
 
+// .button-choix-du-restaurant .fa-tablet-screen-button,
+// .button-composez-votre-menu .fa-list-ul,
+// .button-degustez-au-restaurant .fa-store {
+//   transition: opacity 3s ease-in-out;
+//   opacity: 0;
+// }
+
 .button-choix-du-restaurant:hover .fa-tablet-screen-button,
 .button-composez-votre-menu:hover .fa-list-ul,
 .button-degustez-au-restaurant:hover .fa-store {
   // au survol, les icônes deviennent rose
   color: $pink;
+  // opacity: 1;
 }
 
 // .fa-tablet-screen-button:hover,
