@@ -28,7 +28,7 @@ h1 {
   font-size: 30px;
 }
 
-//--------------HEADER------------------
+//--------------HEADER-----------------
 
 button {
   border: none;
@@ -139,17 +139,6 @@ h3 {
   cursor: pointer;
   transform: scale(1.05);
   transition: 300ms;
-  box-shadow: 0px 4px 3px 1px $back-shadow-gray;
-}
-
-.button-choix-du-restaurant:hover,
-.button-composez-votre-menu:hover,
-.button-degustez-au-restaurant:hover {
-  background-color: $green;
-  transition: 400ms;
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
 }
 

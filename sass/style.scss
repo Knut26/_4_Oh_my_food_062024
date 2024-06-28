@@ -25,7 +25,7 @@
   right: 0;
   bottom: 0;
   animation: fadeOut 3s ease-out;
-  z-index: 5;
+  z-index: 3;
   width: 100%;
   height: 100%;
 }
@@ -56,13 +56,26 @@
     opacity: 1;
   }
   50% {
-    opacity: 1;
+    opacity: 0.9;
   }
   100% {
+    display: none;
     letter-spacing: -0.5em;
     opacity: 0;
   }
 }
+
+// @keyframes cacher-loader {
+//   100% {
+//     display: none;
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+// }
+
+// .loader {
+//   animation: cahcer-loader 1s ease-out 2s forwards;
+// }
 
 //-------CORPS DU SITE----------------
 
@@ -241,12 +254,30 @@ a {
   z-index: 1;
 }
 
+.button-choix-du-restaurant:hover,
+.button-composez-votre-menu:hover,
+.button-degustez-au-restaurant:hover {
+  background-color: $green;
+  transition: 400ms;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0px 4px 3px 1px $back-shadow-gray;
+}
+
 .button-choix-du-restaurant:hover .fa-tablet-screen-button,
 .button-composez-votre-menu:hover .fa-list-ul,
 .button-degustez-au-restaurant:hover .fa-store {
   // au survol, les icônes deviennent rose
   color: $pink;
 }
+
+// .fa-tablet-screen-button:hover,
+// .fa-list-ul:hover,
+// .fa-store:hover {
+//   // changement au survol
+//   color: $violet;
+// }
 
 .number {
   // centrage des nombres
@@ -260,13 +291,13 @@ a {
 .box-number {
   // définition des nombres
   position: absolute;
-  z-index: 2;
   left: -10px;
   width: 20px;
   height: 20px;
   border: 2px solid $violet;
   border-radius: 15px;
   background: $violet;
+  z-index: 2;
 }
 
 .fa-tablet-screen-button,
@@ -275,13 +306,6 @@ a {
   // mise en forme des 3 icônes
   color: $font-awesome-gray;
   padding-right: 30px;
-}
-
-.fa-tablet-screen-button:hover,
-.fa-list-ul:hover,
-.fa-store:hover {
-  // changement au survol
-  color: $violet;
 }
 
 .fa-1,
