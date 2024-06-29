@@ -10,13 +10,13 @@ body {
   padding: 0;
 }
 
+main {
+  background-color: rgb(247, 247, 247);
+}
+
 div {
   font-family: roboto, sans-serif;
   scroll-behavior: smooth;
-}
-
-main {
-  background-color: rgb(247, 247, 247);
 }
 
 h1 {
