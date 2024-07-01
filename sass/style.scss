@@ -1,6 +1,6 @@
 //------IMPORTS--------------------
 
-// "_" pour dire que c'est un module
+//"_" pour dire que c'est un module
 // et qu'il ne faut pas le compiler
 
 @import "./add-ons/variables";
@@ -98,7 +98,7 @@ h1 {
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
-  margin: 13px;
+  margin: 11px;
   display: flex;
   justify-content: center;
 }
@@ -117,8 +117,9 @@ h1 {
   // couleur background et ombres
   @extend %flex-center;
   background-color: $back-gray;
-  box-shadow: 0px -4px 3px 1px $back-shadow-gray,
-    0px 4px 3px 1px $back-shadow-gray;
+  box-shadow: 0px 0px 3px 1px $back-shadow-gray,
+    0px 3px 3px 1px $back-shadow-gray;
+  height: 45px;
 }
 
 .localisation .fa-location-dot {
@@ -157,11 +158,12 @@ a {
   display: flex;
   flex-direction: column;
   background-color: $back-lightgray;
+  height: 330px;
 }
 
 .reservation-title {
   // ajustement padding titre résa
-  padding: 45px 30px 20px 30px;
+  padding: 45px 30px 14px 30px;
 }
 
 .reservation-title-1,
@@ -187,13 +189,13 @@ a {
 
 .button-explorer {
   // déco bouton explorer
-  width: 56%;
+  width: 230px;
   border-radius: 50px;
   border: none;
   font-size: 15px;
   color: white;
   padding: 17px 20px 17px 20px;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 45px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 10px rgb(189, 182, 182);
@@ -221,7 +223,7 @@ a {
   //   display: flex;
   //   justify-content: baseline;
   font-size: 24px;
-  margin: 50px 0 30px 5%;
+  margin: 50px 0 20px 5%;
 }
 
 .button-fonctionnement {
@@ -243,7 +245,7 @@ a {
   width: 90%;
   margin-block: 10px;
   margin-inline: 5%;
-  padding: 25px 0px 25px 0;
+  padding: 26px 0px 26px 0;
   border: none;
   border-radius: 15px;
   font-size: 16px;
@@ -335,13 +337,14 @@ a {
   // mise en colonne
   @extend %flex-column;
   background-color: $back-lightgray;
+  margin-top: 5px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
 .restaurants-title {
   // modif titre restaurants
-  font-size: 25px;
+  font-size: 23px;
   margin-left: 5%;
   font-weight: 500;
   margin-top: 10px;
@@ -361,16 +364,17 @@ a {
   // hauteur cards
   height: 250px;
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .card-part1,
 .card-part2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 30px;
-  column-gap: 10%;
+  // row-gap: 30px;
+  // column-gap: 10%;
 }
 
 .card1,
@@ -390,7 +394,7 @@ a {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
-  height: 95px;
+  height: 80px;
   margin-top: -4px;
 }
 
@@ -413,8 +417,8 @@ a {
   padding: 5px 10px 5px 10px;
   position: absolute;
   z-index: 2;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
 }
 
 .fa-heart {
@@ -534,9 +538,57 @@ footer {
   padding: 5px;
 }
 
-//-----MEDIA QUERIES > 768PX--------------
+//-----MEDIA QUERIES--------------
 
-@media (min-width: 768px) {
+@media (min-width: 445px) and (max-width: 701px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 444px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reservation-title-1,
+  .reservation-title-2 {
+    font-size: 32px;
+  }
+
+  .reservation-commentaire-1,
+  .reservation-commentaire-2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 445px) {
+  .reservation-title-1,
+  .reservation-title-2 {
+    font-size: 40px;
+  }
+}
+
+// @media (min-width: 375px) and (max-width: 899px) {
+//   .button-fonctionnement {
+//     display: grid;
+//     grid-template-rows: 1fr 1fr 1fr;
+//   }
+// }
+
+// @media (min-width: 900px) {
+//   .button-fonctionnement {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
+//-----MEDIA QUERIES > 375PX--------------
+
+@media (min-width: 375px) {
   body {
     // mise à zéro des marges et padding pour navigateurs
     margin: 0;
@@ -559,6 +611,7 @@ footer {
   }
 
   .reservation-title {
+    display: flex;
     padding: 17px 30px 16px 30px;
   }
 
@@ -571,10 +624,10 @@ footer {
     margin-top: 7px;
   }
 
-  .reservation-title-1,
-  .reservation-title-2 {
-    font-size: 40px;
-  }
+  // .reservation-title-1,
+  // .reservation-title-2 {
+  //   font-size: 40px;
+  // }
 
   .button-container {
     display: flex;
@@ -584,7 +637,7 @@ footer {
   }
 
   .button-explorer {
-    width: 28%;
+    // width: 28%;
     border-radius: 50px;
     border: none;
     font-size: 15px;
@@ -596,14 +649,19 @@ footer {
     box-shadow: 0px 5px 10px rgb(189, 182, 182);
   }
 
-  .button-fonctionnement {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  // .button-fonctionnement {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
 
-  .partie-2-fonctionnement {
-    background: white;
-    height: 235px;
+  .card-part1,
+  .card-part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 10%;
   }
 
   .partie-3-restaurants {
