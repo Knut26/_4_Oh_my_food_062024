@@ -65,17 +65,41 @@
   }
 }
 
-// @keyframes cacher-loader {
-//   100% {
-//     display: none;
-//     visibility: hidden;
-//     opacity: 0;
-//   }
-// }
+//-------ANIMATION SLIDE----------------
 
-// .loader {
-//   animation: cahcer-loader 1s ease-out 2s forwards;
-// }
+.slide-left {
+  color: white;
+  background-color: #99e2d0;
+  font-size: 24px;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+}
 
 //-------CORPS DU SITE----------------
 
@@ -572,6 +596,17 @@ footer {
     font-size: 40px;
   }
 }
+
+// @media (min-width: 900px) {
+//   .button-choix-du-restaurant,
+//   .button-composez-votre-menu,
+//   .button-degustez-au-restaurant {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
 
 // @media (min-width: 375px) and (max-width: 899px) {
 //   .button-fonctionnement {
