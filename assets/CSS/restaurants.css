@@ -120,7 +120,7 @@ img {
   top: -45px;
 }
 
-.entrees-comm:hover > .prix-check {
+.sous-titre-et-comm:hover .prix-check {
   transform: translateX(-100%);
 }
 
