@@ -12,7 +12,7 @@ body {
   // mise à zéro des marges et padding pour navigateurs
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
   // position: relative;
   // z-index: 0;
 }
@@ -150,6 +150,9 @@ img {
 .sous-titre-et-comm:hover .prix-check {
   transform: translateX(-100%);
 }
+
+//---------------FIN SLIDER----------------------
+
 // .sous-titre-et-comm {
 //   position: relative;
 // }
