@@ -120,6 +120,170 @@ img {
   box-shadow: 3px 3px 3px $back-shadow-gray;
 }
 
+//---------------SLIDER----------------------
+.entrees-comm {
+  position: relative;
+}
+.prix-check {
+  width: 10%;
+  height: 100%;
+  transition: all ease 500ms;
+  position: absolute;
+  left: 95%;
+}
+
+.circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 170%;
+  transition: all ease 500ms;
+  background: $green;
+  position: absolute;
+  left: 100%;
+  top: -45px;
+}
+
+.entrees-comm:hover > .prix-check {
+  transform: translateX(-100%);
+}
+// .sous-titre-et-comm {
+//   position: relative;
+// }
+
+// .sous-titre-et-comm:hover {
+//   animation: slide 1s forwards;
+// }
+
+// .fa-circle-check {
+//   display: flex;
+//   justify-content: end;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   background-color: $green;
+//   animation-name: slide;
+//   animation-duration: 1s;
+//   position: absolute;
+//   top: 0;
+//   left: 90%;
+//   width: 10%;
+//   height: 100%;
+//   border-radius: 0 15px 15px 0;
+// }
+
+// @keyframes slide {
+//   from {
+//     width: 0%;
+//     // transform: translateX(100%);
+//   }
+//   to {
+//     width: 10%;
+//     // transform: translateX(0);
+//   }
+// }
+
+//--------------ENTREES AU LOADING-----------------------
+.entrees {
+  animation-name: entrees-loading;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes entrees-loading {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//--------------PLATS AU LOADING-----------------------
+
+.plats {
+  animation-name: plats-loading;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes plats-loading {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//--------------DESSERTS AU LOADING-----------------------
+
+.desserts {
+  animation-name: desserts-loading;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes desserts-loading {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+//-------------------------------------
+
 .prix {
   font-weight: 500;
 }

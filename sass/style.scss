@@ -66,6 +66,105 @@
 }
 
 //-------ANIMATION SLIDE----------------
+// .slide {
+//   overflow: hidden;
+// }
+
+// .fa-circle-check {
+//   color: white;
+//   background: #99e2d0;
+//   width: 20px;
+//   height: 30px;
+// }
+
+// .slide-left {
+//   opacity: 0;
+//   transform: translate(100%, -0%);
+//   transition-duration: 0.5s;
+//   transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
+//   transition-property: opacity, transform;
+//   transition-delay: 2s;
+// }
+
+// input[type="checkbox"] {
+//   position: relative;
+//   left: -50px;
+//   &:checked ~ .slide {
+//     opacity: 1;
+//     transform: translateX(0);
+//     transition-delay: 2s;
+//   }
+//   &:not(:checked) {
+//     transition-delay: 2s;
+//   }
+//   &:checked + label {
+//     color: #99e2d0;
+//   }
+// }
+
+// .slide {
+//   cursor: pointer;
+//   &:hover {
+//     background: $back-lightgray;
+//   }
+// }
+// .fa-circle-check {
+//   color: white;
+//   background: #99e2d0;
+//   font-size: 30px;
+// }
+
+// .fa-circle-check {
+//   opacity: 0;
+//   transform: translateX(100%, -0%);
+//   transition-duration: 0.3s;
+//   transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
+//   transition-property: opacity, transform;
+//   transition-delay: calc(0.025s * (var(--length) - (var(--index) + 1)));
+// }
+
+// label {
+//   cursor: pointer;
+//   &:hover {
+//     background: gray;
+//   }
+// }
+
+// input[type:checkbox] {
+//   list-style-type: none;
+//   position: absolute;
+//   left: -5000px;
+//   &:checked ~ .fa-circle-check {
+//     opacity: 1;
+//     transform: translateX(0);
+//     transition-delay: 1s;
+//   }
+
+//   &:not(:checked) {
+//     transition-delay: 1s;
+//   }
+
+//   &:checked + label {
+//     color: blue;
+//   }
+// }
+
+// #slide {
+//   display: none;
+// }
+
+// @keyframes slide {
+//   0% {
+//     -webkit-transform: translateX(0);
+//     transform: translateX(0);
+//     opacity: 0.1;
+//   }
+//   100% {
+//     -webkit-transform: translateX(-100px);
+//     transform: translateX(-100px);
+//     opacity: 1;
+//   }
+// }
 
 // .slide-left {
 //   color: white;
@@ -102,6 +201,9 @@
 // }
 
 //-------CORPS DU SITE----------------
+// html {
+//   min-height: 1496px;
+// }
 
 body {
   // mise à zéro des marges et padding pour navigateurs
@@ -184,6 +286,8 @@ a {
   background-color: $back-lightgray;
   height: 330px;
 }
+
+// JOUER AVEC LA MAX_WIDTH DES TITRES ET SS TITRES POUR RESPONSIVE
 
 .reservation-title {
   // ajustement padding titre résa
