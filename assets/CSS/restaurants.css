@@ -94,30 +94,31 @@ img {
   box-shadow: 3px 3px 3px rgb(189, 182, 182);
 }
 
+.checkbox-hidden {
+  display: none;
+}
+
+.icone-coeur i {
+  transition: color 500ms ease-out;
+}
+
+#coeur-checkbox:checked + .icone-coeur i {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#coeur-checkbox:not(:checked) + .icone-coeur i {
+  color: inherit;
+  background: none;
+}
+
 @keyframes slide {
   0% {
     opacity: 0;
     transform: translateX(100%);
-  }
-  10% {
-    opacity: 0.1;
-    transform: translateX(90%);
-  }
-  20% {
-    opacity: 0.2;
-    transform: translateX(80%);
-  }
-  30% {
-    opacity: 0.3;
-    transform: translateX(70%);
-  }
-  40% {
-    opacity: 0.4;
-    transform: translateX(60%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(50%);
   }
   100% {
     opacity: 1;

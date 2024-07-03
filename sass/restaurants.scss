@@ -126,7 +126,63 @@ img {
   border-radius: 15px;
   box-shadow: 3px 3px 3px $back-shadow-gray;
 }
+//---------------COEUR CHECK----------------------
 
+.checkbox-hidden {
+  display: none;
+}
+
+.icone-coeur i {
+  transition: color 500ms ease-out;
+}
+
+#coeur-checkbox:checked + .icone-coeur i {
+  color: transparent;
+  // pour safari
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  // applique le dégradé uniquement sur l'icône et pas sur arrière plan
+  background-clip: text;
+}
+
+#coeur-checkbox:not(:checked) + .icone-coeur i {
+  color: inherit;
+  background: none;
+}
+
+// .checkbox-hidden {
+//   display: none;
+// }
+
+// .icone-coeur {
+//   cursor: pointer;
+//   position: relative;
+// }
+
+// .icone-coeur i {
+//   transition: color 500ms ease-out;
+// }
+
+// .icone-coeur i::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(to bottom, #9356dc, #ff79da);
+//   opacity: 0;
+//   transition: opacity 500ms ease-out;
+// }
+
+// #coeur-checkbox:checked + .icone-coeur i::before {
+//   opacity: 1;
+// }
+
+// #coeur-checkbox:not(:checked) + .icone-coeur i::before {
+//   opacity: 0;
+// }
 //---------------SLIDER CHECK----------------------
 
 // animations @keyframes
@@ -136,26 +192,26 @@ img {
     transform: translateX(100%);
     // commence à l'intérieur du bloc parent
   }
-  10% {
-    opacity: 0.1;
-    transform: translateX(90%);
-  }
-  20% {
-    opacity: 0.2;
-    transform: translateX(80%);
-  }
-  30% {
-    opacity: 0.3;
-    transform: translateX(70%);
-  }
-  40% {
-    opacity: 0.4;
-    transform: translateX(60%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(50%);
-  }
+  // 10% {
+  //   opacity: 0.1;
+  //   transform: translateX(90%);
+  // }
+  // 20% {
+  //   opacity: 0.2;
+  //   transform: translateX(80%);
+  // }
+  // 30% {
+  //   opacity: 0.3;
+  //   transform: translateX(70%);
+  // }
+  // 40% {
+  //   opacity: 0.4;
+  //   transform: translateX(60%);
+  // }
+  // 50% {
+  //   opacity: 0.5;
+  //   transform: translateX(50%);
+  // }
   100% {
     opacity: 1;
     transform: translateX(0);
