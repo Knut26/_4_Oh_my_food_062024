@@ -105,6 +105,11 @@ img {
   margin: 45px 20px 0px 20px;
 }
 
+// a {
+//   text-decoration: none;
+//   color: black;
+// }
+
 .entrees-comm,
 .plats-comm,
 .desserts-comm {
@@ -122,7 +127,7 @@ img {
   box-shadow: 3px 3px 3px $back-shadow-gray;
 }
 
-//---------------SLIDER----------------------
+//---------------SLIDER CHECK----------------------
 @keyframes slide {
   from {
     transform: translateX(0px);
@@ -156,7 +161,7 @@ img {
 }
 //---MOVE DU PRIX---
 .prix {
-  transition: transform 500ms;
+  transition: transform 100ms;
 }
 
 #click-checked:checked + label .prix {
@@ -173,6 +178,7 @@ img {
 
 .sous-titre-et-comm {
   position: relative;
+  height: 90px;
 }
 
 .circle-check {
@@ -183,7 +189,7 @@ img {
   background: $green;
   transition: transform;
   width: 90px;
-  height: 76px;
+  height: 90px;
   position: absolute;
   top: 0;
   right: 0px;

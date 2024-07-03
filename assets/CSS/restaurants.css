@@ -125,7 +125,7 @@ img {
 }
 
 .prix {
-  transition: transform 500ms;
+  transition: transform 100ms;
 }
 
 #click-checked:checked + label .prix {
@@ -142,6 +142,7 @@ img {
 
 .sous-titre-et-comm {
   position: relative;
+  height: 90px;
 }
 
 .circle-check {
@@ -152,7 +153,7 @@ img {
   background: #99e2d0;
   transition: transform;
   width: 90px;
-  height: 76px;
+  height: 90px;
   position: absolute;
   top: 0;
   right: 0px;

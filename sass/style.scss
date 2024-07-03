@@ -274,7 +274,8 @@ p {
   padding: 5px 0 0 10px;
 }
 
-a {
+.fa-arrow-left,
+.title-heart {
   text-decoration: none;
   color: black;
 }
@@ -530,7 +531,6 @@ a {
 .card2:hover,
 .card3:hover,
 .card4:hover {
-  cursor: pointer;
   transform: scale(1.05);
   transition: 0.3s;
   border-radius: 15px;
@@ -590,6 +590,13 @@ a {
 .index-le-delice-des-sens {
   font-size: 18px;
   font-weight: 500;
+}
+
+.card1-comm:hover,
+.card2-comm:hover,
+.card3-comm:hover,
+.card4-comm:hover {
+  cursor: pointer;
 }
 
 .index-menilmontant,
