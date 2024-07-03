@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  overflow: hidden;
   background-color: rgb(247, 247, 247);
 }
 
@@ -93,16 +94,54 @@ img {
   box-shadow: 3px 3px 3px rgb(189, 182, 182);
 }
 
-.entrees-comm {
-  position: relative;
+@keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-reverse {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#click-checked {
+  display: none;
+}
+
+#click-checked:checked + label .circle-check {
+  animation: slide 500ms forwards;
+  opacity: 1;
+}
+
+#click-checked:not(:checked) + label .circle-check {
+  animation: slide-reverse 500ms forwards;
+  opacity: 0;
+}
+
+.prix {
+  transition: transform 500ms;
+}
+
+#click-checked:checked + label .prix {
+  transform: translateX(-100px);
+}
+
+#click-checked:not(:checked) + label .prix {
+  transform: translateX(0);
 }
 
 .prix-check {
-  width: 10%;
-  height: 100%;
-  transition: all ease 500ms;
-  position: absolute;
-  left: 95%;
+  display: flex;
+}
+
+.sous-titre-et-comm {
+  position: relative;
 }
 
 .circle-check {
@@ -110,17 +149,15 @@ img {
   justify-content: center;
   align-items: center;
   color: white;
-  width: 100%;
-  height: 170%;
-  transition: all ease 500ms;
   background: #99e2d0;
+  transition: transform;
+  width: 90px;
+  height: 76px;
   position: absolute;
-  left: 100%;
-  top: -45px;
-}
-
-.sous-titre-et-comm:hover .prix-check {
-  transform: translateX(-100%);
+  top: 0;
+  right: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .entrees {
@@ -137,10 +174,10 @@ img {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
   75% {
     opacity: 0.75;
@@ -151,7 +188,7 @@ img {
 }
 .plats {
   animation-name: plats-loading;
-  animation-duration: 500ms;
+  animation-duration: 800ms;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 300ms;
   animation-fill-mode: forwards;
@@ -163,10 +200,10 @@ img {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
   75% {
     opacity: 0.75;
@@ -177,7 +214,7 @@ img {
 }
 .desserts {
   animation-name: desserts-loading;
-  animation-duration: 500ms;
+  animation-duration: 1200ms;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 600ms;
   animation-fill-mode: forwards;
@@ -189,10 +226,10 @@ img {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
   75% {
     opacity: 0.75;

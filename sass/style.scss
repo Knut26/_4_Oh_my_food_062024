@@ -387,7 +387,7 @@ a {
 .button-choix-du-restaurant:hover,
 .button-composez-votre-menu:hover,
 .button-degustez-au-restaurant:hover {
-  background-color: $green;
+  background-color: white;
   transition: 400ms;
   cursor: pointer;
   transform: scale(1.05);
@@ -874,11 +874,13 @@ footer {
   }
 }
 
+// on click : coeurs apparaissent et disparaissent
+// on click : checks verts apparaissent et disparaissent
 // z-index page principale
 // mettre des comm
 // retouches détails
 // chiffres à centrer
-// hover cards / coeurs
+// hover cards
 // animations ? cf brief
 // w3 pass html et css
 // vérif des liens / photos

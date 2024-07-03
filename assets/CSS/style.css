@@ -195,7 +195,7 @@ a {
 .button-choix-du-restaurant:hover,
 .button-composez-votre-menu:hover,
 .button-degustez-au-restaurant:hover {
-  background-color: #99e2d0;
+  background-color: white;
   transition: 400ms;
   cursor: pointer;
   transform: scale(1.05);
