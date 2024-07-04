@@ -1,3 +1,566 @@
+.button-choix-du-restaurant,
+.button-composez-votre-menu,
+.button-degustez-au-restaurant, .button-container, .reservation-commentaire-1,
+.reservation-commentaire-2, .reservation-title-1,
+.reservation-title-2, .localisation .fa-location-dot, .localisation {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
 
+.partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9356dc;
+  background-color: #99e2d0;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: shrikhand;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeOut 3s ease-out;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  -webkit-animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes tracking-out-contract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+@keyframes tracking-out-contract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    display: none;
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: shrikhand;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-title {
+  font-family: shrikhand;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.localisation {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
+  height: 45px;
+}
+
+.localisation .fa-location-dot {
+  font-size: 16px;
+  margin-inline: 5px;
+}
+
+.ville {
+  font-size: 15px;
+}
+
+h3 {
+  margin: 0;
+  padding: 18px 0 0 10px;
+}
+
+p {
+  margin: 0;
+  padding: 5px 0 0 10px;
+}
+
+.fa-arrow-left,
+.title-heart {
+  text-decoration: none;
+  color: black;
+}
+
+.partie-1-reservation {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  height: 330px;
+}
+
+.reservation-title {
+  padding: 45px 30px 14px 30px;
+}
+
+.reservation-title-1,
+.reservation-title-2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.reservation-commentaire-1,
+.reservation-commentaire-2 {
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.button-explorer {
+  width: 230px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  padding: 17px 20px 17px 20px;
+  margin-top: 27px;
+  margin-bottom: 45px;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 10px rgb(189, 182, 182);
+}
+
+.button-explorer:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
+}
+
+.partie-2-fonctionnement {
+  background: white;
+  height: 435px;
+}
+
+.fonctionnement-title {
+  font-size: 24px;
+  margin: 50px 0 20px 5%;
+}
+
+.button-choix-du-restaurant,
+.button-composez-votre-menu,
+.button-degustez-au-restaurant {
+  justify-content: center;
+  width: 90%;
+  margin-block: 10px;
+  margin-inline: 5%;
+  padding: 26px 0px 26px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  /* font-weight: 500; */
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0px 5px 5px rgb(236, 234, 234);
+  position: relative;
+  z-index: 1;
+}
+
+.button-choix-du-restaurant:hover,
+.button-composez-votre-menu:hover,
+.button-degustez-au-restaurant:hover {
+  background-color: white;
+  transition: 400ms;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
+}
+
+.button-choix-du-restaurant:hover .fa-tablet-screen-button,
+.button-composez-votre-menu:hover .fa-list-ul,
+.button-degustez-au-restaurant:hover .fa-store {
+  color: #ff79da;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0;
+}
+
+.box-number {
+  position: absolute;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9356dc;
+  border-radius: 15px;
+  background: #9356dc;
+  z-index: 2;
+}
+
+.fa-tablet-screen-button,
+.fa-list-ul,
+.fa-store {
+  color: #757575;
+  padding-right: 30px;
+}
+
+.fa-1,
+.fa-2,
+.fa-3 {
+  color: white;
+  border-radius: 50px;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #9356dc;
+}
+
+.partie-3-restaurants {
+  background-color: rgb(247, 247, 247);
+  margin-top: 5px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.restaurants-title {
+  font-size: 23px;
+  margin-left: 5%;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.cards {
+  width: 90%;
+  margin: 5%;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  height: 250px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.card-part1,
+.card-part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1,
+.card2 {
+  position: relative;
+  z-index: 1;
+}
+
+.card1-comm,
+.card2-comm,
+.card3-comm,
+.card4-comm {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 20px;
+  height: 80px;
+  margin-top: -4px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 15px;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
+}
+
+.nouveau {
+  font-size: 14px;
+  border: 2px solid #99e2d0;
+  border-radius: 2px;
+  background: #99e2d0;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 12px;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+
+.coeur-plein {
+  display: none;
+  color: #ff79da;
+}
+
+.card1:hover .fa-heart,
+.card2:hover .fa-heart,
+.card3:hover .fa-heart,
+.card4:hover .fa-heart {
+  display: none;
+}
+
+.card1:hover .fa-heart + .coeur-plein,
+.card2:hover .fa-heart + .coeur-plein,
+.card3:hover .fa-heart + .coeur-plein,
+.card4:hover .fa-heart + .coeur-plein {
+  display: inline-block;
+}
+
+.index-la-palette-du-gout,
+.index-la-note-enchantee,
+.index-a-la-francaise,
+.index-le-delice-des-sens {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card1-comm:hover,
+.card2-comm:hover,
+.card3-comm:hover,
+.card4-comm:hover {
+  cursor: pointer;
+}
+
+.index-menilmontant,
+.index-charonne,
+.index-cite-rouge,
+.index-folie-mericourt {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nouveau {
+  color: green;
+}
+
+.title-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 25px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+  width: 700px;
+  height: 175px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer {
+  padding: 15px 25px 15px 25px;
+  background: #323030;
+}
+
+.liens-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  margin-block: 10px;
+  font-family: shrikhand;
+  color: white;
+  font-size: 20px;
+}
+
+.proposer-un-restaurant,
+.devenir-partenaire,
+.mentions-legales,
+.contact {
+  color: white;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  padding: 5px;
+}
+
+@media (min-width: 445px) and (max-width: 701px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 375px) and (max-width: 444px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
+  }
+  .reservation-title-1,
+  .reservation-title-2 {
+    font-size: 32px;
+  }
+  .reservation-commentaire-1,
+  .reservation-commentaire-2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 445px) {
+  .reservation-title-1,
+  .reservation-title-2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-family: shrikhand;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .localisation {
+    background-color: rgb(227, 227, 227);
+    box-shadow: none;
+    height: 45px;
+  }
+  .reservation-title {
+    display: flex;
+    padding: 17px 30px 16px 30px;
+  }
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 7px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .button-explorer {
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 17px 20px 17px 20px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0px 5px 10px rgb(189, 182, 182);
+  }
+  .card-part1,
+  .card-part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 10%;
+  }
+  .partie-3-restaurants {
+    background-color: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .button-choix-du-restaurant {
+    justify-content: center;
+    width: 90%;
+    margin-block: 10px;
+    margin-inline: 5%;
+    padding: 30px 5px 30px 0px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 5px 5px rgb(236, 234, 234);
+    position: relative;
+    z-index: 1;
+  }
+  .fonctionnement-title {
+    font-size: 24px;
+    margin: 45px 0 10px 5%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+  }
+  .footer-title {
+    padding: 40px 30px 40px 0;
+    font-size: 18px;
+  }
+  .liens-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 90px 20px 0;
+  }
+  .devenir-partenaire {
+    padding-right: 45px;
+  }
+  .mentions-legales,
+  .contact {
+    font-size: 15px;
+  }
+  .mentions-legales {
+    padding-right: 10px;
+  }
+  .fa-utensils,
+  .fa-handshake-angle {
+    padding-right: 5px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
