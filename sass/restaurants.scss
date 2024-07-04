@@ -484,7 +484,32 @@ footer {
   transform: scale(1.05);
   transition: 0.3s;
 }
-// }
+
+// -----------MEDIA QUERIES SOUS TITRE AND COMM---------------
+@media (max-width: 729px) {
+  .sous-titre-et-comm {
+    height: 120px;
+  }
+}
+
+@media (max-width: 572px) {
+  .sous-titre-et-comm {
+    height: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sous-titre-et-comm {
+    height: 180px;
+  }
+}
+
+@media (max-width: 398px) {
+  .sous-titre-et-comm {
+    height: 210px;
+  }
+}
+// -------FIN MEDIA QUERIES SOUS TITRE AND COMM---------------
 
 @media (min-width: 375px) {
   body {
@@ -688,6 +713,8 @@ footer {
 // apparition des plats au chargement de la page
 // z-index "main" partout
 // hover coeurs
+// bien centrer les images sur les 4 pages restaurants
+// passer le footer fixé en bas mais visible quand même par rapport au main
 // animations ? cf brief
 // w3 pass html et css
 // vérif des liens / photos

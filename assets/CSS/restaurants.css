@@ -319,6 +319,26 @@ footer {
   transition: 0.3s;
 }
 
+@media (max-width: 729px) {
+  .sous-titre-et-comm {
+    height: 120px;
+  }
+}
+@media (max-width: 572px) {
+  .sous-titre-et-comm {
+    height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .sous-titre-et-comm {
+    height: 180px;
+  }
+}
+@media (max-width: 398px) {
+  .sous-titre-et-comm {
+    height: 210px;
+  }
+}
 @media (min-width: 375px) {
   body {
     margin: 0;
