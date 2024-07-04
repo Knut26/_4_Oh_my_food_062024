@@ -8,11 +8,33 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+  z-index: 0;
 }
 
 main {
   overflow: hidden;
   background-color: rgb(247, 247, 247);
+  position: absolute;
+  z-index: 3;
+  top: 370px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 div {
@@ -47,10 +69,6 @@ h3 {
   justify-content: space-between;
   width: 85%;
   margin-block: 40px;
-}
-
-img {
-  width: 400px;
 }
 
 .entrees,
@@ -319,10 +337,45 @@ footer {
   transition: 0.3s;
 }
 
+@media (max-width: 729px) {
+  .sous-titre-et-comm {
+    height: 120px;
+  }
+}
+@media (max-width: 572px) {
+  .sous-titre-et-comm {
+    height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .sous-titre-et-comm {
+    height: 180px;
+  }
+}
+@media (max-width: 398px) {
+  .sous-titre-et-comm {
+    height: 210px;
+  }
+}
 @media (min-width: 375px) {
   body {
     margin: 0;
     padding: 0;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    width: 80%;
+  }
+  img {
+    height: 384px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+  .photo-a-la-francaise {
+    width: 100%;
+    object-fit: cover;
   }
   h1 {
     font-family: shrikhand;
@@ -423,11 +476,6 @@ footer {
   .fa-utensils,
   .fa-handshake-angle {
     padding-right: 5px;
-  }
-  img {
-    height: 384px;
-    width: -webkit-fill-available;
-    object-fit: cover;
   }
   .nav {
     height: 70px;
