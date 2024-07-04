@@ -13,6 +13,7 @@ body {
   // mise à zéro des marges et padding pour navigateurs
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   // position: relative;
   // z-index: 0;
 }
@@ -37,7 +38,6 @@ main {
 div {
   // police et éventuels ancres avec comportement smooth
   font-family: roboto, sans-serif;
-  scroll-behavior: smooth;
 }
 
 h1 {

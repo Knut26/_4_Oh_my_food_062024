@@ -211,6 +211,7 @@ body {
   // mise à zéro des marges et padding pour navigateurs
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 main {
