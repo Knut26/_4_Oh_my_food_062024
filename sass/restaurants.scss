@@ -197,26 +197,7 @@ img {
     transform: translateX(100%);
     // commence à l'intérieur du bloc parent
   }
-  // 10% {
-  //   opacity: 0.1;
-  //   transform: translateX(90%);
-  // }
-  // 20% {
-  //   opacity: 0.2;
-  //   transform: translateX(80%);
-  // }
-  // 30% {
-  //   opacity: 0.3;
-  //   transform: translateX(70%);
-  // }
-  // 40% {
-  //   opacity: 0.4;
-  //   transform: translateX(60%);
-  // }
-  // 50% {
-  //   opacity: 0.5;
-  //   transform: translateX(50%);
-  // }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -260,7 +241,7 @@ img {
   display: none;
 }
 
-//---MOVE DU PRIX---
+//---FIN DU MOVE DU PRIX---
 .prix-check {
   display: flex;
 }
@@ -486,31 +467,35 @@ footer {
   transition: 0.3s;
 }
 
-// -----------MEDIA QUERIES SOUS TITRE AND COMM---------------
+// -------MEDIA QUERIES SOUS TITRE AND COMM et CHECKBOX-----------
 @media (max-width: 729px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 120px;
   }
 }
 
 @media (max-width: 572px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 150px;
   }
 }
 
 @media (max-width: 500px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 180px;
   }
 }
 
 @media (max-width: 398px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 210px;
   }
 }
-// -------FIN MEDIA QUERIES SOUS TITRE AND COMM---------------
+// ----FIN MEDIA QUERIES SOUS TITRE AND COMM et CHECKBOX---------
 
 @media (min-width: 375px) {
   body {
@@ -518,6 +503,15 @@ footer {
     margin: 0;
     padding: 0;
   }
+
+  // .sous-titre-et-comm:hover .circle-check {
+  //   transform: translateX(-100px);
+  // }
+
+  // .circle-check {
+  //   transition: transform 1s ease-out;
+  //   transform-origin: right;
+  // }
 
   h1 {
     font-family: shrikhand;

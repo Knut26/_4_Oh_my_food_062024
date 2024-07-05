@@ -320,22 +320,26 @@ footer {
 }
 
 @media (max-width: 729px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 120px;
   }
 }
 @media (max-width: 572px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 150px;
   }
 }
 @media (max-width: 500px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 180px;
   }
 }
 @media (max-width: 398px) {
-  .sous-titre-et-comm {
+  .sous-titre-et-comm,
+  .circle-check {
     height: 210px;
   }
 }
