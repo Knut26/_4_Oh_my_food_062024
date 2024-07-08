@@ -18,26 +18,42 @@ body {
   // z-index: 0;
 }
 
-.main-restaurants {
+.main-a-la-francaise,
+.main-la-palette-du-gout,
+.main-le-delice-des-sens {
   overflow: hidden;
   background-color: $back-lightgray;
   position: absolute;
-  top: 370px;
-  left: 10%;
-  width: 80%;
+  top: 285px;
+  left: 0;
+  right: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  // z-index: 2;
+  height: 1150px;
 }
 
-.footer-restaurants {
+.main-la-note-enchantee {
+  overflow: hidden;
+  background-color: $back-lightgray;
+  position: absolute;
+  top: 285px;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  height: 1265px;
+}
+
+.footer-a-la-francaise,
+.footer-la-palette-du-gout,
+.footer-le-delice-des-sens {
   position: relative;
-  bottom: -1765px;
+  bottom: -945px;
 }
 
 .footer-la-note-enchantee {
   position: relative;
-  bottom: -1900px;
+  bottom: -940px;
 }
 
 div {
@@ -56,18 +72,19 @@ button {
 }
 
 .fa-arrow-left {
-  font-size: 35px;
+  font-size: 20px;
+  margin-right: 50px;
 }
 
 .nav {
   @extend %flex-center;
   justify-content: space-between;
   width: 60%;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 200;
 }
 
@@ -75,7 +92,7 @@ h3 {
   @extend %flex-center;
   justify-content: space-between;
   width: 85%;
-  margin-block: 40px;
+  margin-block: 13px;
 }
 
 img {
@@ -94,41 +111,44 @@ img {
 .entrees,
 .plats,
 .desserts {
-  margin: 30px 30px 50px 30px;
+  margin: 30px 15px 50px 15px;
   font-size: 20px;
 }
 
 .entrees-title,
 .plats-title,
 .desserts-title {
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 300;
-  padding-bottom: 15px;
-  border-bottom: 5px solid $green;
-  width: 70px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $green;
+  width: 42px;
+  margin-block: 0;
 }
 
 .entrees-sous-title,
 .plats-sous-title,
 .desserts-sous-title {
-  font-size: 30px;
-  margin: 45px 20px 0px 20px;
+  font-size: 18px;
+  margin: 12px 20px 0px 20px;
+  padding: 10px 0 0 0;
 }
 
-// a {
-//   text-decoration: none;
-//   color: black;
-// }
+.sous-titre-et-comm {
+  height: 65px;
+  position: relative;
+  cursor: pointer;
+}
 
 .entrees-comm,
 .plats-comm,
 .desserts-comm {
   display: flex;
   justify-content: space-between;
-  font-size: 27px;
+  font-size: 15px;
   font-weight: 300;
   margin: 0 0 0 20px;
-  padding: 10px 10px 10px 0;
+  padding: 7px 10px 10px 0;
 }
 
 .sous-titre-et-comm {
@@ -249,12 +269,6 @@ img {
 //---FIN DU MOVE DU PRIX---
 .prix-check {
   display: flex;
-}
-
-.sous-titre-et-comm {
-  position: relative;
-  height: 90px;
-  cursor: pointer;
 }
 
 .circle-check {
@@ -420,14 +434,13 @@ img {
 }
 
 .button-commander {
-  width: 45%;
+  width: 50%;
   border-radius: 50px;
   border: none;
   font-size: 28px;
   color: white;
   padding: 28px 75px 28px 75px;
-  margin-top: 38px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   background: linear-gradient($pink, $violet);
   box-shadow: 0px 5px 5px $back-shadow-gray;
 }
@@ -473,38 +486,46 @@ footer {
 }
 
 // -------MEDIA QUERIES SOUS TITRE AND COMM et CHECKBOX-----------
-@media (max-width: 729px) {
-  .sous-titre-et-comm,
-  .circle-check {
-    height: 120px;
-  }
-}
+// @media (max-width: 729px) {
+//   .sous-titre-et-comm,
+//   .circle-check {
+//     height: 120px;
+//   }
+// }
 
-@media (max-width: 572px) {
-  .sous-titre-et-comm,
-  .circle-check {
-    height: 150px;
-  }
-}
+// @media (max-width: 572px) {
+//   .sous-titre-et-comm,
+//   .circle-check {
+//     height: 150px;
+//   }
+// }
 
-@media (max-width: 500px) {
-  .sous-titre-et-comm,
-  .circle-check {
-    height: 180px;
-  }
-}
+// @media (max-width: 500px) {
+//   .sous-titre-et-comm,
+//   .circle-check {
+//     height: 180px;
+//   }
+// }
 
-@media (max-width: 398px) {
-  .sous-titre-et-comm,
-  .circle-check {
-    height: 210px;
-  }
-}
+// @media (max-width: 398px) {
+//   .sous-titre-et-comm,
+//   .circle-check {
+//     height: 210px;
+//   }
+// }
 
 @media (max-width: 650px) {
   .button-commander {
-    font-size: 20px;
-    padding: 20px 0px 20px 0px;
+    font-size: 16px;
+    padding: 15px 30px 15px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-restaurants {
+    left: 10%;
+    right: 10%;
+    top: 400px;
   }
 }
 
@@ -533,6 +554,11 @@ footer {
   //   transform-origin: right;
   // }
 
+  .main-restaurants {
+    position: absolute;
+    top: 435px;
+  }
+
   h1 {
     font-family: shrikhand;
     font-size: 40px;
@@ -540,6 +566,15 @@ footer {
     margin: 20px;
     display: flex;
     justify-content: center;
+  }
+
+  .main-la-note-enchantee {
+    height: 1235px;
+  }
+
+  .footer-la-note-enchantee {
+    position: relative;
+    bottom: -1185px;
   }
 
   .localisation {
@@ -685,7 +720,7 @@ footer {
   }
 
   .nav {
-    height: 70px;
+    height: 97px;
   }
 
   .restaurant-title {
