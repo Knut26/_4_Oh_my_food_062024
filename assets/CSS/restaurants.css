@@ -9,11 +9,28 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  position: relative;
 }
 
-main {
+.main-restaurants {
   overflow: hidden;
   background-color: rgb(247, 247, 247);
+  position: absolute;
+  top: 370px;
+  left: 10%;
+  width: 80%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+.footer-restaurants {
+  position: relative;
+  bottom: -1765px;
+}
+
+.footer-la-note-enchantee {
+  position: relative;
+  bottom: -1900px;
 }
 
 div {
@@ -341,6 +358,12 @@ footer {
   .sous-titre-et-comm,
   .circle-check {
     height: 210px;
+  }
+}
+@media (max-width: 650px) {
+  .button-commander {
+    font-size: 20px;
+    padding: 20px 0px 20px 0px;
   }
 }
 @media (min-width: 375px) {
