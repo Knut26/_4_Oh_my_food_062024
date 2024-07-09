@@ -33,9 +33,6 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-}
-
-.loader {
   -webkit-animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -97,7 +94,6 @@ h1 {
   box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
   height: 45px;
 }
-
 .localisation .fa-location-dot {
   font-size: 16px;
   margin-inline: 5px;
@@ -158,7 +154,6 @@ p {
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 10px rgb(189, 182, 182);
 }
-
 .button-explorer:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -187,13 +182,11 @@ p {
   border: none;
   border-radius: 15px;
   font-size: 16px;
-  /* font-weight: 500; */
   background-color: rgb(247, 247, 247);
   box-shadow: 0px 5px 5px rgb(236, 234, 234);
   position: relative;
   z-index: 1;
 }
-
 .button-choix-du-restaurant:hover,
 .button-composez-votre-menu:hover,
 .button-degustez-au-restaurant:hover {
@@ -204,10 +197,13 @@ p {
   transition: 0.3s;
   box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
-
-.button-choix-du-restaurant:hover .fa-tablet-screen-button,
-.button-composez-votre-menu:hover .fa-list-ul,
-.button-degustez-au-restaurant:hover .fa-store {
+.button-choix-du-restaurant:hover.button-choix-du-restaurant:hover .fa-tablet-screen-button, .button-choix-du-restaurant:hover.button-composez-votre-menu:hover .fa-list-ul, .button-choix-du-restaurant:hover.button-degustez-au-restaurant:hover .fa-store,
+.button-composez-votre-menu:hover.button-choix-du-restaurant:hover .fa-tablet-screen-button,
+.button-composez-votre-menu:hover.button-composez-votre-menu:hover .fa-list-ul,
+.button-composez-votre-menu:hover.button-degustez-au-restaurant:hover .fa-store,
+.button-degustez-au-restaurant:hover.button-choix-du-restaurant:hover .fa-tablet-screen-button,
+.button-degustez-au-restaurant:hover.button-composez-votre-menu:hover .fa-list-ul,
+.button-degustez-au-restaurant:hover.button-degustez-au-restaurant:hover .fa-store {
   color: #ff79da;
 }
 
@@ -276,6 +272,15 @@ p {
   max-width: 500px;
   margin-bottom: 20px;
 }
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 15px;
+  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
+}
 
 .card-part1,
 .card-part2 {
@@ -305,16 +310,6 @@ p {
   margin-top: -4px;
 }
 
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-  border-radius: 15px;
-  box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
-}
-
 .nouveau {
   font-size: 14px;
   border: 2px solid #99e2d0;
@@ -334,26 +329,6 @@ p {
 .coeur-plein {
   display: none;
   color: #ff79da;
-}
-
-.card1:hover .fa-heart,
-.card2:hover .fa-heart,
-.card3:hover .fa-heart,
-.card4:hover .fa-heart,
-.restaurant-title:hover .fa-heart {
-  display: none;
-}
-
-.card1:hover .fa-heart + .coeur-plein,
-.card2:hover .fa-heart + .coeur-plein,
-.card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein,
-.restaurant-title:hover .fa-heart + .coeur-plein {
-  display: inline-block;
-  animation: coeurs-loading 300ms;
-}
-
-.coeur-plein {
   animation-name: coeurs-loading;
   animation-duration: 800ms;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -376,6 +351,23 @@ p {
     opacity: 1;
   }
 }
+.card1:hover .fa-heart,
+.card2:hover .fa-heart,
+.card3:hover .fa-heart,
+.card4:hover .fa-heart,
+.restaurant-title:hover .fa-heart {
+  display: none;
+}
+
+.card1:hover .fa-heart + .coeur-plein,
+.card2:hover .fa-heart + .coeur-plein,
+.card3:hover .fa-heart + .coeur-plein,
+.card4:hover .fa-heart + .coeur-plein,
+.restaurant-title:hover .fa-heart + .coeur-plein {
+  display: inline-block;
+  animation: coeurs-loading 300ms;
+}
+
 .index-la-palette-du-gout,
 .index-la-note-enchantee,
 .index-a-la-francaise,
@@ -384,19 +376,19 @@ p {
   font-weight: 500;
 }
 
-.card1-comm:hover,
-.card2-comm:hover,
-.card3-comm:hover,
-.card4-comm:hover {
-  cursor: pointer;
-}
-
 .index-menilmontant,
 .index-charonne,
 .index-cite-rouge,
 .index-folie-mericourt {
   font-size: 18px;
   font-weight: 300;
+}
+
+.card1-comm:hover,
+.card2-comm:hover,
+.card3-comm:hover,
+.card4-comm:hover {
+  cursor: pointer;
 }
 
 .nouveau {
