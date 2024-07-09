@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement {
+#partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement {
   display: flex;
   flex-direction: column;
 }
@@ -248,7 +248,7 @@ p {
   background-color: #9356dc;
 }
 
-.partie-3-restaurants {
+#partie-3-restaurants {
   background-color: rgb(247, 247, 247);
   margin-top: 5px;
   padding-top: 40px;
@@ -257,7 +257,7 @@ p {
 
 .restaurants-title {
   font-size: 23px;
-  margin-left: 5%;
+  margin-left: 8%;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -265,7 +265,7 @@ p {
 
 .cards {
   width: 90%;
-  margin: 5%;
+  margin: 30px 5% 5% 5%;
 }
 
 .card1,
@@ -510,11 +510,6 @@ footer {
     align-items: center;
     row-gap: 30px;
     column-gap: 10%;
-  }
-  .partie-3-restaurants {
-    background-color: rgb(247, 247, 247);
-    padding-top: 20px;
-    padding-bottom: 30px;
   }
   .button-choix-du-restaurant {
     justify-content: center;

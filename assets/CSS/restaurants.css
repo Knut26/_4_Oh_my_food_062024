@@ -68,10 +68,6 @@ body {
   bottom: -1080px;
 }
 
-div {
-  font-family: roboto, sans-serif;
-}
-
 h1 {
   font-size: 30px;
 }
@@ -467,11 +463,6 @@ footer {
   .partie-2-fonctionnement {
     background: white;
     height: 235px;
-  }
-  .partie-3-restaurants {
-    background-color: rgb(247, 247, 247);
-    padding-top: 20px;
-    padding-bottom: 30px;
   }
   .button-choix-du-restaurant {
     justify-content: center;
