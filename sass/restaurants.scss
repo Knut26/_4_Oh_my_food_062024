@@ -18,42 +18,60 @@ body {
   // z-index: 0;
 }
 
-.main-a-la-francaise,
 .main-la-palette-du-gout,
 .main-le-delice-des-sens {
   overflow: hidden;
   background-color: $back-lightgray;
   position: absolute;
-  top: 285px;
+  top: 280px;
   left: 0;
   right: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+}
+
+.main-la-palette-du-gout {
   height: 1150px;
+}
+
+.footer-la-palette-du-gout {
+  position: relative;
+  bottom: -1085px;
 }
 
 .main-la-note-enchantee {
   overflow: hidden;
   background-color: $back-lightgray;
   position: absolute;
-  top: 285px;
+  top: 280px;
   left: 0;
   right: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  height: 1265px;
-}
-
-.footer-a-la-francaise,
-.footer-la-palette-du-gout,
-.footer-le-delice-des-sens {
-  position: relative;
-  bottom: -945px;
+  height: 1190px;
 }
 
 .footer-la-note-enchantee {
   position: relative;
-  bottom: -940px;
+  bottom: -960px;
+}
+
+.main-a-la-francaise {
+  overflow: hidden;
+  background-color: $back-lightgray;
+  position: absolute;
+  top: 265px;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  height: 1200px;
+}
+
+.footer-a-la-francaise,
+.footer-le-delice-des-sens {
+  position: relative;
+  bottom: -1080px;
 }
 
 div {
@@ -91,7 +109,7 @@ h3 {
 .restaurant-title {
   @extend %flex-center;
   justify-content: space-between;
-  width: 85%;
+  width: 92%;
   margin-block: 13px;
 }
 
@@ -123,7 +141,7 @@ img {
   padding-bottom: 5px;
   border-bottom: 3px solid $green;
   width: 42px;
-  margin-block: 0;
+  margin-block: 15px;
 }
 
 .entrees-sous-title,
@@ -279,7 +297,7 @@ img {
   background: $green;
   transition: transform;
   width: 90px;
-  height: 90px;
+  height: 65px;
   position: absolute;
   top: 0;
   right: 0px;
@@ -521,13 +539,38 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  .main-restaurants {
-    left: 10%;
-    right: 10%;
-    top: 400px;
-  }
-}
+// @media (min-width: 768px) {
+//   .main-a-la-francaise,
+//   .main-la-palette-du-gout,
+//   .main-le-delice-des-sens,
+//   .mainla-note-enchantee {
+//     position: absolute;
+//     left: 10%;
+//     right: 10%;
+//     top: 450px;
+//   }
+
+//   .main-la-palette-du-gout {
+//     height: 1250px;
+//   }
+
+//   .footer-la-palette-du-gout {
+//     position: relative;
+//     bottom: -1200px;
+//   }
+
+//   .button-commander {
+//     width: 200px;
+//     border-radius: 50px;
+//     border: none;
+//     font-size: 18px;
+//     color: white;
+//     padding: 20px 0px 20px 0px;
+//     margin-bottom: 30px;
+//     background: linear-gradient(#ff79da, #9356dc);
+//     box-shadow: 0px 5px 5px rgb(189, 182, 182);
+//   }
+// }
 
 // @media (max-width: 700px) {
 //   . {
@@ -554,11 +597,6 @@ footer {
   //   transform-origin: right;
   // }
 
-  .main-restaurants {
-    position: absolute;
-    top: 435px;
-  }
-
   h1 {
     font-family: shrikhand;
     font-size: 40px;
@@ -568,13 +606,44 @@ footer {
     justify-content: center;
   }
 
-  .main-la-note-enchantee {
-    height: 1235px;
+  .main-a-la-francaise,
+  .main-la-palette-du-gout,
+  .main-le-delice-des-sens,
+  .mainla-note-enchantee {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 450px;
+  }
+
+  .main-la-palette-du-gout,
+  .main-la-note-enchantee,
+  .main-le-delice-des-sens {
+    height: 1270px;
+  }
+
+  .footer-la-palette-du-gout,
+  .footer-a-la-francaise,
+  .footer-le-delice-des-sens {
+    position: relative;
+    bottom: -1150px;
   }
 
   .footer-la-note-enchantee {
     position: relative;
-    bottom: -1185px;
+    bottom: -1050px;
+  }
+
+  .button-commander {
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 30px;
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0px 5px 5px rgb(189, 182, 182);
   }
 
   .localisation {
@@ -715,7 +784,7 @@ footer {
 
   img {
     height: 384px;
-    width: -webkit-fill-available;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -728,7 +797,7 @@ footer {
     justify-content: center;
     align-items: baseline;
     margin-block: 40px;
-    gap: 40px;
+    gap: 35px;
   }
 
   h3 {
