@@ -200,7 +200,8 @@ img {
 }
 
 .sous-titre-et-comm:hover .slide-check i {
-  animation: rotation 300ms ease-out;
+  animation: rotation 550ms;
+  animation-timing-function: cubic-bezier(0, -0.5, 1, 2.5);
 }
 
 @keyframes rotation {

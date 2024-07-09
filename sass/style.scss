@@ -426,9 +426,7 @@ p {
   color: #ff79da;
   // color: linear-gradient(#ff79da, #9356dc);
   animation-name: coeurs-loading;
-  animation-duration: 800ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-delay: 300ms;
+  animation-duration: 300ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
