@@ -339,17 +339,43 @@ p {
 .card1:hover .fa-heart,
 .card2:hover .fa-heart,
 .card3:hover .fa-heart,
-.card4:hover .fa-heart {
+.card4:hover .fa-heart,
+.restaurant-title:hover .fa-heart {
   display: none;
 }
 
 .card1:hover .fa-heart + .coeur-plein,
 .card2:hover .fa-heart + .coeur-plein,
 .card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein {
+.card4:hover .fa-heart + .coeur-plein,
+.restaurant-title:hover .fa-heart + .coeur-plein {
   display: inline-block;
+  animation: coeurs-loading 300ms;
 }
 
+.coeur-plein {
+  animation-name: coeurs-loading;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes coeurs-loading {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .index-la-palette-du-gout,
 .index-la-note-enchantee,
 .index-a-la-francaise,

@@ -119,13 +119,6 @@ img {
 
 //--------MAIN------------------
 
-// .card1:hover .fa-heart,
-// .card2:hover .fa-heart,
-// .card3:hover .fa-heart,
-// .card4:hover .fa-heart {
-//   color: $pink;
-// }
-
 .entrees,
 .plats,
 .desserts {
@@ -176,28 +169,36 @@ img {
 }
 //---------------COEUR CHECK----------------------
 
-.checkbox-hidden {
-  display: none;
-}
+// .checkbox-hidden {
+//   display: none;
+// }
 
-.icone-coeur i {
-  transition: color 500ms ease-out;
-}
+// .icone-coeur i {
+//   transition: color 500ms ease-out;
+// }
 
-#coeur-checkbox:checked + .icone-coeur i {
-  color: transparent;
-  // pour safari
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  // applique le dégradé uniquement sur l'icône et pas sur arrière plan
-  background-clip: text;
-}
+// #coeur-checkbox:checked + .icone-coeur i {
+//   color: transparent;
+//   // pour safari
+//   -webkit-text-fill-color: transparent;
+//   background: linear-gradient(to bottom, #9356dc, #ff79da);
+//   -webkit-background-clip: text;
+//   // applique le dégradé uniquement sur l'icône et pas sur arrière plan
+//   background-clip: text;
+// }
 
-#coeur-checkbox:not(:checked) + .icone-coeur i {
-  color: inherit;
-  background: none;
-}
+// #coeur-checkbox:not(:checked) + .icone-coeur i {
+//   color: inherit;
+//   background: none;
+// }
+
+//----PROJET DE TEST COEUR
+// text-indent: -9999px;
+// background-image: url("../images/magnifying-glass-solid.svg");
+// background-size: 35%;
+// background-repeat: no-repeat;
+// background-position: center;
+//--- FIN TEST COEUR
 
 // .checkbox-hidden {
 //   display: none;

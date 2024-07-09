@@ -151,27 +151,6 @@ img {
   box-shadow: 3px 3px 3px rgb(189, 182, 182);
 }
 
-.checkbox-hidden {
-  display: none;
-}
-
-.icone-coeur i {
-  transition: color 500ms ease-out;
-}
-
-#coeur-checkbox:checked + .icone-coeur i {
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-#coeur-checkbox:not(:checked) + .icone-coeur i {
-  color: inherit;
-  background: none;
-}
-
 .sous-titre-et-comm {
   position: relative;
 }
