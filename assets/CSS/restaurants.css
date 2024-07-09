@@ -393,8 +393,8 @@ footer {
   .main-le-delice-des-sens,
   .main-la-note-enchantee {
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 13%;
+    right: 13%;
     top: 440px;
   }
   .main-la-palette-du-gout,
@@ -403,14 +403,17 @@ footer {
     height: 1300px;
   }
   .footer-la-palette-du-gout,
-  .footer-a-la-francaise,
+  .footer-a-la-francaise {
+    position: relative;
+    bottom: -1130px;
+  }
   .footer-le-delice-des-sens {
     position: relative;
-    bottom: -1170px;
+    bottom: -1160px;
   }
   .footer-la-note-enchantee {
     position: relative;
-    bottom: -1250px;
+    bottom: -1210px;
   }
   .button-commander {
     width: 200px;
@@ -418,7 +421,7 @@ footer {
     border: none;
     font-size: 18px;
     color: white;
-    padding: 20px 0px 20px 0px;
+    padding: 17px 0px 17px 0px;
     margin-bottom: 30px;
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 5px rgb(189, 182, 182);
@@ -494,13 +497,13 @@ footer {
     height: 80px;
   }
   .footer-title {
-    padding: 40px 30px 40px 0;
+    padding: 35px 30px 40px 0;
     font-size: 18px;
   }
   .liens-footer {
     display: flex;
     flex-direction: row;
-    padding: 50px 90px 20px 0;
+    padding: 40px 90px 20px 0;
   }
   .devenir-partenaire {
     padding-right: 45px;
