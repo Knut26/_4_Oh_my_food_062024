@@ -83,7 +83,7 @@ button {
 
 .nav {
   justify-content: space-between;
-  width: 60%;
+  width: 57%;
   margin-left: 25px;
 }
 
@@ -463,6 +463,12 @@ footer {
   .partie-2-fonctionnement {
     background: white;
     height: 235px;
+  }
+  .card-entree-la-note-enchantee,
+  .entrees,
+  .plats,
+  .desserts {
+    padding-inline: 12%;
   }
   .button-choix-du-restaurant {
     justify-content: center;

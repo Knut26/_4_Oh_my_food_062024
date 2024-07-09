@@ -97,7 +97,7 @@ button {
 .nav {
   @extend %flex-center;
   justify-content: space-between;
-  width: 60%;
+  width: 57%;
   margin-left: 25px;
 }
 
@@ -726,6 +726,13 @@ footer {
   //   row-gap: 30px;
   //   column-gap: 95px;
   // }
+
+  .card-entree-la-note-enchantee,
+  .entrees,
+  .plats,
+  .desserts {
+    padding-inline: 12%;
+  }
 
   .button-choix-du-restaurant {
     justify-content: center;
