@@ -186,12 +186,12 @@ img {
 }
 
 .sous-titre-et-comm:hover .slide-check i {
-  animation: rotation 1000ms ease-out;
+  animation: rotation 300ms ease-out;
 }
 
 @keyframes rotation {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(-60deg);
   }
   100% {
     transform: rotate(0);
