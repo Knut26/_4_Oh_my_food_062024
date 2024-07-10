@@ -215,14 +215,6 @@ img {
   margin-right: 0;
 }
 
-// .entrees-comm,
-// .plats-comm,
-// .desserts-comm {
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
-
 .entrees-sous-title,
 .plats-sous-title,
 .desserts-sous-title,
@@ -232,77 +224,6 @@ img {
   text-overflow: ellipsis;
 }
 
-// // animations @keyframes
-// @keyframes slide {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100%);
-//     // commence à l'intérieur du bloc parent
-//   }
-
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//     // termine à sa position finale
-//   }
-// }
-
-// .circle-check {
-//   // style initial de la box "check" invisible
-//   //  et à l'intérieur du bloc parent
-//   opacity: 0;
-//   transform: translateX (100%);
-//   transition: opacity 500ms, transform 500ms;
-// }
-
-// #click-checked:checked + label .circle-check {
-//   // quand la checkbox est cochée, l'animation commence
-//   animation: slide 500ms forwards;
-// }
-
-// #click-checked:not(:checked) + label .circle-check {
-//   // inverse l'animation quand la checckbox est décochée
-//   animation: slide 500ms reverse forwards;
-// }---MOVE DU PRIX---
-
-// .prix {
-//   transition: transform 100ms;
-// }
-
-// #click-checked:checked + label .prix {
-//   transform: translateX(-100px);
-// }
-
-// #click-checked:not(:checked) + label .prix {
-//   transform: translateX(0);
-// }
-
-// #click-checked {
-//   display: none;
-// }
-
-// //---FIN DU MOVE DU PRIX---
-// .prix-check {
-//   display: flex;
-// }
-
-// .circle-check {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: white;
-//   background: $green;
-//   transition: transform;
-//   width: 90px;
-//   height: 65px;
-//   position: absolute;
-//   top: 0;
-//   right: 0px;
-//   border-top-right-radius: 15px;
-//   border-bottom-right-radius: 15px;
-// }
-
-//
 //--------------ENTREES LOADING-----------------------
 .entrees {
   animation-name: entrees-loading;
@@ -622,14 +543,16 @@ footer {
     box-shadow: 0px 5px 10px rgb(189, 182, 182);
   }
 
-  .button-fonctionnement {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  @media (min-width: 877px) {
+    .button-fonctionnement {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
-  .partie-2-fonctionnement {
-    background: white;
-    height: 235px;
+    .partie-2-fonctionnement {
+      background: white;
+      height: 235px;
+    }
   }
 
   .card-entree-la-note-enchantee,
@@ -726,3 +649,82 @@ footer {
 // vérif des pages restau
 // retouches détails
 // mettre des comm
+//----------------------------------------------
+//----------------------------------------------
+//----------------------------------------------
+//----------------------------------------------
+
+// TEST CHECKBOX ON CLICK
+
+// // animations @keyframes
+// @keyframes slide {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(100%);
+//     // commence à l'intérieur du bloc parent
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//     // termine à sa position finale
+//   }
+// }
+
+// .circle-check {
+//   // style initial de la box "check" invisible
+//   //  et à l'intérieur du bloc parent
+//   opacity: 0;
+//   transform: translateX (100%);
+//   transition: opacity 500ms, transform 500ms;
+// }
+
+// #click-checked:checked + label .circle-check {
+//   // quand la checkbox est cochée, l'animation commence
+//   animation: slide 500ms forwards;
+// }
+
+// #click-checked:not(:checked) + label .circle-check {
+//   // inverse l'animation quand la checckbox est décochée
+//   animation: slide 500ms reverse forwards;
+
+// }---MOVE DU PRIX---
+
+// .prix {
+//   transition: transform 100ms;
+// }
+
+// #click-checked:checked + label .prix {
+//   transform: translateX(-100px);
+// }
+
+// #click-checked:not(:checked) + label .prix {
+//   transform: translateX(0);
+// }
+
+// #click-checked {
+//   display: none;
+// }
+
+// //---FIN DU MOVE DU PRIX---
+// .prix-check {
+//   display: flex;
+// }
+
+// .circle-check {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   background: $green;
+//   transition: transform;
+//   width: 90px;
+//   height: 65px;
+//   position: absolute;
+//   top: 0;
+//   right: 0px;
+//   border-top-right-radius: 15px;
+//   border-bottom-right-radius: 15px;
+// }
+
+//
