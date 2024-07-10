@@ -1,4 +1,3 @@
-//last chance
 //-----------IMPORTS------------------
 
 //"_" pour dire que c'est un module
@@ -201,7 +200,6 @@ img {
 
 .sous-titre-et-comm:hover .slide-check i {
   animation: rotation 550ms;
-  animation-timing-function: cubic-bezier(0, -0.5, 1, 2.5);
 }
 
 @keyframes rotation {
@@ -215,6 +213,23 @@ img {
 
 .sous-titre-et-comm:hover .check-test {
   margin-right: 0;
+}
+
+// .entrees-comm,
+// .plats-comm,
+// .desserts-comm {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+.entrees-sous-title,
+.plats-sous-title,
+.desserts-sous-title,
+.accompagnements {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // // animations @keyframes

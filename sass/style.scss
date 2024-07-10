@@ -43,7 +43,7 @@
     opacity: 1;
   }
   100% {
-    letter-spacing: -0.5em;
+    letter-spacing: -2em;
     opacity: 0;
   }
 }
@@ -285,7 +285,7 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0;
+  padding-top: 2px;
 }
 
 .box-number {
@@ -305,7 +305,7 @@ p {
 .fa-store {
   // mise en forme des 3 icônes
   color: $font-awesome-gray;
-  padding-right: 30px;
+  padding-inline: 30px;
 }
 
 .fa-1,

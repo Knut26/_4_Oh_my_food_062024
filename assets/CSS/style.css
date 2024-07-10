@@ -45,7 +45,7 @@
     opacity: 1;
   }
   100% {
-    letter-spacing: -0.5em;
+    letter-spacing: -2em;
     opacity: 0;
   }
 }
@@ -212,7 +212,7 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0;
+  padding-top: 2px;
 }
 
 .box-number {
@@ -230,7 +230,7 @@ p {
 .fa-list-ul,
 .fa-store {
   color: #757575;
-  padding-right: 30px;
+  padding-inline: 30px;
 }
 
 .fa-1,
