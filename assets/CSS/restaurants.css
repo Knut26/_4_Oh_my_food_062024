@@ -100,6 +100,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-block: 10px;
 }
 
 .fa-arrow-left {
@@ -113,6 +114,11 @@ nav {
 h1 {
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 30px;
+}
+
+.main-h1 {
+  margin-block: 10px;
   font-size: 30px;
 }
 
@@ -177,7 +183,7 @@ img {
 .sous-titre-et-comm {
   background: white;
   border-radius: 15px;
-  box-shadow: 3px 3px 3px rgb(189, 182, 182);
+  box-shadow: 3px 0px 10px rgb(189, 182, 182);
 }
 
 .sous-titre-et-comm {
@@ -349,7 +355,7 @@ img {
 }
 
 .liens-footer {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 .proposer-un-restaurant,
@@ -395,7 +401,7 @@ img {
     top: 440px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   nav {
     position: relative;
   }

@@ -92,7 +92,7 @@ h1 {
 .localisation {
   background-color: rgb(227, 227, 227);
   box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
-  height: 45px;
+  height: 48px;
 }
 .localisation .fa-location-dot {
   font-size: 16px;
@@ -123,7 +123,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: rgb(247, 247, 247);
-  height: 330px;
+  height: 335px;
 }
 
 .reservation-title {
@@ -138,7 +138,7 @@ p {
 
 .reservation-commentaire-1,
 .reservation-commentaire-2 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 200;
 }
 
@@ -163,7 +163,7 @@ p {
 
 .partie-2-fonctionnement {
   background: white;
-  height: 435px;
+  height: 440px;
 }
 
 .fonctionnement-title {
@@ -178,7 +178,7 @@ p {
   width: 90%;
   margin-block: 10px;
   margin-inline: 5%;
-  padding: 26px 0px 26px 0;
+  padding: 28px 0px 28px 0;
   border: none;
   border-radius: 15px;
   font-size: 16px;
@@ -255,13 +255,13 @@ p {
   font-size: 23px;
   margin-left: 8%;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 17px;
   margin-bottom: 0px;
 }
 
 .cards {
   width: 90%;
-  margin: 30px 5% 5% 5%;
+  margin: 15px 5% 5% 5%;
 }
 
 .card1,
@@ -478,6 +478,8 @@ footer {
     justify-content: center;
     align-items: center;
   }
+}
+@media (min-width: 500px) and (max-width: 877px) {
   .partie-2-fonctionnement {
     height: 500px;
   }
