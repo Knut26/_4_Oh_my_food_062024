@@ -106,7 +106,7 @@ button {
   border: none;
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +489,7 @@ img {
 }
 
 @media (max-width: 375px) {
-  .nav {
+  nav {
     position: relative;
   }
 
@@ -689,7 +689,7 @@ img {
     object-fit: cover;
   }
 
-  .nav {
+  nav {
     height: 97px;
   }
 
