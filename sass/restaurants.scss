@@ -100,26 +100,31 @@ body {
   }
 }
 
-h1 {
-  font-size: 30px;
-}
-
 //--------------HEADER-----------------
 
 button {
   border: none;
 }
 
-.fa-arrow-left {
-  font-size: 20px;
-  margin-right: 50px;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.nav {
-  @extend %flex-center;
-  justify-content: space-between;
-  width: 57%;
-  margin-left: 25px;
+.fa-arrow-left {
+  align-self: flex-start;
+  font-size: 20px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
 }
 
 h3 {
@@ -129,8 +134,8 @@ h3 {
 
 .restaurant-title {
   @extend %flex-center;
-  justify-content: space-between;
-  width: 92%;
+  justify-content: space-evenly;
+  // width: 92%;
   margin-block: 13px;
   cursor: pointer;
 }
@@ -459,6 +464,41 @@ img {
   }
 }
 
+@media (min-width: 375px) and (max-width: 500px) {
+  .main-a-la-francaise,
+  .main-la-palette-du-gout,
+  .main-le-delice-des-sens,
+  .main-la-note-enchantee {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 440px;
+  }
+}
+
+@media (min-width: 500px) {
+  .main-a-la-francaise,
+  .main-la-palette-du-gout,
+  .main-le-delice-des-sens,
+  .main-la-note-enchantee {
+    position: absolute;
+    left: 13%;
+    right: 13%;
+    top: 440px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    position: relative;
+  }
+
+  .fa-arrow-left {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+}
 // ----MEDIA QUERIES 375---------
 
 @media (min-width: 375px) {
@@ -479,15 +519,15 @@ img {
   //   justify-content: center;
   // }
 
-  .main-a-la-francaise,
-  .main-la-palette-du-gout,
-  .main-le-delice-des-sens,
-  .main-la-note-enchantee {
-    position: absolute;
-    left: 13%;
-    right: 13%;
-    top: 440px;
-  }
+  // .main-a-la-francaise,
+  // .main-la-palette-du-gout,
+  // .main-le-delice-des-sens,
+  // .main-la-note-enchantee {
+  //   position: absolute;
+  //   left: 13%;
+  //   right: 13%;
+  //   top: 440px;
+  // }
 
   .main-la-palette-du-gout,
   .main-la-note-enchantee,
@@ -662,7 +702,7 @@ img {
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 200;
   }
 }
