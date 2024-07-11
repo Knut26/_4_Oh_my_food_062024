@@ -42,7 +42,7 @@ body {
   right: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  height: 1190px;
+  height: 1230px;
 }
 
 .main-a-la-francaise {
@@ -59,18 +59,18 @@ body {
 
 .footer-la-palette-du-gout {
   position: relative;
-  bottom: -1085px;
+  bottom: -1150px;
 }
 
 .footer-la-note-enchantee {
   position: relative;
-  bottom: -960px;
+  bottom: -1040px;
 }
 
 .footer-a-la-francaise,
 .footer-le-delice-des-sens {
   position: relative;
-  bottom: -1080px;
+  bottom: -1100px;
 }
 
 h1 {
@@ -366,12 +366,6 @@ img {
 
 //--------FOOTER------------------
 
-footer {
-  height: 160px;
-  padding-inline: 20px;
-  padding-bottom: 8px;
-}
-
 .footer-title {
   font-size: 18px;
   margin-block: 6px;
@@ -441,20 +435,22 @@ footer {
 // ----MEDIA QUERIES 375---------
 
 @media (min-width: 375px) {
-  body {
-    // mise à zéro des marges et padding pour navigateurs
-    margin: 0;
-    padding: 0;
-  }
+  // doublon de style.scss de L628 à L641
 
-  h1 {
-    font-family: shrikhand;
-    font-size: 40px;
-    font-weight: 300;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-  }
+  // body {
+  //   // mise à zéro des marges et padding pour navigateurs
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  // h1 {
+  //   font-family: shrikhand;
+  //   font-size: 40px;
+  //   font-weight: 300;
+  //   margin: 20px;
+  //   display: flex;
+  //   justify-content: center;
+  // }
 
   .main-a-la-francaise,
   .main-la-palette-du-gout,
@@ -472,25 +468,25 @@ footer {
     height: 1300px;
   }
 
-  .footer-a-la-francaise {
-    position: relative;
-    bottom: -1130px;
-  }
+  // .footer-a-la-francaise {
+  //   position: relative;
+  //   bottom: -1130px;
+  // }
 
-  .footer-la-palette-du-gout {
-    position: relative;
-    bottom: -1152px;
-  }
+  // .footer-la-palette-du-gout {
+  //   position: relative;
+  //   bottom: -1152px;
+  // }
 
-  .footer-le-delice-des-sens {
-    position: relative;
-    bottom: -1160px;
-  }
+  // .footer-le-delice-des-sens {
+  //   position: relative;
+  //   bottom: -1160px;
+  // }
 
-  .footer-la-note-enchantee {
-    position: relative;
-    bottom: -1210px;
-  }
+  // .footer-la-note-enchantee {
+  //   position: relative;
+  //   bottom: -1210px;
+  // }
 
   .button-commander {
     width: 200px;
@@ -504,44 +500,45 @@ footer {
     box-shadow: 0px 5px 5px rgb(189, 182, 182);
   }
 
-  .localisation {
-    background-color: rgb(227, 227, 227);
-    box-shadow: none;
-    height: 45px;
-  }
+  // doublon de style.scss de L643 à L681
+  // .localisation {
+  //   background-color: rgb(227, 227, 227);
+  //   box-shadow: none;
+  //   height: 45px;
+  // }
 
-  .reservation-title {
-    padding: 17px 30px 16px 30px;
-  }
+  // .reservation-title {
+  //   padding: 17px 30px 16px 30px;
+  // }
 
-  .reservation-title,
-  .reservation-commentaire {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    margin-top: 7px;
-  }
+  // .reservation-title,
+  // .reservation-commentaire {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 7px;
+  //   margin-top: 7px;
+  // }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+  // .button-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 100%;
+  // }
 
-  .button-explorer {
-    // width: 28%;
-    border-radius: 50px;
-    border: none;
-    font-size: 15px;
-    color: white;
-    padding: 17px 20px 17px 20px;
-    margin-top: 30px;
-    margin-bottom: 45px;
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 0px 5px 10px rgb(189, 182, 182);
-  }
+  // .button-explorer {
+  //   // width: 28%;
+  //   border-radius: 50px;
+  //   border: none;
+  //   font-size: 15px;
+  //   color: white;
+  //   padding: 17px 20px 17px 20px;
+  //   margin-top: 30px;
+  //   margin-bottom: 45px;
+  //   background: linear-gradient(#ff79da, #9356dc);
+  //   box-shadow: 0px 5px 10px rgb(189, 182, 182);
+  // }
 
   @media (min-width: 877px) {
     .button-fonctionnement {
@@ -562,60 +559,62 @@ footer {
     padding-inline: 12%;
   }
 
-  .button-choix-du-restaurant {
-    justify-content: center;
-    width: 90%;
-    margin-block: 10px;
-    margin-inline: 5%;
-    padding: 30px 5px 30px 0px;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0px 5px 5px rgb(236, 234, 234);
-    position: relative;
-    z-index: 1;
-  }
+  // doublon de style.scss de L693 à L746
 
-  .fonctionnement-title {
-    font-size: 24px;
-    margin: 45px 0 10px 5%;
-  }
+  // .button-choix-du-restaurant {
+  //   justify-content: center;
+  //   width: 90%;
+  //   margin-block: 10px;
+  //   margin-inline: 5%;
+  //   padding: 30px 5px 30px 0px;
+  //   border: none;
+  //   border-radius: 15px;
+  //   font-size: 16px;
+  //   background-color: rgb(247, 247, 247);
+  //   box-shadow: 0px 5px 5px rgb(236, 234, 234);
+  //   position: relative;
+  //   z-index: 1;
+  // }
 
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 80px;
-  }
+  // .fonctionnement-title {
+  //   font-size: 24px;
+  //   margin: 45px 0 10px 5%;
+  // }
 
-  .footer-title {
-    padding: 35px 30px 40px 0;
-    font-size: 18px;
-  }
+  // footer {
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   height: 80px;
+  // }
 
-  .liens-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 40px 90px 20px 0;
-  }
+  // .footer-title {
+  //   padding: 35px 30px 40px 0;
+  //   font-size: 18px;
+  // }
 
-  .devenir-partenaire {
-    padding-right: 45px;
-  }
+  // .liens-footer {
+  //   display: flex;
+  //   flex-direction: row;
+  //   padding: 40px 90px 20px 0;
+  // }
 
-  .mentions-legales,
-  .contact {
-    font-size: 15px;
-  }
+  // .devenir-partenaire {
+  //   padding-right: 45px;
+  // }
 
-  .mentions-legales {
-    padding-right: 10px;
-  }
+  // .mentions-legales,
+  // .contact {
+  //   font-size: 15px;
+  // }
 
-  .fa-utensils,
-  .fa-handshake-angle {
-    padding-right: 5px;
-  }
+  // .mentions-legales {
+  //   padding-right: 10px;
+  // }
+
+  // .fa-utensils,
+  // .fa-handshake-angle {
+  //   padding-right: 5px;
+  // }
 
   img {
     height: 384px;
