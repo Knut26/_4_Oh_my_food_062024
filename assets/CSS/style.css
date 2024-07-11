@@ -556,6 +556,8 @@ footer {
     font-size: 24px;
     margin: 45px 0 10px 5%;
   }
+}
+@media (min-width: 375px) and (min-width: 877px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -570,6 +572,8 @@ footer {
     flex-direction: row;
     padding: 50px 90px 20px 0;
   }
+}
+@media (min-width: 375px) {
   .devenir-partenaire {
     padding-right: 45px;
   }

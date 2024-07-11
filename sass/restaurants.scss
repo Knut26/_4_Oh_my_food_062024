@@ -27,6 +27,7 @@ body {
   right: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  height: 1180px;
 }
 
 .main-la-palette-du-gout {
@@ -57,20 +58,46 @@ body {
   height: 1200px;
 }
 
-.footer-la-palette-du-gout {
-  position: relative;
-  bottom: -1150px;
-}
-
 .footer-la-note-enchantee {
   position: relative;
-  bottom: -1040px;
+  bottom: -1240px;
 }
 
-.footer-a-la-francaise,
+.footer-la-palette-du-gout {
+  position: relative;
+  bottom: -1160px;
+}
+
+.footer-a-la-francaise {
+  position: relative;
+  bottom: -1160px;
+}
+
 .footer-le-delice-des-sens {
   position: relative;
-  bottom: -1100px;
+  bottom: -1170px;
+}
+
+@media (max-width: 374px) {
+  .footer-la-note-enchantee {
+    position: relative;
+    bottom: -950px;
+  }
+
+  .footer-la-palette-du-gout {
+    position: relative;
+    bottom: -1090px;
+  }
+
+  .footer-a-la-francaise {
+    position: relative;
+    bottom: -1070px;
+  }
+
+  .footer-le-delice-des-sens {
+    position: relative;
+    bottom: -1080px;
+  }
 }
 
 h1 {

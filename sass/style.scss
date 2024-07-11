@@ -710,21 +710,23 @@ footer {
     margin: 45px 0 10px 5%;
   }
 
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 80px;
-  }
+  @media (min-width: 877px) {
+    footer {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 80px;
+    }
 
-  .footer-title {
-    padding: 40px 30px 40px 0;
-    font-size: 18px;
-  }
+    .footer-title {
+      padding: 40px 30px 40px 0;
+      font-size: 18px;
+    }
 
-  .liens-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 90px 20px 0;
+    .liens-footer {
+      display: flex;
+      flex-direction: row;
+      padding: 50px 90px 20px 0;
+    }
   }
 
   .devenir-partenaire {
