@@ -5,6 +5,7 @@
 
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
+@import "./add-ons/animations.scss";
 
 //-------LOADER INDEX.HTML---------------------
 
@@ -30,22 +31,6 @@
   height: 100%;
   //-webkit-animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-// tuto sur animista
-// @-webkit-keyframes reduction {...}
-@keyframes reduction {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    display: none;
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
 }
 
 //-------CORPS DU SITE----------------
@@ -363,24 +348,6 @@ p {
   animation-name: coeurs-loading;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-}
-
-@keyframes coeurs-loading {
-  0% {
-    opacity: 0.15;
-  }
-
-  50% {
-    opacity: 0.25;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .card1:hover .fa-heart,

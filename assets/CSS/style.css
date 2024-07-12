@@ -16,6 +16,92 @@
   flex-direction: column;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes reduction {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    display: none;
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+@keyframes coeurs-loading {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes entrees-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes plats-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes desserts-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -38,19 +124,6 @@
   animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@keyframes reduction {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    display: none;
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -315,20 +388,6 @@ p {
   animation-iteration-count: 1;
 }
 
-@keyframes coeurs-loading {
-  0% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .card1:hover .fa-heart,
 .card2:hover .fa-heart,
 .card3:hover .fa-heart,

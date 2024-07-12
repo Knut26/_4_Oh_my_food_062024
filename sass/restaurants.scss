@@ -5,6 +5,7 @@
 
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
+@import "./add-ons/animations.scss";
 
 //------------CORPS DU SITE-----------
 
@@ -226,17 +227,8 @@ img {
   transition: margin-right 500ms;
 }
 
-.sous-titre-et-comm:hover .slide-check i {
+.sous-titre-et-comm:hover i {
   animation: rotation 550ms;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 
 .sous-titre-et-comm:hover .check-test {
@@ -252,35 +244,11 @@ img {
   text-overflow: ellipsis;
 }
 
-//--------------ENTREES LOADING-----------------------
+//----ENTREES/PLATS/DESSERTS LOADING-----------------------
 .entrees {
   @extend %loading;
   animation-duration: 500ms;
 }
-
-@keyframes entrees-loading {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.15;
-  }
-
-  50% {
-    opacity: 0.25;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-//--------------PLATS LOADING-----------------------
 
 .plats {
   @extend %loading;
@@ -288,57 +256,12 @@ img {
   animation-delay: 300ms;
 }
 
-@keyframes plats-loading {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.15;
-  }
-
-  50% {
-    opacity: 0.25;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-//--------------DESSERTS LOADING-----------------------
-
 .desserts {
   @extend %loading;
   animation-duration: 1200ms;
   animation-delay: 600ms;
 }
 
-@keyframes desserts-loading {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.15;
-  }
-
-  50% {
-    opacity: 0.25;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 //-------------------------------------
 
 .prix {

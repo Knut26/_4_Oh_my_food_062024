@@ -12,6 +12,92 @@
   animation-iteration-count: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes reduction {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    display: none;
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+@keyframes coeurs-loading {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes entrees-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes plats-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes desserts-loading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   position: relative;
 }
@@ -218,18 +304,10 @@ img {
   transition: margin-right 500ms;
 }
 
-.sous-titre-et-comm:hover .slide-check i {
+.sous-titre-et-comm:hover i {
   animation: rotation 550ms;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .sous-titre-et-comm:hover .check-test {
   margin-right: 0;
 }
@@ -247,67 +325,16 @@ img {
   animation-duration: 500ms;
 }
 
-@keyframes entrees-loading {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .plats {
   animation-duration: 800ms;
   animation-delay: 300ms;
 }
 
-@keyframes plats-loading {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .desserts {
   animation-duration: 1200ms;
   animation-delay: 600ms;
 }
 
-@keyframes desserts-loading {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .prix {
   font-weight: 500;
 }
