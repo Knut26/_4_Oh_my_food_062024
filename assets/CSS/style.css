@@ -4,7 +4,6 @@
 .reservation-commentaire-2, .reservation-title-1,
 .reservation-title-2, .localisation .fa-location-dot, .localisation {
   display: flex;
-  flex-direction: center;
   justify-content: center;
   align-items: center;
 }
