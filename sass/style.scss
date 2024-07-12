@@ -78,14 +78,14 @@ main {
 
 //---------HEADER---------------------
 
-h1 {
+.main-h1 {
   // modif du titre et centrage
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
-  margin: 11px;
   display: flex;
   justify-content: center;
+  margin: 20px 0 0 20px;
 }
 
 //----------MAIN----------------------
@@ -105,6 +105,7 @@ h1 {
   box-shadow: 0px 0px 3px 1px $back-shadow-gray,
     0px 3px 3px 1px $back-shadow-gray;
   height: 48px;
+  margin-block: 0;
   .fa-location-dot {
     // mise en place de l'icône
     @extend %flex-center;
@@ -239,7 +240,7 @@ p {
   margin-inline: 5%;
   padding: 28px 0px 28px 0;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 16px;
   background-color: rgb(247, 247, 247);
   box-shadow: 0px 5px 5px rgb(236, 234, 234);
@@ -633,11 +634,11 @@ footer {
     padding: 0;
   }
 
-  h1 {
+  .main-h1 {
     font-family: shrikhand;
     font-size: 40px;
     font-weight: 300;
-    margin: 20px;
+    margin-block: 20px;
     display: flex;
     justify-content: center;
   }
@@ -645,12 +646,36 @@ footer {
   .localisation {
     background-color: rgb(227, 227, 227);
     box-shadow: none;
-    height: 45px;
+    height: 50px;
+    margin: 0;
   }
 
   .reservation-title {
     display: flex;
     padding: 17px 30px 16px 30px;
+  }
+
+  .partie-1-reservation {
+    height: 290px;
+  }
+
+  #partie-3-restaurants {
+    padding-top: 25px;
+    padding-bottom: 0;
+    height: 645px;
+  }
+
+  .restaurants-title {
+    margin-top: 5px;
+  }
+
+  .cards {
+    margin: 25px 5% 5% 5%;
+  }
+
+  .card1,
+  .card2 {
+    margin-bottom: 50px;
   }
 
   .reservation-title,
@@ -659,7 +684,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 7px;
-    margin-top: -14px;
+    margin-top: 20px;
   }
 
   .button-container {
@@ -676,8 +701,8 @@ footer {
     font-size: 15px;
     color: white;
     padding: 17px 20px 17px 20px;
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 23px;
+    margin-bottom: 20px;
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 10px rgb(189, 182, 182);
   }
@@ -709,7 +734,7 @@ footer {
 
   .fonctionnement-title {
     font-size: 24px;
-    margin: 45px 0 10px 5%;
+    margin: 53px 0 10px 5%;
   }
 
   @media (min-width: 877px) {

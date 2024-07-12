@@ -73,13 +73,13 @@ main {
   scroll-behavior: smooth;
 }
 
-h1 {
+.main-h1 {
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
-  margin: 11px;
   display: flex;
   justify-content: center;
+  margin: 20px 0 0 20px;
 }
 
 .restaurant-title {
@@ -93,6 +93,7 @@ h1 {
   background-color: rgb(227, 227, 227);
   box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
   height: 48px;
+  margin-block: 0;
 }
 .localisation .fa-location-dot {
   font-size: 16px;
@@ -180,7 +181,7 @@ p {
   margin-inline: 5%;
   padding: 28px 0px 28px 0;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 16px;
   background-color: rgb(247, 247, 247);
   box-shadow: 0px 5px 5px rgb(236, 234, 234);
@@ -489,22 +490,41 @@ footer {
     margin: 0;
     padding: 0;
   }
-  h1 {
+  .main-h1 {
     font-family: shrikhand;
     font-size: 40px;
     font-weight: 300;
-    margin: 20px;
+    margin-block: 20px;
     display: flex;
     justify-content: center;
   }
   .localisation {
     background-color: rgb(227, 227, 227);
     box-shadow: none;
-    height: 45px;
+    height: 50px;
+    margin: 0;
   }
   .reservation-title {
     display: flex;
     padding: 17px 30px 16px 30px;
+  }
+  .partie-1-reservation {
+    height: 290px;
+  }
+  #partie-3-restaurants {
+    padding-top: 25px;
+    padding-bottom: 0;
+    height: 645px;
+  }
+  .restaurants-title {
+    margin-top: 5px;
+  }
+  .cards {
+    margin: 25px 5% 5% 5%;
+  }
+  .card1,
+  .card2 {
+    margin-bottom: 50px;
   }
   .reservation-title,
   .reservation-commentaire {
@@ -512,7 +532,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 7px;
-    margin-top: -14px;
+    margin-top: 20px;
   }
   .button-container {
     display: flex;
@@ -526,8 +546,8 @@ footer {
     font-size: 15px;
     color: white;
     padding: 17px 20px 17px 20px;
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 23px;
+    margin-bottom: 20px;
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 10px rgb(189, 182, 182);
   }
@@ -556,7 +576,7 @@ footer {
   }
   .fonctionnement-title {
     font-size: 24px;
-    margin: 45px 0 10px 5%;
+    margin: 53px 0 10px 5%;
   }
 }
 @media (min-width: 375px) and (min-width: 877px) {

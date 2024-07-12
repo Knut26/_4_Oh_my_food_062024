@@ -122,14 +122,10 @@ nav {
   left: 40px;
 }
 
-h1 {
+.restaurants-h1 {
+  font-family: shrikhand;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 30px;
-}
-
-.main-h1 {
-  margin-block: 10px;
   font-size: 30px;
 }
 
@@ -621,7 +617,7 @@ img {
 
     .partie-2-fonctionnement {
       background: white;
-      height: 235px;
+      height: 220px;
     }
   }
 
