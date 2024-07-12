@@ -18,3 +18,11 @@
   justify-content: center;
   align-items: center;
 }
+
+%loading {
+  animation-name: entrees-loading;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}

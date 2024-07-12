@@ -1,14 +1,17 @@
-.button-choix-du-restaurant,
+.number, .button-choix-du-restaurant,
 .button-composez-votre-menu,
 .button-degustez-au-restaurant, .button-container, .reservation-commentaire-1,
 .reservation-commentaire-2, .reservation-title-1,
-.reservation-title-2, .localisation .fa-location-dot, .localisation {
+.reservation-title-2, .localisation .fa-location-dot, .localisation, .main-h1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement {
+.card1-comm,
+.card2-comm,
+.card3-comm,
+.card4-comm, #partie-3-restaurants, .button-fonctionnement, .partie-2-fonctionnement, .partie-1-reservation {
   display: flex;
   flex-direction: column;
 }
@@ -32,23 +35,10 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-  -webkit-animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@-webkit-keyframes tracking-out-contract {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    letter-spacing: -2em;
-    opacity: 0;
-  }
-}
-@keyframes tracking-out-contract {
+@keyframes reduction {
   0% {
     opacity: 1;
   }
@@ -64,28 +54,17 @@
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 main {
   font-family: roboto, sans-serif;
-  scroll-behavior: smooth;
 }
 
 .main-h1 {
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
-  display: flex;
-  justify-content: center;
   margin: 20px 0 0 20px;
-}
-
-.restaurant-title {
-  font-family: shrikhand;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 20px;
 }
 
 .localisation {
@@ -104,6 +83,8 @@ main {
 }
 
 h3 {
+  font-size: 28px;
+  font-weight: 200;
   margin: 0;
   padding: 13px 0 0 10px;
 }
@@ -120,8 +101,6 @@ p {
 }
 
 .partie-1-reservation {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(247, 247, 247);
   height: 335px;
 }
@@ -153,6 +132,7 @@ p {
   margin-bottom: 45px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 10px rgb(189, 182, 182);
+  scroll-behavior: smooth;
 }
 .button-explorer:hover {
   cursor: pointer;
@@ -174,7 +154,6 @@ p {
 .button-choix-du-restaurant,
 .button-composez-votre-menu,
 .button-degustez-au-restaurant {
-  justify-content: center;
   width: 90%;
   margin-block: 10px;
   margin-inline: 5%;
@@ -208,9 +187,6 @@ p {
 }
 
 .number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   padding-top: 2px;
 }
@@ -300,14 +276,18 @@ p {
 .card2-comm,
 .card3-comm,
 .card4-comm {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
   height: 80px;
   margin-top: -4px;
+}
+.card1-comm:hover,
+.card2-comm:hover,
+.card3-comm:hover,
+.card4-comm:hover {
+  cursor: pointer;
 }
 
 .nouveau {
@@ -320,6 +300,7 @@ p {
   z-index: 2;
   top: 12px;
   right: 12px;
+  color: green;
 }
 
 .fa-heart {
@@ -330,7 +311,6 @@ p {
   display: none;
   color: #ff79da;
   animation-name: coeurs-loading;
-  animation-duration: 300ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -363,7 +343,7 @@ p {
 .card4:hover .fa-heart + .coeur-plein,
 .restaurant-title:hover .fa-heart + .coeur-plein {
   display: inline-block;
-  animation: coeurs-loading 300ms;
+  animation: coeurs-loading 500ms;
 }
 
 .index-la-palette-du-gout,
@@ -380,17 +360,6 @@ p {
 .index-folie-mericourt {
   font-size: 17px;
   font-weight: 300;
-}
-
-.card1-comm:hover,
-.card2-comm:hover,
-.card3-comm:hover,
-.card4-comm:hover {
-  cursor: pointer;
-}
-
-.nouveau {
-  color: green;
 }
 
 .title-heart {
@@ -427,10 +396,10 @@ footer {
 }
 
 .footer-title {
-  margin-block: 10px;
+  margin-block: 6px;
   font-family: shrikhand;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .proposer-un-restaurant,
@@ -441,15 +410,17 @@ footer {
   text-decoration: none;
   font-family: roboto, sans-serif;
   padding: 5px;
+  font-size: 15px;
+}
+.proposer-un-restaurant:hover,
+.devenir-partenaire:hover,
+.mentions-legales:hover,
+.contact:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
-@media (min-width: 445px) and (max-width: 701px) {
-  .reservation-title,
-  .reservation-commentaire {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media (min-width: 375px) and (max-width: 444px) {
   .reservation-title,
   .reservation-commentaire {
@@ -469,6 +440,13 @@ footer {
   .reservation-title-1,
   .reservation-title-2 {
     font-size: 40px;
+  }
+}
+@media (min-width: 445px) and (max-width: 701px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 877px) {
@@ -507,6 +485,14 @@ footer {
     display: flex;
     padding: 17px 30px 16px 30px;
   }
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+  }
   .partie-1-reservation {
     height: 290px;
   }
@@ -525,18 +511,7 @@ footer {
   .card2 {
     margin-bottom: 50px;
   }
-  .reservation-title,
-  .reservation-commentaire {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    margin-top: 20px;
-  }
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
   .button-explorer {
@@ -577,24 +552,6 @@ footer {
     font-size: 24px;
     margin: 53px 0 10px 5%;
   }
-}
-@media (min-width: 375px) and (min-width: 877px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 80px;
-  }
-  .footer-title {
-    padding: 40px 30px 40px 0;
-    font-size: 18px;
-  }
-  .liens-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 90px 20px 0;
-  }
-}
-@media (min-width: 375px) {
   .devenir-partenaire {
     padding-right: 45px;
   }
@@ -608,6 +565,22 @@ footer {
   .fa-utensils,
   .fa-handshake-angle {
     padding-right: 5px;
+  }
+}
+@media (min-width: 877px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+  }
+  .footer-title {
+    padding: 40px 30px 40px 0;
+    font-size: 18px;
+  }
+  .liens-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 90px 20px 0;
   }
 }
 

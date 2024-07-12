@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.desserts, .plats, .entrees {
+  animation-name: entrees-loading;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
 body {
   position: relative;
 }
@@ -114,12 +122,11 @@ nav {
   font-size: 30px;
 }
 
-h3 {
-  font-size: 28px;
-  font-weight: 200;
-}
-
 .restaurant-title {
+  font-family: shrikhand;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
   justify-content: space-evenly;
   margin-block: 13px;
   cursor: pointer;
@@ -237,12 +244,7 @@ img {
 }
 
 .entrees {
-  animation-name: entrees-loading;
   animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes entrees-loading {
@@ -263,12 +265,8 @@ img {
   }
 }
 .plats {
-  animation-name: plats-loading;
   animation-duration: 800ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 300ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes plats-loading {
@@ -289,12 +287,8 @@ img {
   }
 }
 .desserts {
-  animation-name: desserts-loading;
   animation-duration: 1200ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 600ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes desserts-loading {
@@ -341,28 +335,8 @@ img {
   box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
 
-.footer-title {
-  font-size: 18px;
-  margin-block: 6px;
-}
-
 .liens-footer {
   margin-bottom: 5px;
-}
-
-.proposer-un-restaurant,
-.devenir-partenaire,
-.mentions-legales,
-.contact {
-  font-size: 15px;
-}
-.proposer-un-restaurant:hover,
-.devenir-partenaire:hover,
-.mentions-legales:hover,
-.contact:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
 }
 
 @media (max-width: 650px) {

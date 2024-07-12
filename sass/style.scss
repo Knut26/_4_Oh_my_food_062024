@@ -13,8 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #9356dc;
-  background-color: #99e2d0;
+  color: $violet;
+  background-color: $green;
   font-size: 50px;
   font-weight: 500;
   font-family: shrikhand;
@@ -28,26 +28,13 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-  -webkit-animation: tracking-out-contract 1.7s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: tracking-out-contract 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
+  //-webkit-animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 // tuto sur animista
-@-webkit-keyframes tracking-out-contract {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    letter-spacing: -2em;
-    opacity: 0;
-  }
-}
-@keyframes tracking-out-contract {
+// @-webkit-keyframes reduction {...}
+@keyframes reduction {
   0% {
     opacity: 1;
   }
@@ -67,36 +54,25 @@ body {
   // mise à zéro des marges et padding pour navigateurs
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 main {
   // police et éventuels ancres avec comportement smooth
   font-family: roboto, sans-serif;
-  scroll-behavior: smooth;
 }
 
 //---------HEADER---------------------
 
 .main-h1 {
   // modif du titre et centrage
+  @extend %flex-center;
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
-  display: flex;
-  justify-content: center;
   margin: 20px 0 0 20px;
 }
 
 //----------MAIN----------------------
-
-.restaurant-title {
-  // mise en page du titre
-  font-family: shrikhand;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
 
 .localisation {
   // couleur background et ombres
@@ -113,12 +89,6 @@ main {
     margin-inline: 5px;
   }
 }
-// .localisation .fa-location-dot {
-//   // mise en place de l'icône
-//   @extend %flex-center;
-//   font-size: 16px;
-//   margin-inline: 5px;
-// }
 
 .ville {
   // mise en place du nom de la ville
@@ -129,6 +99,8 @@ main {
 
 h3 {
   // padding titre et paragraphe
+  font-size: 28px;
+  font-weight: 200;
   margin: 0;
   padding: 13px 0 0 10px;
 }
@@ -147,8 +119,7 @@ p {
 
 .partie-1-reservation {
   // mise en forme de la partie réservation
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   background-color: $back-lightgray;
   height: 335px;
 }
@@ -189,8 +160,9 @@ p {
   padding: 17px 20px 17px 20px;
   margin-top: 27px;
   margin-bottom: 45px;
-  background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 0px 5px 10px rgb(189, 182, 182);
+  background: linear-gradient($pink, $violet);
+  box-shadow: 0px 5px 10px $back-shadow-gray;
+  scroll-behavior: smooth;
   &:hover {
     // changement au survol
     cursor: pointer;
@@ -199,13 +171,6 @@ p {
     box-shadow: 0px 4px 3px 1px $back-shadow-gray;
   }
 }
-// .button-explorer:hover {
-//   // changement au survol
-//   cursor: pointer;
-//   transform: scale(1.05);
-//   transition: 0.3s;
-//   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
-// }
 
 //-----PARTIE 2-------------------
 
@@ -218,8 +183,6 @@ p {
 
 .fonctionnement-title {
   // mise en place et police du titre
-  //   display: flex;
-  //   justify-content: baseline;
   font-size: 24px;
   margin: 50px 0 20px 5%;
 }
@@ -234,7 +197,6 @@ p {
 .button-degustez-au-restaurant {
   // mise en forme des 3 boutons
   @extend %flex-center;
-  justify-content: center;
   width: 90%;
   margin-block: 10px;
   margin-inline: 5%;
@@ -242,8 +204,8 @@ p {
   border: none;
   border-radius: 20px;
   font-size: 16px;
-  background-color: rgb(247, 247, 247);
-  box-shadow: 0px 5px 5px rgb(236, 234, 234);
+  background-color: $back-lightgray;
+  box-shadow: 0px 5px 5px $box-shadow-gray;
   position: relative;
   z-index: 1;
   &:hover {
@@ -256,35 +218,15 @@ p {
     &.button-choix-du-restaurant:hover .fa-tablet-screen-button,
     &.button-composez-votre-menu:hover .fa-list-ul,
     &.button-degustez-au-restaurant:hover .fa-store {
+      // au survol, les icônes deviennent rose
       color: $pink;
     }
   }
 }
 
-// .button-choix-du-restaurant:hover,
-// .button-composez-votre-menu:hover,
-// .button-degustez-au-restaurant:hover {
-//   background-color: white;
-//   transition: 400ms;
-//   cursor: pointer;
-//   transform: scale(1.05);
-//   transition: 0.3s;
-//   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
-// }
-
-// .button-choix-du-restaurant:hover .fa-tablet-screen-button,
-// .button-composez-votre-menu:hover .fa-list-ul,
-// .button-degustez-au-restaurant:hover .fa-store {
-//   // au survol, les icônes deviennent rose
-//   color: $pink;
-//   // opacity: 1;
-// }
-
 .number {
   // centrage des nombres
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   color: white;
   padding-top: 2px;
 }
@@ -314,7 +256,6 @@ p {
 .fa-3 {
   // chiffre 1/2/3
   color: white;
-  // margin:2px;
   border-radius: 50px;
   margin-right: 20px;
   padding: 5px;
@@ -364,16 +305,6 @@ p {
   }
 }
 
-// .card1:hover,
-// .card2:hover,
-// .card3:hover,
-// .card4:hover {
-//   transform: scale(1.05);
-//   transition: 0.3s;
-//   border-radius: 15px;
-//   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
-// }
-
 .card-part1,
 .card-part2 {
   display: flex;
@@ -393,26 +324,29 @@ p {
 .card3-comm,
 .card4-comm {
   // modif du comm
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   background-color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
   height: 80px;
   margin-top: -4px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nouveau {
   font-size: 14px;
-  border: 2px solid #99e2d0;
+  border: 2px solid $green;
   border-radius: 2px;
-  background: #99e2d0;
+  background: $green;
   padding: 5px 10px 5px 10px;
   position: absolute;
   z-index: 2;
   top: 12px;
   right: 12px;
+  color: green;
 }
 
 .fa-heart {
@@ -425,9 +359,8 @@ p {
   // le coeur plein de base n'est pas affiché
   display: none;
   color: #ff79da;
-  // color: linear-gradient(#ff79da, #9356dc);
+  // color: linear-gradient($pink, $violet);
   animation-name: coeurs-loading;
-  animation-duration: 300ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -467,7 +400,7 @@ p {
   // au survol de la carte entière le coeur de
   // base est remplacé par le coeur plein
   display: inline-block;
-  animation: coeurs-loading 300ms;
+  animation: coeurs-loading 500ms;
 }
 
 //-----FIN COEURS HOVER-----
@@ -487,17 +420,6 @@ p {
   font-size: 17px;
   font-weight: 300;
   //   padding-left: 15px;
-}
-
-.card1-comm:hover,
-.card2-comm:hover,
-.card3-comm:hover,
-.card4-comm:hover {
-  cursor: pointer;
-}
-
-.nouveau {
-  color: green;
 }
 
 .title-heart {
@@ -542,10 +464,10 @@ footer {
 
 .footer-title {
   // police du titre du footer
-  margin-block: 10px;
+  margin-block: 6px;
   font-family: shrikhand;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .proposer-un-restaurant,
@@ -557,17 +479,15 @@ footer {
   text-decoration: none;
   font-family: roboto, sans-serif;
   padding: 5px;
+  font-size: 15px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
 }
 
 //-----MEDIA QUERIES--------------
-
-@media (min-width: 445px) and (max-width: 701px) {
-  .reservation-title,
-  .reservation-commentaire {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 @media (min-width: 375px) and (max-width: 444px) {
   .reservation-title,
@@ -594,11 +514,16 @@ footer {
   }
 }
 
+@media (min-width: 445px) and (max-width: 701px) {
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 877px) {
   .button-fonctionnement {
-    // .button-choix-du-restaurant,
-    // .button-composez-votre-menu,
-    // .button-degustez-au-restaurant {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,19 +537,6 @@ footer {
   }
 }
 
-// @media (min-width: 375px) and (max-width: 899px) {
-//   .button-fonctionnement {
-//     display: grid;
-//     grid-template-rows: 1fr 1fr 1fr;
-//   }
-// }
-
-// @media (min-width: 900px) {
-//   .button-fonctionnement {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-// }
 //-----MEDIA QUERIES > 375PX--------------
 
 @media (min-width: 375px) {
@@ -644,7 +556,7 @@ footer {
   }
 
   .localisation {
-    background-color: rgb(227, 227, 227);
+    background-color: $back-gray;
     box-shadow: none;
     height: 50px;
     margin: 0;
@@ -653,6 +565,15 @@ footer {
   .reservation-title {
     display: flex;
     padding: 17px 30px 16px 30px;
+  }
+
+  .reservation-title,
+  .reservation-commentaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
   }
 
   .partie-1-reservation {
@@ -678,19 +599,8 @@ footer {
     margin-bottom: 50px;
   }
 
-  .reservation-title,
-  .reservation-commentaire {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    margin-top: 20px;
-  }
-
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     width: 100%;
   }
 
@@ -703,8 +613,8 @@ footer {
     padding: 17px 20px 17px 20px;
     margin-top: 23px;
     margin-bottom: 20px;
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 0px 5px 10px rgb(189, 182, 182);
+    background: linear-gradient($pink, $violet);
+    box-shadow: 0px 5px 10px $back-shadow-gray;
   }
 
   .card-part1,
@@ -726,8 +636,8 @@ footer {
     border: none;
     border-radius: 15px;
     font-size: 16px;
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0px 5px 5px rgb(236, 234, 234);
+    background-color: $back-lightgray;
+    box-shadow: 0px 5px 5px $box-shadow-gray;
     position: relative;
     z-index: 1;
   }
@@ -735,25 +645,6 @@ footer {
   .fonctionnement-title {
     font-size: 24px;
     margin: 53px 0 10px 5%;
-  }
-
-  @media (min-width: 877px) {
-    footer {
-      display: flex;
-      flex-direction: row-reverse;
-      height: 80px;
-    }
-
-    .footer-title {
-      padding: 40px 30px 40px 0;
-      font-size: 18px;
-    }
-
-    .liens-footer {
-      display: flex;
-      flex-direction: row;
-      padding: 50px 90px 20px 0;
-    }
   }
 
   .devenir-partenaire {
@@ -772,6 +663,25 @@ footer {
   .fa-utensils,
   .fa-handshake-angle {
     padding-right: 5px;
+  }
+}
+
+@media (min-width: 877px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+  }
+
+  .footer-title {
+    padding: 40px 30px 40px 0;
+    font-size: 18px;
+  }
+
+  .liens-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 90px 20px 0;
   }
 }
 

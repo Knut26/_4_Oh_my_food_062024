@@ -72,7 +72,7 @@ body {
   position: relative;
   bottom: -1170px;
 }
-
+//----MEDIA QUERIES----------------
 @media (max-width: 374px) {
   .footer-la-note-enchantee {
     position: relative;
@@ -124,15 +124,14 @@ nav {
   font-size: 30px;
 }
 
-h3 {
-  font-size: 28px;
-  font-weight: 200;
-}
-
 .restaurant-title {
+  // mise en page du titre
   @extend %flex-center;
+  font-family: shrikhand;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
   justify-content: space-evenly;
-  // width: 92%;
   margin-block: 13px;
   cursor: pointer;
 }
@@ -255,12 +254,8 @@ img {
 
 //--------------ENTREES LOADING-----------------------
 .entrees {
-  animation-name: entrees-loading;
+  @extend %loading;
   animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes entrees-loading {
@@ -288,12 +283,9 @@ img {
 //--------------PLATS LOADING-----------------------
 
 .plats {
-  animation-name: plats-loading;
+  @extend %loading;
   animation-duration: 800ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 300ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes plats-loading {
@@ -321,12 +313,9 @@ img {
 //--------------DESSERTS LOADING-----------------------
 
 .desserts {
-  animation-name: desserts-loading;
+  @extend %loading;
   animation-duration: 1200ms;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: 600ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 @keyframes desserts-loading {
@@ -385,74 +374,13 @@ img {
   }
 }
 
-// .button-commander:hover {
-//   // changement au survol
-//   cursor: pointer;
-//   transform: scale(1.05);
-//   transition: 300ms;
-//   box-shadow: 0px 4px 3px 1px $back-shadow-gray;
-// }
-
 //--------FOOTER------------------
-
-.footer-title {
-  font-size: 18px;
-  margin-block: 6px;
-}
 
 .liens-footer {
   margin-bottom: 5px;
 }
 
-.proposer-un-restaurant,
-.devenir-partenaire,
-.mentions-legales,
-.contact {
-  font-size: 15px;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.3s;
-  }
-}
-
-// .proposer-un-restaurant:hover,
-// .devenir-partenaire:hover,
-// .mentions-legales:hover,
-// .contact:hover {
-//   cursor: pointer;
-//   transform: scale(1.05);
-//   transition: 0.3s;
-// }
-
-// -------MEDIA QUERIES SOUS TITRE AND COMM et CHECKBOX-----------
-// @media (max-width: 729px) {
-//   .sous-titre-et-comm,
-//   .circle-check {
-//     height: 120px;
-//   }
-// }
-
-// @media (max-width: 572px) {
-//   .sous-titre-et-comm,
-//   .circle-check {
-//     height: 150px;
-//   }
-// }
-
-// @media (max-width: 500px) {
-//   .sous-titre-et-comm,
-//   .circle-check {
-//     height: 180px;
-//   }
-// }
-
-// @media (max-width: 398px) {
-//   .sous-titre-et-comm,
-//   .circle-check {
-//     height: 210px;
-//   }
-// }
+//----MEDIA QUERIES---------------
 
 @media (max-width: 650px) {
   .button-commander {
@@ -499,58 +427,11 @@ img {
 // ----MEDIA QUERIES 375---------
 
 @media (min-width: 375px) {
-  // doublon de style.scss de L628 à L641
-
-  // body {
-  //   // mise à zéro des marges et padding pour navigateurs
-  //   margin: 0;
-  //   padding: 0;
-  // }
-
-  // h1 {
-  //   font-family: shrikhand;
-  //   font-size: 40px;
-  //   font-weight: 300;
-  //   margin: 20px;
-  //   display: flex;
-  //   justify-content: center;
-  // }
-
-  // .main-a-la-francaise,
-  // .main-la-palette-du-gout,
-  // .main-le-delice-des-sens,
-  // .main-la-note-enchantee {
-  //   position: absolute;
-  //   left: 13%;
-  //   right: 13%;
-  //   top: 440px;
-  // }
-
   .main-la-palette-du-gout,
   .main-la-note-enchantee,
   .main-le-delice-des-sens {
     height: 1300px;
   }
-
-  // .footer-a-la-francaise {
-  //   position: relative;
-  //   bottom: -1130px;
-  // }
-
-  // .footer-la-palette-du-gout {
-  //   position: relative;
-  //   bottom: -1152px;
-  // }
-
-  // .footer-le-delice-des-sens {
-  //   position: relative;
-  //   bottom: -1160px;
-  // }
-
-  // .footer-la-note-enchantee {
-  //   position: relative;
-  //   bottom: -1210px;
-  // }
 
   .button-commander {
     width: 200px;
@@ -560,49 +441,9 @@ img {
     color: white;
     padding: 17px 0px 17px 0px;
     margin-bottom: 30px;
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 0px 5px 5px rgb(189, 182, 182);
+    background: linear-gradient($pink, $violet);
+    box-shadow: 0px 5px 5px $back-shadow-gray;
   }
-
-  // doublon de style.scss de L643 à L681
-  // .localisation {
-  //   background-color: rgb(227, 227, 227);
-  //   box-shadow: none;
-  //   height: 45px;
-  // }
-
-  // .reservation-title {
-  //   padding: 17px 30px 16px 30px;
-  // }
-
-  // .reservation-title,
-  // .reservation-commentaire {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 7px;
-  //   margin-top: 7px;
-  // }
-
-  // .button-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 100%;
-  // }
-
-  // .button-explorer {
-  //   // width: 28%;
-  //   border-radius: 50px;
-  //   border: none;
-  //   font-size: 15px;
-  //   color: white;
-  //   padding: 17px 20px 17px 20px;
-  //   margin-top: 30px;
-  //   margin-bottom: 45px;
-  //   background: linear-gradient(#ff79da, #9356dc);
-  //   box-shadow: 0px 5px 10px rgb(189, 182, 182);
-  // }
 
   @media (min-width: 877px) {
     .button-fonctionnement {
@@ -622,63 +463,6 @@ img {
   .desserts {
     padding-inline: 12%;
   }
-
-  // doublon de style.scss de L693 à L746
-
-  // .button-choix-du-restaurant {
-  //   justify-content: center;
-  //   width: 90%;
-  //   margin-block: 10px;
-  //   margin-inline: 5%;
-  //   padding: 30px 5px 30px 0px;
-  //   border: none;
-  //   border-radius: 15px;
-  //   font-size: 16px;
-  //   background-color: rgb(247, 247, 247);
-  //   box-shadow: 0px 5px 5px rgb(236, 234, 234);
-  //   position: relative;
-  //   z-index: 1;
-  // }
-
-  // .fonctionnement-title {
-  //   font-size: 24px;
-  //   margin: 45px 0 10px 5%;
-  // }
-
-  // footer {
-  //   display: flex;
-  //   flex-direction: row-reverse;
-  //   height: 80px;
-  // }
-
-  // .footer-title {
-  //   padding: 35px 30px 40px 0;
-  //   font-size: 18px;
-  // }
-
-  // .liens-footer {
-  //   display: flex;
-  //   flex-direction: row;
-  //   padding: 40px 90px 20px 0;
-  // }
-
-  // .devenir-partenaire {
-  //   padding-right: 45px;
-  // }
-
-  // .mentions-legales,
-  // .contact {
-  //   font-size: 15px;
-  // }
-
-  // .mentions-legales {
-  //   padding-right: 10px;
-  // }
-
-  // .fa-utensils,
-  // .fa-handshake-angle {
-  //   padding-right: 5px;
-  // }
 
   img {
     height: 384px;
