@@ -54,30 +54,11 @@ body {
   height: 1200px;
 }
 
-.footer-la-note-enchantee {
-  position: relative;
-  bottom: -1240px;
-}
-
-.footer-la-palette-du-gout {
-  position: relative;
-  bottom: -1160px;
-}
-
-.footer-a-la-francaise {
-  position: relative;
-  bottom: -1160px;
-}
-
-.footer-le-delice-des-sens {
-  position: relative;
-  bottom: -1170px;
-}
 //----MEDIA QUERIES----------------
 @media (max-width: 374px) {
   .footer-la-note-enchantee {
     position: relative;
-    bottom: -950px;
+    bottom: -1160px;
   }
 
   .footer-la-palette-du-gout {
@@ -139,6 +120,8 @@ nav {
 
 img {
   width: 400px;
+  height: 260px;
+  object-fit: cover;
 }
 
 //--------MAIN------------------
@@ -354,6 +337,10 @@ img {
   .main-la-palette-du-gout,
   .main-la-note-enchantee,
   .main-le-delice-des-sens {
+    height: 1260px;
+  }
+
+  .main-la-note-enchantee {
     height: 1300px;
   }
 
@@ -367,6 +354,18 @@ img {
     margin-bottom: 30px;
     background: linear-gradient($pink, $violet);
     box-shadow: 0px 5px 5px $back-shadow-gray;
+  }
+
+  .footer-la-palette-du-gout,
+  .footer-a-la-francaise,
+  .footer-le-delice-des-sens {
+    position: relative;
+    bottom: -1110px;
+  }
+
+  .footer-la-note-enchantee {
+    position: relative;
+    bottom: -1185px;
   }
 
   @media (min-width: 877px) {
@@ -386,6 +385,7 @@ img {
   .plats,
   .desserts {
     padding-inline: 12%;
+    margin-bottom: 50px;
   }
 
   img {
@@ -395,7 +395,7 @@ img {
   }
 
   nav {
-    height: 97px;
+    height: 80px;
   }
 
   .restaurant-title {
