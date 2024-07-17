@@ -2,7 +2,7 @@
 .button-composez-votre-menu,
 .button-degustez-au-restaurant, .button-container, .reservation-commentaire-1,
 .reservation-commentaire-2, .reservation-title-1,
-.reservation-title-2, .localisation .fa-location-dot, .localisation, .main-h1 {
+.reservation-title-2, .partie-1-reservation.localisation .fa-location-dot, .partie-1-reservation.localisation, .main-h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,21 +140,6 @@ main {
   margin: 20px 0 0 20px;
 }
 
-.localisation {
-  background-color: rgb(227, 227, 227);
-  box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
-  height: 48px;
-  margin-block: 0;
-}
-.localisation .fa-location-dot {
-  font-size: 16px;
-  margin-inline: 5px;
-}
-
-.ville {
-  font-size: 15px;
-}
-
 h3 {
   font-size: 28px;
   font-weight: 200;
@@ -167,15 +152,22 @@ p {
   padding: 4px 0 0 10px;
 }
 
-.fa-arrow-left,
-.title-heart {
-  text-decoration: none;
-  color: black;
-}
-
 .partie-1-reservation {
   background-color: rgb(247, 247, 247);
   height: 335px;
+}
+.partie-1-reservation.localisation {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 0px 0px 3px 1px rgb(189, 182, 182), 0px 3px 3px 1px rgb(189, 182, 182);
+  height: 48px;
+  margin-block: 0;
+}
+.partie-1-reservation.localisation .fa-location-dot {
+  font-size: 16px;
+  margin-inline: 5px;
+}
+.partie-1-reservation.ville {
+  font-size: 15px;
 }
 
 .reservation-title {
@@ -263,6 +255,14 @@ p {
   color: white;
   padding-top: 2px;
 }
+.number.fa-1, .number.fa-2, .number.fa-3 {
+  color: white;
+  border-radius: 50px;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #9356dc;
+}
 
 .box-number {
   position: absolute;
@@ -280,17 +280,6 @@ p {
 .fa-store {
   color: #757575;
   padding-inline: 30px;
-}
-
-.fa-1,
-.fa-2,
-.fa-3 {
-  color: white;
-  border-radius: 50px;
-  margin-right: 20px;
-  padding: 5px;
-  font-size: 15px;
-  background-color: #9356dc;
 }
 
 #partie-3-restaurants {
@@ -312,6 +301,12 @@ p {
   width: 90%;
   margin: 15px 5% 5% 5%;
 }
+.cards.card-part1, .cards.card-part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card1,
 .card2,
@@ -330,17 +325,13 @@ p {
   border-radius: 15px;
   box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
-
-.card-part1,
-.card-part2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card1,
-.card2 {
+.card1.card1, .card1.card2,
+.card2.card1,
+.card2.card2,
+.card3.card1,
+.card3.card2,
+.card4.card1,
+.card4.card2 {
   position: relative;
   z-index: 1;
 }
@@ -508,6 +499,11 @@ footer {
     flex-direction: column;
   }
 }
+@media (min-width: 375px) and (max-width: 701px) {
+  .partie-1-reservation {
+    height: 400px;
+  }
+}
 @media (max-width: 877px) {
   .button-fonctionnement {
     display: flex;
@@ -551,9 +547,6 @@ footer {
     align-items: center;
     gap: 7px;
     margin-top: 20px;
-  }
-  .partie-1-reservation {
-    height: 290px;
   }
   #partie-3-restaurants {
     padding-top: 25px;

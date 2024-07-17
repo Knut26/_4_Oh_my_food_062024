@@ -161,6 +161,12 @@ body {
     bottom: -1080px;
   }
 }
+.fa-arrow-left,
+.title-heart {
+  text-decoration: none;
+  color: black;
+}
+
 button {
   border: none;
 }
@@ -173,14 +179,15 @@ nav {
   margin-block: 10px;
 }
 
-.fa-arrow-left {
-  align-self: flex-start;
-  font-size: 20px;
-  position: absolute;
-  top: 40px;
-  left: 40px;
+@media (min-width: 376px) {
+  .fa-arrow-left {
+    align-self: flex-start;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
 }
-
 .restaurants-h1 {
   font-family: shrikhand;
   margin-top: auto;
@@ -389,11 +396,9 @@ img {
 @media (min-width: 375px) {
   .main-la-palette-du-gout,
   .main-la-note-enchantee,
-  .main-le-delice-des-sens {
-    height: 1260px;
-  }
+  .main-le-delice-des-sens,
   .main-la-note-enchantee {
-    height: 1300px;
+    height: 1258px;
   }
   .button-commander {
     width: 200px;
