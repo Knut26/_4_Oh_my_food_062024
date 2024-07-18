@@ -303,7 +303,7 @@ img {
 }
 
 .sous-titre-et-comm:hover .check-test {
-  animation: rotation 300ms;
+  animation: rotation 600ms;
 }
 
 .sous-titre-et-comm:hover .conteneur-check {
