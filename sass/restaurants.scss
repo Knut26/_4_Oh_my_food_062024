@@ -189,6 +189,15 @@ img {
   position: relative;
 }
 
+.entrees-sous-title,
+.plats-sous-title,
+.desserts-sous-title,
+.accompagnements {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .slide-check {
   display: flex;
   position: absolute;
@@ -206,7 +215,7 @@ img {
   // background: white;
 }
 
-.check-test {
+.conteneur-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,20 +229,11 @@ img {
 }
 
 .sous-titre-et-comm:hover .check-test {
-  animation: rotation 550ms;
+  animation: rotation 300ms;
 }
 
-.sous-titre-et-comm:hover .check-test {
+.sous-titre-et-comm:hover .conteneur-check {
   margin-right: 0;
-}
-
-.entrees-sous-title,
-.plats-sous-title,
-.desserts-sous-title,
-.accompagnements {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 //----ENTREES/PLATS/DESSERTS LOADING-----------------------
