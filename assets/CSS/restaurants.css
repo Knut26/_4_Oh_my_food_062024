@@ -324,7 +324,7 @@ img {
 .sous-titre-et-comm:hover .desserts-sous-title,
 .sous-titre-et-comm:hover .accompagnements {
   width: calc(85% - 70px);
-  margin-right: 100px;
+  margin-right: 80px;
 }
 
 .entrees {
