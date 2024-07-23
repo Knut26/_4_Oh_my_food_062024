@@ -310,6 +310,23 @@ img {
   margin-right: 0;
 }
 
+.entrees-sous-title,
+.entrees-comm,
+.plats-sous-title,
+.desserts-sous-title,
+.accompagnements {
+  transition: margin-right 600ms;
+}
+
+.sous-titre-et-comm:hover .entrees-sous-title,
+.sous-titre-et-comm:hover .entrees-comm,
+.sous-titre-et-comm:hover .plats-sous-title,
+.sous-titre-et-comm:hover .desserts-sous-title,
+.sous-titre-et-comm:hover .accompagnements {
+  width: calc(85% - 70px);
+  margin-right: 100px;
+}
+
 .entrees {
   animation-duration: 500ms;
 }
