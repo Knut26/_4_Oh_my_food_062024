@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes rotation {
   0% {
     transform: rotate(-360deg);
@@ -84,5 +85,23 @@
     opacity: 1;
   }
 }
+@keyframes empty-heart {
+  from {
+    color: #ff79da;
+  }
+  to {
+    color: white;
+  }
+}
+/*
+-coeurs animations inversées
+-max-width pour aligner Fonctionnement/boutons et restaurants et cards
+(test de : margin Fonctionnement title 53px 0 0 66px)
+les mettre dans un container pour appliquer la même margin à tous les éléments
+-icônes des 3 boutons de la page index à centrer et peut être à réduire de taille ou centrer les textes
+-faire apparaître les menus des pages restos au fur et à mesure 1er puis 2e puis 3e
+-media queries : faire disparaître le coeur pour qu'il revienne à son statut initial
+-media queries : pour les checks, les mettre tous en hover (tester si on peut mettre une checkbox CF W3SCHOOL)
+*/
 
 /*# sourceMappingURL=animations.css.map */
