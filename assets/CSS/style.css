@@ -112,14 +112,14 @@
   }
 }
 /*
--coeurs animations inversées
--max-width pour aligner Fonctionnement/boutons et restaurants et cards
-(test de : margin Fonctionnement title 53px 0 0 66px)
+- coeurs animations inversées
+- max-width pour aligner Fonctionnement/boutons et restaurants et cards
+(test de : margin style.SCSS partie-2 fonctionnement-title 53px 0 0 5%)
 les mettre dans un container pour appliquer la même margin à tous les éléments
--icônes des 3 boutons de la page index à centrer et peut être à réduire de taille ou centrer les textes
--faire apparaître les menus des pages restos au fur et à mesure 1er puis 2e puis 3e
--media queries : faire disparaître le coeur pour qu'il revienne à son statut initial
--media queries : pour les checks, les mettre tous en hover (tester si on peut mettre une checkbox CF W3SCHOOL)
+- icônes des 3 boutons de la page index à centrer et peut être à réduire de taille ou centrer les textes
+- faire apparaître les menus des pages restos au fur et à mesure 1er puis 2e puis 3e
+- media queries : faire disparaître le coeur pour qu'il revienne à son statut initial
+- media queries : pour les checks, les mettre tous en hover (tester si on peut mettre une checkbox CF W3SCHOOL)
 */
 .loader {
   display: flex;
@@ -225,9 +225,14 @@ p {
   box-shadow: 0px 4px 3px 1px rgb(189, 182, 182);
 }
 
+.boutons {
+  width: 100%;
+}
+
 .partie-2-fonctionnement {
   background: white;
   height: 440px;
+  margin-inline: 12%;
 }
 
 .fonctionnement-title {
@@ -238,9 +243,9 @@ p {
 .button-choix-du-restaurant,
 .button-composez-votre-menu,
 .button-degustez-au-restaurant {
+  justify-content: space-evenly;
   width: 90%;
   margin-block: 10px;
-  margin-inline: 5%;
   padding: 28px 0px 28px 0;
   border: none;
   border-radius: 20px;
@@ -298,7 +303,7 @@ p {
 .fa-list-ul,
 .fa-store {
   color: #757575;
-  padding-inline: 30px;
+  padding-left: 35px;
 }
 
 #partie-3-restaurants {
@@ -310,14 +315,13 @@ p {
 
 .restaurants-title {
   font-size: 23px;
-  margin-left: 8%;
+  max-width: 500px;
   font-weight: 500;
   margin-top: 17px;
   margin-bottom: 0px;
 }
 
 .cards {
-  width: 90%;
   margin: 15px 5% 5% 5%;
 }
 .cards.card-part1, .cards.card-part2 {
@@ -576,11 +580,14 @@ footer {
     padding-bottom: 0;
     height: 645px;
   }
+  .container-partie-3 {
+    margin-inline: 12%;
+  }
   .restaurants-title {
     margin-top: 5px;
   }
   .cards {
-    margin: 25px 5% 5% 5%;
+    margin: 25px 0 5% 0;
   }
   .card1,
   .card2 {
@@ -604,16 +611,15 @@ footer {
   .card-part2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     row-gap: 30px;
     column-gap: 10%;
   }
   .button-choix-du-restaurant {
-    justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
     margin-block: 10px;
-    margin-inline: 5%;
     padding: 30px 5px 30px 0px;
     border: none;
     border-radius: 15px;
@@ -625,7 +631,7 @@ footer {
   }
   .fonctionnement-title {
     font-size: 24px;
-    margin: 53px 0 10px 5%;
+    margin: 53px 0 10px 0;
   }
   .devenir-partenaire {
     padding-right: 45px;

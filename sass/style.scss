@@ -149,11 +149,17 @@ p {
 
 //-----PARTIE 2-------------------
 
+.boutons {
+  // ajout 01.09
+  width: 100%; // ajout 01.09
+} // ajout 01.09
+
 .partie-2-fonctionnement {
   // mise en colonne
   @extend %flex-column;
   background: white;
   height: 440px;
+  margin-inline: 12%; // ajout 01.09
 }
 
 .fonctionnement-title {
@@ -172,9 +178,10 @@ p {
 .button-degustez-au-restaurant {
   // mise en forme des 3 boutons
   @extend %flex-center;
-  width: 90%;
+  justify-content: space-evenly;
+  width: 90%; // retrait 01.09
   margin-block: 10px;
-  margin-inline: 5%;
+  // margin-inline: 5%; // retrait 02.09
   padding: 28px 0px 28px 0;
   border: none;
   border-radius: 20px;
@@ -234,7 +241,7 @@ p {
 .fa-store {
   // mise en forme des 3 icônes
   color: $font-awesome-gray;
-  padding-inline: 30px;
+  padding-left: 35px; // retrait 02.09
 }
 
 //------PARTIE 3-------------------
@@ -251,7 +258,8 @@ p {
 .restaurants-title {
   // modif titre restaurants
   font-size: 23px;
-  margin-left: 8%;
+  // margin-left: 8%; // retrait 01.09
+  max-width: 500px; // ajout 01.09 voire comment le rendre utile
   font-weight: 500;
   margin-top: 17px;
   margin-bottom: 0px;
@@ -259,7 +267,7 @@ p {
 
 .cards {
   // modif cards
-  width: 90%;
+  // width: 90%; // retrait 02.09
   margin: 15px 5% 5% 5%;
   &.card-part1,
   &.card-part2 {
@@ -553,12 +561,17 @@ footer {
     height: 645px;
   }
 
+  .container-partie-3 {
+    // ajout 02.09
+    margin-inline: 12%; // ajout 02.09
+  } // ajout 02.09
+
   .restaurants-title {
     margin-top: 5px;
   }
 
   .cards {
-    margin: 25px 5% 5% 5%;
+    margin: 25px 0 5% 0; // modif 02.09 (margin: 25px 5% 5% 5%;)
   }
 
   .card1,
@@ -588,17 +601,17 @@ footer {
   .card-part2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between; // ajout 02.09
     align-items: center;
     row-gap: 30px;
     column-gap: 10%;
   }
 
   .button-choix-du-restaurant {
-    justify-content: center;
+    justify-content: space-evenly; // ajout 02.09
     width: 90%;
     margin-block: 10px;
-    margin-inline: 5%;
+    // margin-inline: 5%; // retrait du 02.09
     padding: 30px 5px 30px 0px;
     border: none;
     border-radius: 15px;
@@ -611,7 +624,7 @@ footer {
 
   .fonctionnement-title {
     font-size: 24px;
-    margin: 53px 0 10px 5%;
+    margin: 53px 0 10px 0;
   }
 
   .devenir-partenaire {
