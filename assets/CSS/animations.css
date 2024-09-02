@@ -26,12 +26,28 @@
   }
   50% {
     opacity: 0.25;
+    transform: 1.05;
   }
   75% {
     opacity: 0.75;
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes empty-heart {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes entrees-loading {
@@ -83,14 +99,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes empty-heart {
-  from {
-    color: #ff79da;
-  }
-  to {
-    color: white;
   }
 }
 /*

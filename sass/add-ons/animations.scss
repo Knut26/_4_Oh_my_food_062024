@@ -31,16 +31,41 @@
 
   50% {
     opacity: 0.25;
+    transform: 1.05;
   }
 
   75% {
     opacity: 0.75;
+    transform: scale(1.1);
   }
 
   100% {
     opacity: 1;
   }
 }
+
+@keyframes empty-heart {
+  //ajout 30.08
+  0% {
+    //ajout 30.08
+    opacity: 1; //ajout 30.08
+  }
+
+  50% {
+    //ajout 30.08
+    opacity: 0.75; //ajout 30.08
+  }
+
+  75% {
+    //ajout 30.08
+    opacity: 0.25; //ajout 30.08
+  }
+
+  100% {
+    //ajout 30.08
+    opacity: 0; //ajout 30.08
+  }
+} //ajout 30.08
 
 //----anim chargements entrees
 @keyframes entrees-loading {
@@ -110,18 +135,6 @@
     opacity: 1;
   }
 }
-
-@keyframes empty-heart {
-  //ajout 30.08
-  from {
-    //ajout 30.08
-    color: #ff79da; //ajout 30.08
-  } //ajout 30.08
-  to {
-    //ajout 30.08
-    color: white; //ajout 30.08
-  } //ajout 30.08
-} //ajout 30.08
 
 /*
 - coeurs animations inversées (aussi en media queries)
