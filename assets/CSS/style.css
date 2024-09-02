@@ -57,10 +57,10 @@
     opacity: 0;
   }
   25% {
-    opacity: 0.15;
+    opacity: 0;
   }
   50% {
-    opacity: 0.25;
+    opacity: 0;
   }
   75% {
     opacity: 0.75;
@@ -112,13 +112,11 @@
   }
 }
 /*
-- coeurs animations inversées
+- coeurs animations inversées (aussi en media queries)
 - max-width pour aligner Fonctionnement/boutons et restaurants et cards
 (test de : margin style.SCSS partie-2 fonctionnement-title 53px 0 0 5%)
 les mettre dans un container pour appliquer la même margin à tous les éléments
 - icônes des 3 boutons de la page index à centrer et peut être à réduire de taille ou centrer les textes
-- faire apparaître les menus des pages restos au fur et à mesure 1er puis 2e puis 3e
-- media queries : faire disparaître le coeur pour qu'il revienne à son statut initial
 - media queries : pour les checks, les mettre tous en hover (tester si on peut mettre une checkbox CF W3SCHOOL)
 */
 .loader {
