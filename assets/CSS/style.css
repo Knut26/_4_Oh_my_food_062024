@@ -278,7 +278,7 @@ p {
 .button-degustez-au-restaurant:hover.button-choix-du-restaurant:hover .fa-tablet-screen-button,
 .button-degustez-au-restaurant:hover.button-composez-votre-menu:hover .fa-list-ul,
 .button-degustez-au-restaurant:hover.button-degustez-au-restaurant:hover .fa-store {
-  color: #ff79da;
+  color: #9356dc;
 }
 
 .number {
@@ -402,7 +402,10 @@ p {
 
 .coeur-plein {
   display: none;
-  color: #ff79da;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   animation-name: coeurs-loading;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;

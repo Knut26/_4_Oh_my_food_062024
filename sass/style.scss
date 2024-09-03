@@ -201,7 +201,7 @@ p {
     &.button-composez-votre-menu:hover .fa-list-ul,
     &.button-degustez-au-restaurant:hover .fa-store {
       // au survol, les icônes deviennent rose
-      color: $pink;
+      color: $violet;
     }
   }
 }
@@ -338,8 +338,11 @@ p {
 .coeur-plein {
   // le coeur plein de base n'est pas affiché
   display: none;
-  color: #ff79da;
-  // color: linear-gradient($pink, $violet);
+  background: linear-gradient(to bottom, $violet, $pink);
+  color: transparent;
+  background-clip: text; // afficher le linear gradient
+  // du texte à travers le coeur qui est transparent
+  -webkit-background-clip: text; // pour compatibilité avec les browsers
   animation-name: coeurs-loading;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
