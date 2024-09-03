@@ -44,11 +44,9 @@
   }
   50% {
     opacity: 0.25;
-    transform: 1.05;
   }
   75% {
     opacity: 0.75;
-    transform: scale(1.15);
   }
   100% {
     opacity: 1;
@@ -57,12 +55,14 @@
 @keyframes empty-heart {
   0% {
     opacity: 1;
+    transform: scale(1.15);
   }
   50% {
     opacity: 0.75;
+    transform: 1.05;
   }
   75% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -120,7 +120,7 @@
   }
 }
 /*
-- coeurs animations inversées (aussi en media queries) opacity ?
+- coeurs animations inversées (aussi en media queries) opacity
 - max-width pour aligner Fonctionnement/boutons et restaurants et cards
 (test de : margin style.SCSS partie-2 fonctionnement-title 53px 0 0 5%)
 les mettre dans un container pour appliquer la même margin à tous les éléments
@@ -400,8 +400,35 @@ p {
   font-size: 25px;
 }
 
+.card1-comm,
+.card2-comm,
+.card3-comm,
+.card4-comm {
+  position: relative;
+}
+
+.coeur-vide {
+  position: absolute;
+  right: 25px;
+  bottom: 48.5px;
+  animation: coeurs-loading 500ms;
+}
+
 .coeur-plein {
-  display: none;
+  opacity: 0;
+  animation: empty-heart 300ms;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card1-comm:hover .coeur-plein,
+.card2-comm:hover .coeur-plein,
+.card3-comm:hover .coeur-plein,
+.card4-comm:hover .coeur-plein,
+.restaurant-title:hover .coeur-plein-restaurants {
+  opacity: 1;
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   color: transparent;
   background-clip: text;
@@ -411,11 +438,31 @@ p {
   animation-iteration-count: 1;
 }
 
+.card1-comm:hover .coeur-vide,
+.card2-comm:hover .coeur-vide,
+.card3-comm:hover .coeur-vide,
+.card4-comm:hover .coeur-vide,
+.restaurant-title:hover .coeur-vide-restaurants {
+  opacity: 0;
+}
+
+.le-delice-des-sens {
+  position: relative;
+}
+
+.coeur-plein-restaurants {
+  position: absolute;
+  top: 56px;
+  right: 171px;
+}
+
+/*
 .partie-3 .card1-comm:hover .fa-heart,
 .partie-3 .card2-comm:hover .fa-heart,
 .partie-3 .card3-comm:hover .fa-heart,
 .partie-3 .card4-comm:hover .fa-heart,
 .restaurant-title:hover .fa-heart {
+  // au survol de la carte le coeur disparait
   display: none;
 }
 
@@ -424,14 +471,20 @@ p {
 .partie-3 .card3-comm:hover .fa-heart + .coeur-plein,
 .partie-3 .card4-comm:hover .fa-heart + .coeur-plein,
 .restaurant-title:hover .fa-heart + .coeur-plein {
+  // au survol de la carte entière le coeur de
+  // base est remplacé par le coeur plein
   display: inline-block;
   animation: coeurs-loading 500ms;
 }
+//----------------------------------------------------------
+//----------------------------------------------------------
+//----------------------------------------------------------
 
 .card1 .coeur-plein .fa-heart {
-  animation: empty-heart 500ms ease forwards;
-}
-
+  //ajout 30.08
+  animation: empty-heart 500ms ease forwards; //ajout 30.08
+} //ajout 30.08
+*/
 .index-la-palette-du-gout,
 .index-la-note-enchantee,
 .index-a-la-francaise,

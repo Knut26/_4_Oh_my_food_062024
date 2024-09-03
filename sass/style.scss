@@ -334,10 +334,36 @@ p {
 }
 
 //-------COEURS HOVER------
+.card1-comm,
+.card2-comm,
+.card3-comm,
+.card4-comm {
+  position: relative;
+}
+
+.coeur-vide {
+  position: absolute;
+  right: 25px;
+  bottom: 48.5px;
+  animation: coeurs-loading 500ms;
+}
 
 .coeur-plein {
+  opacity: 0;
+  animation: empty-heart 300ms;
+  background: linear-gradient(to bottom, $violet, $pink);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card1-comm:hover .coeur-plein,
+.card2-comm:hover .coeur-plein,
+.card3-comm:hover .coeur-plein,
+.card4-comm:hover .coeur-plein,
+.restaurant-title:hover .coeur-plein-restaurants {
   // le coeur plein de base n'est pas affiché
-  display: none;
+  opacity: 1;
   background: linear-gradient(to bottom, $violet, $pink);
   color: transparent;
   background-clip: text; // afficher le linear gradient
@@ -348,6 +374,24 @@ p {
   animation-iteration-count: 1;
 }
 
+.card1-comm:hover .coeur-vide,
+.card2-comm:hover .coeur-vide,
+.card3-comm:hover .coeur-vide,
+.card4-comm:hover .coeur-vide,
+.restaurant-title:hover .coeur-vide-restaurants {
+  opacity: 0;
+}
+
+.le-delice-des-sens {
+  position: relative;
+}
+.coeur-plein-restaurants {
+  position: absolute;
+  top: 56px;
+  right: 171px;
+}
+
+/*
 .partie-3 .card1-comm:hover .fa-heart,
 .partie-3 .card2-comm:hover .fa-heart,
 .partie-3 .card3-comm:hover .fa-heart,
@@ -375,7 +419,7 @@ p {
   //ajout 30.08
   animation: empty-heart 500ms ease forwards; //ajout 30.08
 } //ajout 30.08
-
+*/
 //----------------------------------------------------------
 //----------------------------------------------------------
 //----------------------------------------------------------

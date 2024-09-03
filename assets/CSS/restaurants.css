@@ -40,11 +40,9 @@
   }
   50% {
     opacity: 0.25;
-    transform: 1.05;
   }
   75% {
     opacity: 0.75;
-    transform: scale(1.15);
   }
   100% {
     opacity: 1;
@@ -53,12 +51,14 @@
 @keyframes empty-heart {
   0% {
     opacity: 1;
+    transform: scale(1.15);
   }
   50% {
     opacity: 0.75;
+    transform: 1.05;
   }
   75% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -116,7 +116,7 @@
   }
 }
 /*
-- coeurs animations inversées (aussi en media queries) opacity ?
+- coeurs animations inversées (aussi en media queries) opacity
 - max-width pour aligner Fonctionnement/boutons et restaurants et cards
 (test de : margin style.SCSS partie-2 fonctionnement-title 53px 0 0 5%)
 les mettre dans un container pour appliquer la même margin à tous les éléments
