@@ -411,18 +411,18 @@ p {
   animation-iteration-count: 1;
 }
 
-.card1:hover .fa-heart,
-.card2:hover .fa-heart,
-.card3:hover .fa-heart,
-.card4:hover .fa-heart,
+.partie-3 .card1-comm:hover .fa-heart,
+.partie-3 .card2-comm:hover .fa-heart,
+.partie-3 .card3-comm:hover .fa-heart,
+.partie-3 .card4-comm:hover .fa-heart,
 .restaurant-title:hover .fa-heart {
   display: none;
 }
 
-.card1:hover .fa-heart + .coeur-plein,
-.card2:hover .fa-heart + .coeur-plein,
-.card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein,
+.partie-3 .card1-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card2-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card3-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card4-comm:hover .fa-heart + .coeur-plein,
 .restaurant-title:hover .fa-heart + .coeur-plein {
   display: inline-block;
   animation: coeurs-loading 500ms;

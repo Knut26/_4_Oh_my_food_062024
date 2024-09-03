@@ -342,25 +342,25 @@ p {
   color: transparent;
   background-clip: text; // afficher le linear gradient
   // du texte à travers le coeur qui est transparent
-  -webkit-background-clip: text; // pour compatibilité avec les browsers
+  -webkit-background-clip: text; // pour compatibilité avec les !== browsers
   animation-name: coeurs-loading;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
 
-.card1:hover .fa-heart,
-.card2:hover .fa-heart,
-.card3:hover .fa-heart,
-.card4:hover .fa-heart,
+.partie-3 .card1-comm:hover .fa-heart,
+.partie-3 .card2-comm:hover .fa-heart,
+.partie-3 .card3-comm:hover .fa-heart,
+.partie-3 .card4-comm:hover .fa-heart,
 .restaurant-title:hover .fa-heart {
   // au survol de la carte le coeur disparait
   display: none;
 }
 
-.card1:hover .fa-heart + .coeur-plein,
-.card2:hover .fa-heart + .coeur-plein,
-.card3:hover .fa-heart + .coeur-plein,
-.card4:hover .fa-heart + .coeur-plein,
+.partie-3 .card1-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card2-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card3-comm:hover .fa-heart + .coeur-plein,
+.partie-3 .card4-comm:hover .fa-heart + .coeur-plein,
 .restaurant-title:hover .fa-heart + .coeur-plein {
   // au survol de la carte entière le coeur de
   // base est remplacé par le coeur plein
