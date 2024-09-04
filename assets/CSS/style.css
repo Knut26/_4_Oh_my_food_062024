@@ -441,9 +441,12 @@ p {
 .card1-comm:hover .coeur-vide,
 .card2-comm:hover .coeur-vide,
 .card3-comm:hover .coeur-vide,
-.card4-comm:hover .coeur-vide,
-.restaurant-title:hover .coeur-vide-restaurants {
+.card4-comm:hover .coeur-vide {
   opacity: 0;
+}
+
+.restaurant-title:hover .coeur-vide-restaurants {
+  display: none;
 }
 
 /*
