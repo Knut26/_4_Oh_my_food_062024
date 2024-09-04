@@ -58,11 +58,11 @@
     transform: scale(1.15);
   }
   50% {
-    opacity: 0.75;
+    opacity: 0.95;
     transform: 1.05;
   }
   75% {
-    opacity: 0.5;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -444,16 +444,6 @@ p {
 .card4-comm:hover .coeur-vide,
 .restaurant-title:hover .coeur-vide-restaurants {
   opacity: 0;
-}
-
-.le-delice-des-sens {
-  position: relative;
-}
-
-.coeur-plein-restaurants {
-  position: absolute;
-  top: 56px;
-  right: 171px;
 }
 
 /*
