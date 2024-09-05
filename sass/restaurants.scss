@@ -116,14 +116,36 @@ nav {
 
 .restaurant-title {
   // mise en page du titre
-  @extend %flex-center;
+  // @extend %flex-center;
+  display: flex;
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 20px;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   margin-block: 13px;
   cursor: pointer;
+}
+/*
+@media (min-width: 300px) and (max-width: 430px) {
+  .restaurants-title {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 35px;
+  }
+}
+  */
+
+@media (min-width: 431px) {
+  .restaurant-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 35px;
+  }
 }
 
 img {
@@ -321,7 +343,19 @@ img {
   }
 }
 
-@media (min-width: 375px) and (max-width: 500px) {
+//ajout de ce media queries 05.09...
+@media (min-width: 375px) and (max-width: 430px) {
+  .main-a-la-francaise,
+  .main-la-palette-du-gout,
+  .main-le-delice-des-sens,
+  .main-la-note-enchantee {
+    position: absolute;
+    top: 440px;
+  }
+}
+
+// ...ayant pour effet de modif celui-ci
+@media (min-width: 431px) and (max-width: 500px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
   .main-le-delice-des-sens,
@@ -333,7 +367,7 @@ img {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
   .main-le-delice-des-sens,
@@ -419,7 +453,7 @@ img {
   nav {
     height: 80px;
   }
-
+  /*
   .restaurant-title {
     display: flex;
     justify-content: center;
@@ -427,6 +461,7 @@ img {
     margin-block: 40px;
     gap: 35px;
   }
+    */
 
   h3 {
     font-size: 25px;
@@ -441,82 +476,3 @@ img {
 // vérif des pages restau
 // retouches détails
 // mettre des comm
-//----------------------------------------------
-//----------------------------------------------
-//----------------------------------------------
-//----------------------------------------------
-
-// TEST CHECKBOX ON CLICK
-
-// // animations @keyframes
-// @keyframes slide {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100%);
-//     // commence à l'intérieur du bloc parent
-//   }
-
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//     // termine à sa position finale
-//   }
-// }
-
-// .circle-check {
-//   // style initial de la box "check" invisible
-//   //  et à l'intérieur du bloc parent
-//   opacity: 0;
-//   transform: translateX (100%);
-//   transition: opacity 500ms, transform 500ms;
-// }
-
-// #click-checked:checked + label .circle-check {
-//   // quand la checkbox est cochée, l'animation commence
-//   animation: slide 500ms forwards;
-// }
-
-// #click-checked:not(:checked) + label .circle-check {
-//   // inverse l'animation quand la checckbox est décochée
-//   animation: slide 500ms reverse forwards;
-
-// }---MOVE DU PRIX---
-
-// .prix {
-//   transition: transform 100ms;
-// }
-
-// #click-checked:checked + label .prix {
-//   transform: translateX(-100px);
-// }
-
-// #click-checked:not(:checked) + label .prix {
-//   transform: translateX(0);
-// }
-
-// #click-checked {
-//   display: none;
-// }
-
-// //---FIN DU MOVE DU PRIX---
-// .prix-check {
-//   display: flex;
-// }
-
-// .circle-check {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: white;
-//   background: $green;
-//   transition: transform;
-//   width: 90px;
-//   height: 65px;
-//   position: absolute;
-//   top: 0;
-//   right: 0px;
-//   border-top-right-radius: 15px;
-//   border-bottom-right-radius: 15px;
-// }
-
-//

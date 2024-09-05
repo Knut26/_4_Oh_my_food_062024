@@ -258,11 +258,16 @@ p {
 .restaurants-title {
   // modif titre restaurants
   font-size: 23px;
-  // margin-left: 8%; // retrait 01.09
   max-width: 500px; // ajout 01.09 voire comment le rendre utile
   font-weight: 500;
   margin-top: 17px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 374px) {
+  .restaurants-title {
+    margin-left: 5%;
+  }
 }
 
 .cards {
@@ -334,6 +339,21 @@ p {
 }
 
 //-------COEURS HOVER------
+
+.la-palette-du-gout,
+.le-delice-des-sens,
+.la-note-enchantee,
+.a-la-francaise {
+  position: relative;
+}
+
+.coeur-plein-restaurants,
+.coeur-vide-restaurants {
+  position: absolute;
+  top: 18px;
+  right: -20%;
+}
+
 .card1-comm,
 .card2-comm,
 .card3-comm,
@@ -625,7 +645,7 @@ footer {
   #partie-3-restaurants {
     padding-top: 25px;
     padding-bottom: 0;
-    height: 645px;
+    //height: 645px;
   }
 
   .container-partie-3 {

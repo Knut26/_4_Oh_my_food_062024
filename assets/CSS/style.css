@@ -327,6 +327,11 @@ p {
   margin-bottom: 0px;
 }
 
+@media (max-width: 374px) {
+  .restaurants-title {
+    margin-left: 5%;
+  }
+}
 .cards {
   margin: 15px 5% 5% 5%;
 }
@@ -398,6 +403,20 @@ p {
 
 .fa-heart {
   font-size: 25px;
+}
+
+.la-palette-du-gout,
+.le-delice-des-sens,
+.la-note-enchantee,
+.a-la-francaise {
+  position: relative;
+}
+
+.coeur-plein-restaurants,
+.coeur-vide-restaurants {
+  position: absolute;
+  top: 18px;
+  right: -20%;
 }
 
 .card1-comm,
@@ -656,7 +675,6 @@ footer {
   #partie-3-restaurants {
     padding-top: 25px;
     padding-bottom: 0;
-    height: 645px;
   }
   .container-partie-3 {
     margin-inline: 12%;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button-container, .restaurant-title {
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,15 +221,35 @@ nav {
 }
 
 .restaurant-title {
+  display: flex;
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 20px;
-  justify-content: space-evenly;
   margin-block: 13px;
   cursor: pointer;
 }
 
+/*
+@media (min-width: 300px) and (max-width: 430px) {
+  .restaurants-title {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 35px;
+  }
+}
+  */
+@media (min-width: 431px) {
+  .restaurant-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 35px;
+  }
+}
 img {
   width: 400px;
   height: 260px;
@@ -401,7 +421,16 @@ img {
     padding: 15px 30px 15px 30px;
   }
 }
-@media (min-width: 375px) and (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 430px) {
+  .main-a-la-francaise,
+  .main-la-palette-du-gout,
+  .main-le-delice-des-sens,
+  .main-la-note-enchantee {
+    position: absolute;
+    top: 440px;
+  }
+}
+@media (min-width: 431px) and (max-width: 500px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
   .main-le-delice-des-sens,
@@ -412,7 +441,7 @@ img {
     top: 440px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
   .main-le-delice-des-sens,
@@ -461,6 +490,15 @@ img {
     position: relative;
     bottom: -1185px;
   }
+  /*
+  .restaurant-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-block: 40px;
+    gap: 35px;
+  }
+    */
 }
 @media (min-width: 375px) and (min-width: 1100px) {
   .button-fonctionnement {
@@ -487,13 +525,6 @@ img {
   }
   nav {
     height: 80px;
-  }
-  .restaurant-title {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-block: 40px;
-    gap: 35px;
   }
   h3 {
     font-size: 25px;
