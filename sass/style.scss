@@ -41,6 +41,10 @@ body {
   padding: 0;
 }
 
+.body-restaurants {
+  animation: transitionIn 2700ms;
+}
+
 main {
   // police et éventuels ancres avec comportement smooth
   font-family: roboto, sans-serif;
@@ -365,7 +369,7 @@ p {
   position: absolute;
   right: 25px;
   bottom: 48.5px;
-  animation: coeurs-loading 500ms;
+  animation: coeurs-loading 300ms;
 }
 
 .coeur-plein {

@@ -278,12 +278,12 @@ img {
 //----ENTREES/PLATS/DESSERTS LOADING-----------------------
 .entrees {
   @extend %loading;
-  animation-duration: 1000ms;
+  animation-duration: 2700ms;
 }
 
 .plats {
   @extend %loading;
-  animation-duration: 2000ms;
+  animation-duration: 2850ms;
   //animation-delay: 300ms;
 }
 

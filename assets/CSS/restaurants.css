@@ -169,6 +169,16 @@
     opacity: 1;
   }
 }
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
 /*
 - coeurs animations inversées (aussi en media queries) opacity
 - max-width pour aligner Fonctionnement/boutons et restaurants et cards
@@ -427,11 +437,11 @@ img {
 }
 
 .entrees {
-  animation-duration: 1000ms;
+  animation-duration: 2700ms;
 }
 
 .plats {
-  animation-duration: 2000ms;
+  animation-duration: 2850ms;
 }
 
 .desserts {
