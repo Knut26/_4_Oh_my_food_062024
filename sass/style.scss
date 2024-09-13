@@ -409,39 +409,6 @@ p {
   display: none;
 }
 
-/*
-.partie-3 .card1-comm:hover .fa-heart,
-.partie-3 .card2-comm:hover .fa-heart,
-.partie-3 .card3-comm:hover .fa-heart,
-.partie-3 .card4-comm:hover .fa-heart,
-.restaurant-title:hover .fa-heart {
-  // au survol de la carte le coeur disparait
-  display: none;
-}
-
-.partie-3 .card1-comm:hover .fa-heart + .coeur-plein,
-.partie-3 .card2-comm:hover .fa-heart + .coeur-plein,
-.partie-3 .card3-comm:hover .fa-heart + .coeur-plein,
-.partie-3 .card4-comm:hover .fa-heart + .coeur-plein,
-.restaurant-title:hover .fa-heart + .coeur-plein {
-  // au survol de la carte entière le coeur de
-  // base est remplacé par le coeur plein
-  display: inline-block;
-  animation: coeurs-loading 500ms;
-}
-//----------------------------------------------------------
-//----------------------------------------------------------
-//----------------------------------------------------------
-
-.card1 .coeur-plein .fa-heart {
-  //ajout 30.08
-  animation: empty-heart 500ms ease forwards; //ajout 30.08
-} //ajout 30.08
-*/
-//----------------------------------------------------------
-//----------------------------------------------------------
-//----------------------------------------------------------
-
 //-----FIN COEURS HOVER-----
 
 .index-la-palette-du-gout,
@@ -745,8 +712,3 @@ footer {
     padding: 50px 90px 20px 0;
   }
 }
-
-// mettre des comm
-// retouches détails
-// la réduction centrage des icônes sur index.html
-// w3 pass html et css
