@@ -218,10 +218,6 @@ body {
   padding: 0;
 }
 
-.body-restaurants {
-  animation: transitionIn 2700ms;
-}
-
 main {
   font-family: roboto, sans-serif;
 }
@@ -485,6 +481,7 @@ p {
   position: absolute;
   top: 18px;
   right: -20%;
+  transition: opacity 500ms ease;
 }
 
 .card1-comm,
@@ -499,6 +496,7 @@ p {
   right: 25px;
   bottom: 48.5px;
   animation: coeurs-loading 300ms;
+  transition: opacity 500ms ease;
 }
 
 .coeur-plein {
@@ -508,6 +506,7 @@ p {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  transition: opacity 500ms ease;
 }
 
 .card1-comm:hover .coeur-plein,
@@ -520,9 +519,6 @@ p {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation-name: coeurs-loading;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
 }
 
 .card1-comm:hover .coeur-vide,

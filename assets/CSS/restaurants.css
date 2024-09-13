@@ -437,15 +437,15 @@ img {
 }
 
 .entrees {
-  animation-duration: 2700ms;
+  animation-duration: 3000ms;
 }
 
 .plats {
-  animation-duration: 2850ms;
+  animation-duration: 3200ms;
 }
 
 .desserts {
-  animation-duration: 3000ms;
+  animation-duration: 3400ms;
 }
 
 .prix {
