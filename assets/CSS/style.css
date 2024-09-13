@@ -486,13 +486,11 @@ p {
   position: absolute;
   right: 25px;
   bottom: 48.5px;
-  animation: coeurs-loading 300ms;
   transition: opacity 500ms ease;
 }
 
 .coeur-plein {
   opacity: 0;
-  animation: empty-heart 300ms;
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   color: transparent;
   background-clip: text;
