@@ -1,4 +1,3 @@
-//---- anim check---
 @keyframes rotation {
   0% {
     transform: rotate(-360deg);
@@ -8,7 +7,6 @@
   }
 }
 
-//---- anim loader
 @keyframes reduction {
   0% {
     opacity: 1;
@@ -23,7 +21,6 @@
   }
 }
 
-//----anim coeurs
 @keyframes coeurs-loading {
   0% {
     opacity: 0.15;
@@ -31,12 +28,10 @@
 
   50% {
     opacity: 0.25;
-    //transform: 1.05;
   }
 
   75% {
     opacity: 0.75;
-    //transform: scale(1.15);
   }
 
   100% {
@@ -46,28 +41,23 @@
 
 @keyframes empty-heart {
   0% {
-    //ajout 30.08
-    opacity: 1; //ajout 30.08
+    opacity: 1;
     transform: scale(1.15);
   }
 
   50% {
-    //ajout 30.08
-    opacity: 0.95; //ajout 30.08
+    opacity: 0.95;
   }
 
   75% {
-    //ajout 30.08
-    opacity: 0.9; //ajout 30.08
+    opacity: 0.9;
   }
 
   100% {
-    //ajout 30.08
-    opacity: 0; //ajout 30.08
+    opacity: 0;
   }
-} //ajout 30.08
+}
 
-//----anim chargements entrees
 @keyframes entrees-loading {
   0% {
     opacity: 0;
@@ -90,7 +80,7 @@
   }
 
   50% {
-    opacity: 0.5; //0.25
+    opacity: 0.5;
   }
 
   60% {
@@ -114,7 +104,6 @@
   }
 }
 
-//----anim chargements plats
 @keyframes plats-loading {
   0% {
     opacity: 0;
@@ -137,7 +126,7 @@
   }
 
   50% {
-    opacity: 0.5; //0.25
+    opacity: 0.5;
   }
 
   60% {
@@ -161,7 +150,6 @@
   }
 }
 
-//----anim chargements desserts
 @keyframes desserts-loading {
   0% {
     opacity: 0;
@@ -184,7 +172,7 @@
   }
 
   50% {
-    opacity: 0.5; //0.25
+    opacity: 0.5;
   }
 
   60% {
@@ -205,17 +193,5 @@
 
   100% {
     opacity: 1;
-  }
-}
-
-//chargement pages restaurants
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0);
   }
 }

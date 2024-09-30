@@ -1,8 +1,5 @@
 //-----------IMPORTS------------------
 
-//"_" pour dire que c'est un module
-// et qu'il ne faut pas le compiler
-
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
 @import "./add-ons/animations";
@@ -55,6 +52,7 @@ body {
 }
 
 //----MEDIA QUERIES----------------
+
 @media (max-width: 374px) {
   .footer-la-note-enchantee {
     position: relative;
@@ -83,7 +81,7 @@ body {
   color: black;
 }
 
-//--------------HEADER-----------------
+//-----------HEADER-----------------
 
 button {
   border: none;
@@ -115,28 +113,14 @@ nav {
 }
 
 .restaurant-title {
-  // mise en page du titre
-  // @extend %flex-center;
   display: flex;
   font-family: shrikhand;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 20px;
-  // justify-content: space-evenly;
   margin-block: 13px;
   cursor: pointer;
 }
-/*
-@media (min-width: 300px) and (max-width: 430px) {
-  .restaurants-title {
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
-    margin-block: 40px;
-    gap: 35px;
-  }
-}
-  */
 
 @media (min-width: 431px) {
   .restaurant-title {
@@ -154,7 +138,7 @@ img {
   object-fit: cover;
 }
 
-//--------MAIN------------------
+//--------MAIN---------------
 
 .entrees,
 .plats,
@@ -205,7 +189,7 @@ img {
   box-shadow: 3px 0px 10px $back-shadow-gray;
 }
 
-//---------------SLIDER CHECK----------------------
+//----------SLIDER CHECK------------------
 
 .sous-titre-et-comm {
   position: relative;
@@ -234,7 +218,6 @@ img {
   display: flex;
   align-items: end;
   padding: 0 10px 10px 10px;
-  // background: white;
 }
 
 .conteneur-check {
@@ -275,7 +258,7 @@ img {
   margin-right: 80px;
 }
 
-//----ENTREES/PLATS/DESSERTS LOADING-----------------------
+//----ENTREES/PLATS/DESSERTS LOADING--------------
 .entrees {
   @extend %loading;
   animation-duration: 3000ms;
@@ -284,16 +267,12 @@ img {
 .plats {
   @extend %loading;
   animation-duration: 3200ms;
-  //animation-delay: 300ms;
 }
 
 .desserts {
   @extend %loading;
   animation-duration: 3400ms;
-  //animation-delay: 600ms;
 }
-
-//-------------------------------------
 
 .prix {
   font-weight: 500;
@@ -305,7 +284,6 @@ img {
 }
 
 .button-container {
-  // centrage bouton
   @extend %flex-center;
 }
 
@@ -320,7 +298,6 @@ img {
   background: linear-gradient($pink, $violet);
   box-shadow: 0px 5px 5px $back-shadow-gray;
   &:hover {
-    // changement au survol
     cursor: pointer;
     transform: scale(1.05);
     transition: 300ms;
@@ -343,7 +320,6 @@ img {
   }
 }
 
-//ajout de ce media queries 05.09...
 @media (min-width: 375px) and (max-width: 430px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
@@ -354,7 +330,6 @@ img {
   }
 }
 
-// ...ayant pour effet de modif celui-ci
 @media (min-width: 431px) and (max-width: 500px) {
   .main-a-la-francaise,
   .main-la-palette-du-gout,
@@ -453,15 +428,6 @@ img {
   nav {
     height: 80px;
   }
-  /*
-  .restaurant-title {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-block: 40px;
-    gap: 35px;
-  }
-    */
 
   h3 {
     font-size: 25px;

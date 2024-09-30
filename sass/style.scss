@@ -1,16 +1,12 @@
 //------IMPORTS--------------------
 
-//"_" pour dire que c'est un module
-// et qu'il ne faut pas le compiler
-
 @import "./add-ons/variables";
 @import "./add-ons/_placeholder";
 @import "./add-ons/animations";
 
-//-------LOADER INDEX.HTML---------------------
+//-------LOADER INDEX.HTML---------
 
 .loader {
-  // définition du loader sur page index
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,32 +21,24 @@
   left: 0;
   right: 0;
   bottom: 0;
-  animation: fadeOut 3s ease-out;
   z-index: 3;
   width: 100%;
   height: 100%;
-  //-webkit-animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: reduction 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-//-------CORPS DU SITE----------------
+//-------CORPS DU SITE-----------
 
 body {
-  // mise à zéro des marges et padding pour navigateurs
   margin: 0;
   padding: 0;
 }
 
-// .body-restaurants {
-//   animation: transitionIn 2700ms;
-// }
-
 main {
-  // police et éventuels ancres avec comportement smooth
   font-family: roboto, sans-serif;
 }
 
-//---------HEADER---------------------
+//---------HEADER----------------
 
 .main-h1 {
   // modif du titre et centrage
@@ -61,10 +49,9 @@ main {
   margin: 20px 0 0 20px;
 }
 
-//--------PARTIE 1-----------------
+//--------PARTIE 1---------------
 
 h3 {
-  // padding titre et paragraphe
   font-size: 28px;
   font-weight: 200;
   margin: 0;
@@ -72,18 +59,15 @@ h3 {
 }
 
 p {
-  // padding titre et paragraphe
   margin: 0;
   padding: 4px 0 0 10px;
 }
 
 .partie-1-reservation {
-  // mise en forme de la partie réservation
   @extend %flex-column;
   background-color: $back-lightgray;
   height: 335px;
   &.localisation {
-    // couleur background et ombres
     @extend %flex-center;
     background-color: $back-gray;
     box-shadow: 0px 0px 3px 1px $back-shadow-gray,
@@ -91,26 +75,22 @@ p {
     height: 48px;
     margin-block: 0;
     .fa-location-dot {
-      // mise en place de l'icône
       @extend %flex-center;
       font-size: 16px;
       margin-inline: 5px;
     }
   }
   &.ville {
-    // mise en place du nom de la ville
     font-size: 15px;
   }
 }
 
 .reservation-title {
-  // ajustement padding titre résa
   padding: 45px 30px 14px 30px;
 }
 
 .reservation-title-1,
 .reservation-title-2 {
-  // modif police des titres
   @extend %flex-center;
   font-size: 23px;
   font-weight: 600;
@@ -118,19 +98,16 @@ p {
 
 .reservation-commentaire-1,
 .reservation-commentaire-2 {
-  // modif police des comm
   @extend %flex-center;
   font-size: 18px;
   font-weight: 200;
 }
 
 .button-container {
-  // centrage bouton
   @extend %flex-center;
 }
 
 .button-explorer {
-  // déco bouton explorer
   width: 230px;
   border-radius: 50px;
   border: none;
@@ -143,7 +120,6 @@ p {
   box-shadow: 0px 5px 10px $back-shadow-gray;
   scroll-behavior: smooth;
   &:hover {
-    // changement au survol
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
@@ -151,41 +127,35 @@ p {
   }
 }
 
-//-----PARTIE 2-------------------
+//-----PARTIE 2-------------
 
 .boutons {
-  // ajout 01.09
-  width: 100%; // ajout 01.09
-} // ajout 01.09
+  width: 100%;
+}
 
 .partie-2-fonctionnement {
-  // mise en colonne
   @extend %flex-column;
   background: white;
   height: 440px;
-  margin-inline: 12%; // ajout 01.09
+  margin-inline: 12%;
 }
 
 .fonctionnement-title {
-  // mise en place et police du titre
   font-size: 24px;
   margin: 50px 0 20px 5%;
 }
 
 .button-fonctionnement {
-  // mise en colonne
   @extend %flex-column;
 }
 
 .button-choix-du-restaurant,
 .button-composez-votre-menu,
 .button-degustez-au-restaurant {
-  // mise en forme des 3 boutons
   @extend %flex-center;
   justify-content: space-evenly;
-  width: 90%; // retrait 01.09
+  width: 90%;
   margin-block: 10px;
-  // margin-inline: 5%; // retrait 02.09
   padding: 28px 0px 28px 0;
   border: none;
   border-radius: 20px;
@@ -204,21 +174,18 @@ p {
     &.button-choix-du-restaurant:hover .fa-tablet-screen-button,
     &.button-composez-votre-menu:hover .fa-list-ul,
     &.button-degustez-au-restaurant:hover .fa-store {
-      // au survol, les icônes deviennent rose
       color: $violet;
     }
   }
 }
 
 .number {
-  // centrage des nombres
   @extend %flex-center;
   color: white;
   padding-top: 2px;
   &.fa-1,
   &.fa-2,
   &.fa-3 {
-    // chiffre 1/2/3
     color: white;
     border-radius: 50px;
     margin-right: 20px;
@@ -229,7 +196,6 @@ p {
 }
 
 .box-number {
-  // définition des nombres
   position: absolute;
   left: -10px;
   width: 20px;
@@ -243,15 +209,13 @@ p {
 .fa-tablet-screen-button,
 .fa-list-ul,
 .fa-store {
-  // mise en forme des 3 icônes
   color: $font-awesome-gray;
   padding-left: 35px; // retrait 02.09
 }
 
-//------PARTIE 3-------------------
+//------PARTIE 3--------------
 
 #partie-3-restaurants {
-  // mise en colonne
   @extend %flex-column;
   background-color: $back-lightgray;
   margin-top: 5px;
@@ -260,9 +224,8 @@ p {
 }
 
 .restaurants-title {
-  // modif titre restaurants
   font-size: 23px;
-  max-width: 500px; // ajout 01.09 voire comment le rendre utile
+  max-width: 500px;
   font-weight: 500;
   margin-top: 17px;
   margin-bottom: 0px;
@@ -275,8 +238,6 @@ p {
 }
 
 .cards {
-  // modif cards
-  // width: 90%; // retrait 02.09
   margin: 15px 5% 5% 5%;
   &.card-part1,
   &.card-part2 {
@@ -291,7 +252,6 @@ p {
 .card2,
 .card3,
 .card4 {
-  // hauteur cards
   height: 250px;
   max-width: 500px;
   margin-bottom: 20px;
@@ -312,7 +272,6 @@ p {
 .card2-comm,
 .card3-comm,
 .card4-comm {
-  // modif du comm
   @extend %flex-column;
   background-color: white;
   border-bottom-left-radius: 15px;
@@ -342,7 +301,7 @@ p {
   font-size: 25px;
 }
 
-//-------COEURS HOVER------
+//-------COEURS HOVER----------
 
 .la-palette-du-gout,
 .le-delice-des-sens,
@@ -369,14 +328,13 @@ p {
 .coeur-vide {
   position: absolute;
   right: 25px;
-  bottom: 48.5px;
-  // animation: coeurs-loading 300ms;
+  bottom: 35.5px;
+  font-size: 25px;
   transition: opacity 500ms ease;
 }
 
 .coeur-plein {
   opacity: 0;
-  //animation: empty-heart 300ms;
   background: linear-gradient(to bottom, $violet, $pink);
   color: transparent;
   background-clip: text;
@@ -384,18 +342,23 @@ p {
   transition: opacity 500ms ease;
 }
 
+.coeur-plein-index {
+  position: absolute;
+  right: 25px;
+  bottom: 35.5px;
+  font-size: 25px;
+}
+
 .card1-comm:hover .coeur-plein,
 .card2-comm:hover .coeur-plein,
 .card3-comm:hover .coeur-plein,
 .card4-comm:hover .coeur-plein,
 .restaurant-title:hover .coeur-plein-restaurants {
-  // le coeur plein de base n'est pas affiché
   opacity: 1;
   background: linear-gradient(to bottom, $violet, $pink);
   color: transparent;
   background-clip: text; // afficher le linear gradient
-  // du texte à travers le coeur qui est transparent
-  -webkit-background-clip: text; // pour compatibilité avec les !== browsers
+  -webkit-background-clip: text;
 }
 
 .card1-comm:hover .coeur-vide,
@@ -409,7 +372,7 @@ p {
   display: none;
 }
 
-//-----FIN COEURS HOVER-----
+//-----FIN COEURS HOVER---------
 
 .index-la-palette-du-gout,
 .index-la-note-enchantee,
@@ -425,11 +388,9 @@ p {
 .index-folie-mericourt {
   font-size: 17px;
   font-weight: 300;
-  //   padding-left: 15px;
 }
 
 .title-heart {
-  // modif coeur icône
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -437,7 +398,6 @@ p {
 }
 
 img {
-  // photos
   max-width: 100%;
   max-height: 100%;
 }
@@ -446,7 +406,6 @@ img {
 .photo2,
 .photo3,
 .photo4 {
-  // modif photos
   width: 700px;
   height: 175px;
   object-fit: cover;
@@ -454,22 +413,19 @@ img {
   border-top-right-radius: 15px;
 }
 
-//-----FOOTER------------------
+//-----FOOTER--------------
 
 footer {
-  // background footer
   padding: 15px 25px 15px 25px;
   background: $font-background-dark-gray;
 }
 
 .liens-footer {
-  // mise en colonne footer
   display: flex;
   flex-direction: column;
 }
 
 .footer-title {
-  // police du titre du footer
   margin-block: 6px;
   font-family: shrikhand;
   color: white;
@@ -480,7 +436,6 @@ footer {
 .devenir-partenaire,
 .mentions-legales,
 .contact {
-  // couleur et police liens footer
   color: white;
   text-decoration: none;
   font-family: roboto, sans-serif;
@@ -550,35 +505,33 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 1100px) {
   .card-part1,
   .card-part2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // ajout 02.09
     align-items: center;
     row-gap: 30px;
     column-gap: 10%;
   }
 }
 
-@media (min-width: 431px) {
+@media (min-width: 1101px) {
   .card-part1,
   .card-part2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; // ajout 02.09
+    justify-content: space-between;
     align-items: center;
     row-gap: 30px;
     column-gap: 10%;
   }
 }
 
-//-----MEDIA QUERIES > 375PX--------------
+//-----MEDIA QUERIES > 375PX----------
 
 @media (min-width: 375px) {
   body {
-    // mise à zéro des marges et padding pour navigateurs
     margin: 0;
     padding: 0;
   }
@@ -616,20 +569,18 @@ footer {
   #partie-3-restaurants {
     padding-top: 25px;
     padding-bottom: 0;
-    //height: 645px;
   }
 
   .container-partie-3 {
-    // ajout 02.09
-    margin-inline: 12%; // ajout 02.09
-  } // ajout 02.09
+    margin-inline: 12%;
+  }
 
   .restaurants-title {
     margin-top: 5px;
   }
 
   .cards {
-    margin: 25px 0 5% 0; // modif 02.09 (margin: 25px 5% 5% 5%;)
+    margin: 25px 0 5% 0;
   }
 
   .card1,
@@ -643,7 +594,6 @@ footer {
   }
 
   .button-explorer {
-    // width: 28%;
     border-radius: 50px;
     border: none;
     font-size: 15px;
@@ -656,10 +606,9 @@ footer {
   }
 
   .button-choix-du-restaurant {
-    justify-content: space-evenly; // ajout 02.09
+    justify-content: space-evenly;
     width: 90%;
     margin-block: 10px;
-    // margin-inline: 5%; // retrait du 02.09
     padding: 30px 5px 30px 0px;
     border: none;
     border-radius: 15px;
